@@ -1,7 +1,7 @@
 {
   "meta": {
     "data_year": 2026,
-    "generated_at": "2026-09-18T21:56:11+08:00",
+    "generated_at": "2026-09-18T23:51:02+08:00",
     "last_verified": "2026-09-18",
     "count": 84,
     "ownership_summary": {
@@ -9,15 +9,22 @@
       "民办": 22
     },
     "early_admission_confidence_summary": {
-      "high": 77,
-      "medium": 7,
-      "low": 0
+      "high": 68,
+      "medium": 15,
+      "low": 1
     },
     "coord_confidence_summary": {
       "high": 47,
       "medium": 11,
       "low": 25,
       "none": 1
+    },
+    "link_coverage": {
+      "early_admission": 84,
+      "admission_brochure": 62,
+      "admission_plan": 63,
+      "official_website": 84,
+      "admission_website": 84
     },
     "scope": "江苏省内已核验到 2026 年提前招生相关页面的高职（专科）院校",
     "disclaimer": "本数据集为公开信息整理，非官方招生平台发布。招生政策、计划、报考条件以江苏省教育考试院及各院校官方发布为准。坐标来自 OpenStreetMap，非官方数据。",
@@ -44,13 +51,20 @@
       "school_type_raw": "理工类",
       "official_website": "https://www.njitt.edu.cn/",
       "admission_website": "https://zs.njitt.edu.cn/",
-      "early_admission_url": "https://zs.njitt.edu.cn/2026/0402/c1167a94198/page.htm",
-      "early_admission_title": "2026年提前招生录取查询",
+      "early_admission_url": "http://zs.njitt.edu.cn/2026/0212/c1162a93434/page.htm",
+      "early_admission_title": "2026年高职提前招生简章",
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zs.njitt.edu.cn/2026/0625/c1167a96089/page.htm",
+      "admission_brochure_title": "2026年普通高考招生简章",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "http://zs.njitt.edu.cn/1163/list.htm",
+      "admission_plan_title": "招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年提前招生录取查询",
+      "early_admission_evidence": "2026年高职提前招生简章 2026年普通高考招生简章 招生计划",
       "address": "江苏省南京市江宁科学园龙眠大道629号",
       "latitude": null,
       "longitude": null,
@@ -60,11 +74,13 @@
       "coord_matched_name": "",
       "baidu_address": "江苏省南京市江宁科学园龙眠大道629号",
       "map_query": "南京交通职业技术学院",
-      "source_url": "https://zs.njitt.edu.cn/2026/0402/c1167a94198/page.htm",
+      "source_url": "http://zs.njitt.edu.cn/2026/0212/c1162a93434/page.htm",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1376",
@@ -86,6 +102,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
       "early_admission_evidence": "2026年南京信息职业技术学院提前招生简章（2026-02-11，招生网『提前招生』栏目）",
       "address": "江苏省南京市栖霞区文澜路99号",
@@ -103,8 +126,12 @@
       "last_verified": "2026-09-18",
       "notes": [
         "首页抓取失败 https://zs.njcit.cn/: GET https://zs.njcit.cn/ 失败: TimeoutError('The read operation timed out')",
+        "首页抓取失败 https://www.njcit.cn/: GET https://www.njcit.cn/ 失败: TimeoutError('The read operation timed out')",
         "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）"
       ]
     },
     {
@@ -127,8 +154,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zjc.ncc.edu.cn/zszc/list.htm",
+      "admission_brochure_title": "招生章程",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zjc.ncc.edu.cn/zszy/list.htm",
+      "admission_plan_title": "招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "南京城市职业学院2026年高职院校提前招生简章",
+      "early_admission_evidence": "南京城市职业学院2026年高职院校提前招生简章 招生章程 招生计划",
       "address": "溧水校区：江苏省南京市溧水区高山路1号,新街口校区：江苏省南京市秦淮区游府西街46号",
       "latitude": null,
       "longitude": null,
@@ -142,7 +176,10 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-2539",
@@ -164,6 +201,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "https://zs.nith.edu.cn/infor/zsjh/2026013000018.htm",
+      "admission_plan_title": "2026年跨省普高招生计划（十七省）",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
       "early_admission_evidence": "第二条 本简章适用于我校2026年江苏省高职提前招生工作（发布2026-02-13）",
       "address": "江苏省南京市江宁区月华西路1号",
@@ -181,7 +225,8 @@
       "last_verified": "2026-09-18",
       "notes": [
         "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+        "招生计划：指向栏目页（会随官网更新，较稳定）",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）"
       ]
     },
     {
@@ -199,13 +244,20 @@
       "school_type_raw": "理工类",
       "official_website": "http://www.nimt.edu.cn/",
       "admission_website": "http://www.nimt.edu.cn/zhaoban/main.htm",
-      "early_admission_url": "http://www.nimt.edu.cn/zhaoban/2026/0304/c330a54759/page.htm",
-      "early_admission_title": "南京机电职业技术学院关于2026年提前招生严正声明",
+      "early_admission_url": "http://www.nimt.edu.cn/zhaoban/2026/0228/c314a54740/page.htm",
+      "early_admission_title": "南京机电职业技术学院2026年江苏高职提前招生简章",
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "http://www.nimt.edu.cn/zhaoban/2026nzsjh/list.htm",
+      "admission_plan_title": "2026年招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "南京机电职业技术学院关于2026年提前招生严正声明",
+      "early_admission_evidence": "南京机电职业技术学院关于2026年提前招生严正声明 2026年招生计划",
       "address": "江苏省南京市高淳区鹿鸣大道33号（团结圩地铁站旁）",
       "latitude": 31.3863748,
       "longitude": 118.8807673,
@@ -215,11 +267,16 @@
       "coord_matched_name": "南京机电职业技术学院(高淳校区)",
       "baidu_address": "江苏省南京市高淳区鹿鸣大道33号（团结圩地铁站旁）",
       "map_query": "南京机电职业技术学院",
-      "source_url": "http://www.nimt.edu.cn/zhaoban/2026/0304/c330a54759/page.htm",
+      "source_url": "http://www.nimt.edu.cn/zhaoban/2026/0228/c314a54740/page.htm",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "提前招生简章/栏目：该校未找到「简章/栏目」页，采用过程性页面（命中 严正声明、声明）并已降级为 medium",
+        "招生计划：指向栏目页（会随官网更新，较稳定）",
+        "子代理复核：原链接是《关于2026年提前招生严正声明》（过程性），已替换为当年提前招生简章"
+      ]
     },
     {
       "id": "jsvoc-2212",
@@ -241,8 +298,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://www.njpi.edu.cn/zjb/f7/0c/c2907a128780/page.htm",
+      "admission_brochure_title": "南京科技职业学院2026年普高招生章程",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://www.njpi.edu.cn/zjb/zsjh/list.htm",
+      "admission_plan_title": "招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "南京科技职业学院2026年提前招生简章",
+      "early_admission_evidence": "南京科技职业学院2026年提前招生简章 南京科技职业学院2026年普高招生章程",
       "address": "江苏省南京市江北新区欣乐路188号",
       "latitude": null,
       "longitude": null,
@@ -256,7 +320,9 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-2230",
@@ -278,8 +344,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "http://www.niva.cn/zsjz.html",
+      "admission_brochure_title": "招生章程Admission Charter 南京视觉艺术职业学院",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "http://www.niva.cn/zsjh.html",
+      "admission_plan_title": "招生计划 南京视觉艺术职业学院",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "26 2026.02 南京视觉艺术职业学院2026年提前招生简章",
+      "early_admission_evidence": "26 2026.02 南京视觉艺术职业学院2026年提前招生简章 MORE MORE",
       "address": "江苏省南京市溧水区柘宁东路116号",
       "latitude": 31.7500432,
       "longitude": 118.9231435,
@@ -293,7 +366,10 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1141",
@@ -315,8 +391,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://ntyzs.njrts.edu.cn/info/1003/2089.htm",
+      "admission_brochure_title": "2026年普通高考招生简章-南京铁道职业技术学院-招生网",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://ntyzs.njrts.edu.cn/zsjh.htm",
+      "admission_plan_title": "招生计划-南京铁道职业技术学院-招生网",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年提前招生简章 (02-10)",
+      "early_admission_evidence": "提前招生简章/栏目 提前招生简章/栏目 2026年提前招生简章 (02-10) 招生简章/章程 招生简章/章程 2026年普通高考招生简章 (06-25) 招生计划",
       "address": "江苏省南京市浦口区珍珠南路65号",
       "latitude": null,
       "longitude": null,
@@ -330,7 +413,9 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-2228",
@@ -350,10 +435,17 @@
       "early_admission_url": "https://zs.zdxy.cn/contents/2929/772.html",
       "early_admission_title": "正德职业技术学院招生网",
       "early_admission_year": 2026,
-      "early_admission_confidence": "high",
+      "early_admission_confidence": "medium",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "https://zs.zdxy.cn/contents/2929/880.html",
+      "admission_plan_title": "正德职业技术学院招生网",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "正德职业技术学院2026年提前招生（第二轮）报考指南",
+      "early_admission_evidence": "正德职业技术学院2026年提前招生（第二轮）报考指南 正德职业技术学院2026年中职职教高考招生计划及专业代码",
       "address": "江苏省南京市江宁区将军大道18号",
       "latitude": null,
       "longitude": null,
@@ -367,7 +459,11 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "提前招生简章/栏目：该校未找到「简章/栏目」页，采用过程性页面（命中 第二轮、二轮）并已降级为 medium",
+        "子代理复核：页面确为《2026年提前招生（第二轮）报考指南》，属指南类，保留"
+      ]
     },
     {
       "id": "jsvoc-2221",
@@ -384,13 +480,20 @@
       "school_type_raw": "医药类",
       "official_website": "https://www.jshvc.edu.cn/",
       "admission_website": "https://www.jshvc.edu.cn/zsxxw/",
-      "early_admission_url": "https://www.jshvc.edu.cn/zsxxw/2026/0317/c5410a28467558/page.htm",
-      "early_admission_title": "【提前招生】2026年江苏卫生健康职业学院提前招生校测通知",
-      "early_admission_year": 2026,
+      "early_admission_url": "https://www.jshvc.edu.cn/zsxxw/1996/list.htm",
+      "early_admission_title": "提前招生",
+      "early_admission_year": null,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": true,
+      "admission_brochure_url": "https://www.jshvc.edu.cn/zsxxw/2026/0512/c5410a29601191/page.htm",
+      "admission_brochure_title": "【普通高考】江苏卫生健康职业学院2026年全日制普通专科招生章程",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://www.jshvc.edu.cn/zsxxw/zsjh/list.htm",
+      "admission_plan_title": "招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "【提前招生】2026年江苏卫生健康职业学院提前招生校测通知 03-17",
+      "early_admission_evidence": "提前招生 【普通高考】江苏卫生健康职业学院2026年全日制普通专科招生章程 05-12 招生计划",
       "address": "浦口路校区：江苏省南京市浦口区黄山岭路69号,汉中路校区：江苏省南京市秦淮区汉中路129号,凤凰西街校区：江苏省南京市鼓楼区凤凰西街150-1号",
       "latitude": null,
       "longitude": null,
@@ -400,11 +503,15 @@
       "coord_matched_name": "",
       "baidu_address": "浦口路校区：江苏省南京市浦口区黄山岭路69号,汉中路校区：江苏省南京市秦淮区汉中路129号,凤凰西街校区：江苏省南京市鼓楼区凤凰西街150-1号",
       "map_query": "江苏卫生健康职业学院",
-      "source_url": "https://www.jshvc.edu.cn/zsxxw/2026/0317/c5410a28467558/page.htm",
+      "source_url": "https://www.jshvc.edu.cn/zsxxw/1996/list.htm",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "提前招生简章/栏目：指向栏目页（会随官网更新，较稳定）",
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1543",
@@ -426,6 +533,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "http://zs.jscvc.cn/2026/0129/c3003a222996/page.htm",
+      "admission_brochure_title": "江苏城市职业学院2026年高职院校提前招生简章",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "http://zs.jscvc.cn/2026/0227/c3003a222126/page.htm",
+      "admission_plan_title": "江苏城市职业学院2026年高职提前招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
       "early_admission_evidence": "江苏城市职业学院2026年高职院校提前招生简章（2026-02-27，正文含招生计划/校测/录取）",
       "address": "校本部：江苏省南京市鼓楼区江东北路399号,桥林校区：南京市浦口区桥林街道,应天校区：江苏省南京市建邺区应天大街832号,定淮门东校区：江苏省南京市鼓楼区古平岗35-1号,挹江门校区：江苏省南京市鼓楼区龙池庵62号",
@@ -441,11 +555,7 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": [
-        "首页抓取失败 http://zs.jscvc.cn/: GET http://zs.jscvc.cn/ 失败: URLError(gaierror(11001, 'getaddrinfo failed'))",
-        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
-      ]
+      "notes": []
     },
     {
       "id": "jsvoc-1436",
@@ -467,8 +577,15 @@
       "early_admission_year": null,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": true,
+      "admission_brochure_url": "https://zs.jmi.edu.cn/4088/list.htm",
+      "admission_brochure_title": "招生章程",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zs.jmi.edu.cn/4085/list.htm",
+      "admission_plan_title": "提前招生",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "提前招生",
+      "early_admission_evidence": "提前招生 招生章程 招生计划",
       "address": "江苏省南京市江宁区格致路309号",
       "latitude": null,
       "longitude": null,
@@ -482,7 +599,11 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "提前招生简章/栏目：指向栏目页（会随官网更新，较稳定）",
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1591",
@@ -504,6 +625,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "medium",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
       "early_admission_evidence": "江苏经贸职业技术学院2026年高职提前招生简章（2026-02-11）",
       "address": "江宁校区：江苏省南京市江宁区江宁大学城龙眠大道180号,光华校区：江苏省南京市秦淮区光华路石门坎104号",
@@ -523,7 +651,10 @@
         "首页抓取失败 https://zb.jvic.edu.cn/: GET https://zb.jvic.edu.cn/ 失败: <HTTPError 412: 'Precondition Failed'>",
         "首页抓取失败 https://www.jvic.edu.cn/: GET https://www.jvic.edu.cn/ 失败: <HTTPError 412: 'Precondition Failed'>",
         "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）",
         "人工下调置信度：子代理未能实际打开（站点对抓取一律返回 412），URL 由搜索引擎索引确认存在",
         "人工下调置信度：子代理未能实际打开（站点对抓取一律返回 412），URL 由搜索引擎索引确认存在"
       ]
@@ -548,6 +679,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "medium",
       "early_admission_third_party": true,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "http://www.njjku.com/html/jkzsw/list.html?HType=2&CId=5531",
+      "admission_plan_title": "金肯职业技术学院",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "https://www.jszs.com/n/476779.html",
       "early_admission_evidence": "正文：金肯职业技术学院2026年提前招生简章，报名第一轮2026年3月12日至14日",
       "address": "江苏省南京市江宁区铜山金铜路2号",
@@ -565,7 +703,9 @@
       "last_verified": "2026-09-18",
       "notes": [
         "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+        "招生计划：指向栏目页（会随官网更新，较稳定）",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）",
+        "上一轮补回的链接实为过程性页面（校考/校测等），已回滚"
       ]
     },
     {
@@ -583,13 +723,20 @@
       "school_type_raw": "综合类",
       "official_website": "https://www.zscollege.com/",
       "admission_website": "https://zs.zscollege.com/",
-      "early_admission_url": "https://zs.zscollege.com/info/1022/1910.htm",
-      "early_admission_title": "【高职提前招生】2026年招生计划-招生网",
+      "early_admission_url": "https://zs.zscollege.com/info/1010/1933.htm",
+      "early_admission_title": "【高职提前招生】2026年报考指南-招生网",
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zs.zscollege.com/info/1010/1073.htm",
+      "admission_brochure_title": "钟山职业技术学院2020年招生简章-招生网",
+      "admission_brochure_confidence": "medium",
+      "admission_plan_url": "https://zs.zscollege.com/info/1022/1910.htm",
+      "admission_plan_title": "【高职提前招生】2026年招生计划-招生网",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "【高职提前招生】2026年招生计划",
+      "early_admission_evidence": "提前招生简章/栏目 提前招生简章/栏目 【招生信息】-【高职提前招生】2026年报考指南 招生简章/章程 招生简章/章程 【招生信息】-钟山职业技术学院2020年招生简章 招生计划 招生计划 【高职提前招生】2026年招生计划",
       "address": "江苏省南京市栖霞区马群街169号",
       "latitude": 32.0460081,
       "longitude": 118.8846423,
@@ -599,11 +746,13 @@
       "coord_matched_name": "钟山职业技术学院",
       "baidu_address": "江苏省南京市栖霞区马群街169号",
       "map_query": "钟山职业技术学院",
-      "source_url": "https://zs.zscollege.com/info/1022/1910.htm",
+      "source_url": "https://zs.zscollege.com/info/1010/1933.htm",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：仅找到 2020 年文档（非当年），已降级为 medium"
+      ]
     },
     {
       "id": "jsvoc-3767",
@@ -625,8 +774,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zs.ntwzy.com/1511/list.htm",
+      "admission_brochure_title": "招生简章",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://mp.weixin.qq.com/s/sl6Ja9_jjtnm1cKaogssaw",
+      "admission_plan_title": "通途启航 卫梦飞扬┃南通卫生健康职业学院2025年招生计划",
+      "admission_plan_confidence": "medium",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "南通卫生健康职业学院2026年提前招生报考指南 2026.03.01",
+      "early_admission_evidence": "南通卫生健康职业学院2026年提前招生报考指南 2026.03.01 21 2026-05 南通卫生健康职业学院2026年全日制普通专科招生章程 招生简章 通途启航 卫梦飞扬┃南通卫生健康职业学院2025年招生计划",
       "address": "江苏省南通经济技术开发区振兴东路288号",
       "latitude": null,
       "longitude": null,
@@ -640,7 +796,10 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：仅找到 2025 年文档（非当年），已降级为 medium"
+      ]
     },
     {
       "id": "jsvoc-3230",
@@ -657,13 +816,20 @@
       "school_type_raw": "师范类",
       "official_website": "https://www.ntnc.edu.cn",
       "admission_website": "https://zjc.ntnc.edu.cn/",
-      "early_admission_url": "https://zjc.ntnc.edu.cn/2026/0410/c595a41377/page.htm",
-      "early_admission_title": "2026年高职提前招生考试公告（第二轮）院校代码：1315",
+      "early_admission_url": "https://zjc.ntnc.edu.cn/2026/0212/c590a41018/page.htm",
+      "early_admission_title": "2026年南通师范高等专科学校高职提前招生简章",
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zjc.ntnc.edu.cn/2026/0518/c595a41758/page.htm",
+      "admission_brochure_title": "2026年全日制普通专科招生章程",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zjc.ntnc.edu.cn/2026/0626/c595a42215/page.htm",
+      "admission_plan_title": "2026年普通高考招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年高职提前招生考试公告（第二轮）院校...",
+      "early_admission_evidence": "2026年南通师范高等专科学校高职提前招生简章 2026年全日制普通专科招生章程 2026年普通高考招生计划",
       "address": "开发区校区：江苏省南通市经济技术开发区育贤路2号,南通校区：江苏省南通市崇川区城山路24号,如皋校区：江苏省南通市如皋市学宫路1号",
       "latitude": 32.0073311,
       "longitude": 120.8695209,
@@ -673,7 +839,7 @@
       "coord_matched_name": "南通师范高等专科学校",
       "baidu_address": "开发区校区：江苏省南通市经济技术开发区育贤路2号,南通校区：江苏省南通市崇川区城山路24号,如皋校区：江苏省南通市如皋市学宫路1号",
       "map_query": "南通师范高等专科学校",
-      "source_url": "https://zjc.ntnc.edu.cn/2026/0410/c595a41377/page.htm",
+      "source_url": "https://zjc.ntnc.edu.cn/2026/0212/c590a41018/page.htm",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
@@ -697,10 +863,17 @@
       "early_admission_url": "https://zs.ntst.edu.cn/2026/0211/c1121a52652/page.htm",
       "early_admission_title": "南通科技职业学院2026年提前招生简章",
       "early_admission_year": 2026,
-      "early_admission_confidence": "high",
+      "early_admission_confidence": "medium",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "南通科技职业学院2026年提前招生简章",
+      "early_admission_evidence": "",
       "address": "江苏省南通市青年中路136号",
       "latitude": null,
       "longitude": null,
@@ -714,7 +887,15 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "首页抓取失败 https://zs.ntst.edu.cn/: GET https://zs.ntst.edu.cn/ 失败: TimeoutError('The read operation timed out')",
+        "首页抓取失败 https://www.ntst.edu.cn/: GET https://www.ntst.edu.cn/ 失败: TimeoutError('The read operation timed out')",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）"
+      ]
     },
     {
       "id": "jsvoc-2204",
@@ -736,8 +917,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zsw.ntvu.edu.cn/18150/",
+      "admission_brochure_title": "招生简章_南通职业大学 招生信息网",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zsw.ntvu.edu.cn/16411/",
+      "admission_plan_title": "招生计划_南通职业大学 招生信息网",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "南通职业大学2026年提前招生简章",
+      "early_admission_evidence": "南通职业大学2026年提前招生简章 招生简章 招生计划",
       "address": "青年路校区：江苏省南通市崇川区青年中路89号,海门校区：江苏省南通市海门区广州路511号,钟秀校区：江苏省南通市崇川区通京大道999号",
       "latitude": null,
       "longitude": null,
@@ -751,7 +939,10 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-3109",
@@ -773,6 +964,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "medium",
       "early_admission_third_party": true,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "https://www.jszs.com/n/476820.html",
       "early_admission_evidence": "标题及导航：江苏商贸职业学院2026年提前招生简章_提前招生(2026-02-28)",
       "address": "江苏省南通市江通路48号",
@@ -789,10 +987,14 @@
       "data_year": 2026,
       "last_verified": "2026-09-18",
       "notes": [
-        "首页抓取失败 https://zsc.jsbc.edu.cn/: GET https://zsc.jsbc.edu.cn/ 失败: <HTTPError 412: 'Precondition Failed'>",
-        "首页抓取失败 https://www.jsbc.edu.cn/: GET https://www.jsbc.edu.cn/ 失败: <HTTPError 412: 'Precondition Failed'>",
+        "首页抓取失败 https://zsc.jsbc.edu.cn/: GET https://zsc.jsbc.edu.cn/ 失败: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)'))",
+        "首页抓取失败 https://www.jsbc.edu.cn/: GET https://www.jsbc.edu.cn/ 失败: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)'))",
         "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）",
+        "上一轮补回的链接实为过程性页面（校考/校测等），已回滚"
       ]
     },
     {
@@ -815,8 +1017,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zsb.jcet.edu.cn/zszc.htm",
+      "admission_brochure_title": "招生章程-招生与就业处（招生网）",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zsb.jcet.edu.cn/zsjh.htm",
+      "admission_plan_title": "招生计划-招生与就业处（招生网）",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年提前招生简章",
+      "early_admission_evidence": "提前招生简章/栏目 提前招生简章/栏目 2026年提前招生简章 招生章程 招生计划",
       "address": "崇川校区：江苏省南通市青年中路87号,海门校区：江苏省南通市海门港新区港西大道1118号",
       "latitude": 32.0086277,
       "longitude": 120.884701,
@@ -830,7 +1039,10 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1418",
@@ -852,8 +1064,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://www.jssc.edu.cn/zhaosheng/773/list.htm",
+      "admission_brochure_title": "招生简章",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://www.jssc.edu.cn/zhaosheng/772/list.htm",
+      "admission_plan_title": "招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "江苏航运职业技术学院2026年江苏省提前招生简章 2026-02-10",
+      "early_admission_evidence": "江苏航运职业技术学院2026年江苏省提前招生简章 2026-02-10 招生简章 招生计划",
       "address": "江苏省南通市经济技术开发区通盛大道185号",
       "latitude": 31.9180766,
       "longitude": 120.9586808,
@@ -867,7 +1086,10 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-3717",
@@ -889,6 +1111,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "http://www.sqsf.cn/info/1051/5475.htm",
+      "admission_brochure_title": "宿迁幼儿师范高等专科学校2026年招生章程-宿迁幼儿师范高等专科学校",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "http://www.sqsf.cn/zsjy/zsjh_zszn.htm",
+      "admission_plan_title": "招生计划・招生指南-宿迁幼儿师范高等专科学校",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
       "early_admission_evidence": "栏目含『2026年高职提前招生第二轮报考公告』『2026年高职提前招生第二轮考试成绩查询公告』(2026-04-10/04-23)",
       "address": "江苏省宿迁市湖滨新城区大学城学成路1号",
@@ -904,7 +1133,9 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-2663",
@@ -926,6 +1157,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
       "early_admission_evidence": "标题「提前招生-宿迁泽达职业技术学院招生信息网」，列有《宿迁泽达职业技术学院2026年提前招生计划表》(2026-03-01)等",
       "address": "江苏省宿迁市湖滨新区学成路666号",
@@ -943,7 +1181,7 @@
       "last_verified": "2026-09-18",
       "notes": [
         "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）"
       ]
     },
     {
@@ -966,6 +1204,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://www.sqzyxy.com/zsjz/2020/1020/901.html",
+      "admission_brochure_title": "宿迁职业技术学院 2020年面向社会人员开展全日制学历教育招生章程 - 宿迁职业技术学院招生简章 - _宿迁职业技术学院",
+      "admission_brochure_confidence": "medium",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
       "early_admission_evidence": "标题《宿迁职业技术学院2026年提前招生简章 招生代码：1996》，正文含2026年提前招生报名3/12-3/14、校测3/21-22",
       "address": "江苏省宿迁市湖滨新城合欢路8号",
@@ -981,7 +1226,13 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "提前招生简章/栏目：仅找到 2022 年文档（非当年），已降级为 medium",
+        "提前招生简章/栏目：指向栏目页（会随官网更新，较稳定）",
+        "招生简章/章程：仅找到 2020 年文档（非当年），已降级为 medium",
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1239",
@@ -1003,8 +1254,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zs.ciit.edu.cn/2026/0625/c1154a143192/page.htm",
+      "admission_brochure_title": "2026年普通高考招生简章",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zs.ciit.edu.cn/1148/list.htm",
+      "admission_plan_title": "招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年提前招生宣传简章",
+      "early_admission_evidence": "2026年提前招生宣传简章 学校章程 2026年普通高考招生简章 招生计划",
       "address": "江苏省常州市武进区鸣新中路28号",
       "latitude": 31.6803102,
       "longitude": 119.9353987,
@@ -1018,7 +1276,9 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1151",
@@ -1035,13 +1295,20 @@
       "school_type_raw": "理工类",
       "official_website": "https://www.czie.edu.cn/",
       "admission_website": "https://zsjy.czie.edu.cn/",
-      "early_admission_url": "https://www.czie.edu.cn/html/904/2026-03-28/content-48331.html",
-      "early_admission_title": "我校组织开展2026年提前招生考试_工程要闻_常州工程职业技术学院",
+      "early_admission_url": "https://zsjy.czie.edu.cn/2026_02/11_21/content-132613.html",
+      "early_admission_title": "2026年常州工程职业技术学院提前招生简章_招生章程_常州工程职业技术学院--招生信息网",
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zsjy.czie.edu.cn/25382",
+      "admission_brochure_title": "招生章程_常州工程职业技术学院--招生信息网",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zsjy.czie.edu.cn/25730",
+      "admission_plan_title": "招生计划_常州工程职业技术学院--招生信息网",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "我校组织开展2026年提前招生考试",
+      "early_admission_evidence": "2026年常州工程职业技术学院提前招生简章2026-02-11 招生章程 招生计划",
       "address": "江苏省常州市武进区滆湖中路33号",
       "latitude": 31.6866093,
       "longitude": 119.9415832,
@@ -1051,11 +1318,14 @@
       "coord_matched_name": "常州工程职业技术学院",
       "baidu_address": "江苏省常州市武进区滆湖中路33号",
       "map_query": "常州工程职业技术学院",
-      "source_url": "https://www.czie.edu.cn/html/904/2026-03-28/content-48331.html",
+      "source_url": "https://zsjy.czie.edu.cn/2026_02/11_21/content-132613.html",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-3614",
@@ -1077,6 +1347,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
       "early_admission_evidence": "标题「提前招生-常州幼儿师范高等专科学校招生就业培训处」，含《2026年常州幼儿师范高等专科学校高职提前招生简章》等",
       "address": "江苏省常州市武进区常武中路28号",
@@ -1095,7 +1372,7 @@
       "notes": [
         "首页抓取失败 https://zsw.cyzedu.cn/zsxx.htm: GET https://zsw.cyzedu.cn/zsxx.htm 失败: <HTTPError 403: 'Forbidden'>",
         "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）"
       ]
     },
     {
@@ -1118,8 +1395,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": true,
+      "admission_brochure_url": "https://zt.czimt.edu.cn/zsw/2026/0615/c7486a185013/page.htm",
+      "admission_brochure_title": "2026年普通高考招生章程",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zt.czimt.edu.cn/zsw/2026/0615/c7486a185017/page.htm",
+      "admission_plan_title": "2026年普通高考招生计划一览表（江苏省）",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年提前招生简章",
+      "early_admission_evidence": "2026年提前招生简章 2026年普通高考招生章程 2026年普通高考招生计划一览表（江苏省）",
       "address": "江苏省常州市武进区鸣新中路26号",
       "latitude": 31.6790182,
       "longitude": 119.9424282,
@@ -1133,7 +1417,11 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "提前招生简章/栏目：指向栏目页（会随官网更新，较稳定）",
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1121",
@@ -1155,8 +1443,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zs.cztgi.edu.cn/2026/0618/c3201a88830/page.htm",
+      "admission_brochure_title": "2026年全日制普通专科招生章程",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zs.cztgi.edu.cn/3203/list.htm",
+      "admission_plan_title": "招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "常州纺织服装职业技术学院2026年提前招生简章 2026-02-12",
+      "early_admission_evidence": "常州纺织服装职业技术学院2026年提前招生简章 2026-02-12 06-18 2026年全日制普通专科招生章程 招生计划",
       "address": "江苏省常州市武进区滆湖中路53号",
       "latitude": 31.6868922,
       "longitude": 119.9348,
@@ -1170,7 +1465,9 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1192",
@@ -1192,8 +1489,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "http://www.czjdu.com/html/article11831.html",
+      "admission_brochure_title": "建东职业技术学院2026年招生章程-招生章程 - 建东职业技术学院",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "建东职业技术学院 2026年高职提前招生批次招生简章",
+      "early_admission_evidence": "建东职业技术学院 2026年高职提前招生批次招生简章 建东职业技术学院2026年招生章程",
       "address": "江苏省常州市新北区嫩江路1号",
       "latitude": 31.868516,
       "longitude": 119.9746189,
@@ -1207,7 +1511,9 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）"
+      ]
     },
     {
       "id": "jsvoc-3345",
@@ -1229,8 +1535,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zsw.jscc.edu.cn/2026_05/18_08/content-86916.html",
+      "admission_brochure_title": "江苏城乡建设职业学院2026年全日制普通专科招生章程_江苏高考_招生信息网-江苏城乡建设职业学院",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zsw.jscc.edu.cn/27247/",
+      "admission_plan_title": "招生计划_招生信息网-江苏城乡建设职业学院",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "江苏城乡建设职业学院2026年高职提前招生简章",
+      "early_admission_evidence": "江苏城乡建设职业学院2026年高职提前招生简章 江苏城乡建设职业学院2026年全日制普通专科招生章程 招生计划",
       "address": "殷村校区：江苏省常州市殷村职教园和裕路1号,清潭校区：江苏省常州市钟楼区木梳路12号",
       "latitude": 31.7662237,
       "longitude": 119.7418863,
@@ -1244,7 +1557,9 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-2226",
@@ -1266,8 +1581,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "http://www.jzp.edu.cn/zsgzc/2026/0519/c2170a33069/page.htm",
+      "admission_brochure_title": "九州职业技术学院2026年招生章程",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "http://www.jzp.edu.cn/zsgzc/zsjh/list.htm",
+      "admission_plan_title": "招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "九州职业技术学院2026年高职院校提前招生简章",
+      "early_admission_evidence": "九州职业技术学院2026年高职院校提前招生简章 九州职业技术学院2026年招生章程 招生计划",
       "address": "江苏省徐州市铜山区嵩山路1号",
       "latitude": null,
       "longitude": null,
@@ -1281,7 +1603,9 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1193",
@@ -1303,8 +1627,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zsb.xzcit.cn/?article_39/826.html",
+      "admission_brochure_title": "2026年全日制普通高考专科招生章程-江苏高中生-徐州工业职业技术学院招生信息与服务网-",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zsb.xzcit.cn/?article_15/825.html",
+      "admission_plan_title": "2026年省外地区招生专业及计划-江苏普通高考-徐州工业职业技术学院招生信息与服务网-",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年江苏省高职提前招生章程",
+      "early_admission_evidence": "2026年江苏省高职提前招生章程 2026年全日制普通高考专科招生章程 2026年省外地区招生专业及计划",
       "address": "九里校区：江苏省徐州市鼓楼区襄王路1号,黄河校区：江苏省徐州市鼓楼区黄河北路90号,新沂校区：江苏省新沂市经济开发区马陵山西路与古镇大道交叉口西侧‌‌",
       "latitude": 34.3002198,
       "longitude": 117.1361838,
@@ -1340,8 +1671,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zjc.xzyz.edu.cn/zszc2.htm",
+      "admission_brochure_title": "招生章程-徐州幼儿师范高等专科学校招就处",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zjc.xzyz.edu.cn/zsjh.htm",
+      "admission_plan_title": "招生计划-徐州幼儿师范高等专科学校招就处",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年提前招生简章",
+      "early_admission_evidence": "提前招生简章/栏目 提前招生简章/栏目 2026年提前招生简章 招生章程 招生计划",
       "address": "洞山校区：江苏徐州经济技术开发区桃园路6号,碧螺校区：徐州经济技术开发区洞山路17号",
       "latitude": 34.2935568,
       "longitude": 117.2415883,
@@ -1355,7 +1693,10 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-3090",
@@ -1372,13 +1713,20 @@
       "school_type_raw": "理工类",
       "official_website": "https://www.xzsw.net.cn/",
       "admission_website": "https://zsw.xzsw.net.cn/",
-      "early_admission_url": "https://mp.weixin.qq.com/s/P4tlHAL9UigX_XT1p2J89w",
-      "early_admission_title": "徐州生物工程职业技术学院2026年提前招生简章",
+      "early_admission_url": "https://zsw.xzsw.net.cn/2026_02/10_15/content-32320.html",
+      "early_admission_title": "徐州生物工程职业技术学院2026年提前招生简章_招生章程_c",
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "http://zsw.xzsw.net.cn/25085",
+      "admission_brochure_title": "招生章程_c",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "http://zsw.xzsw.net.cn/25086",
+      "admission_plan_title": "招生计划_c",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "徐州生物工程职业技术学院2026年提前招生简章",
+      "early_admission_evidence": "徐州生物工程职业技术学院2026年提前招生简章 招生章程 招生计划",
       "address": "泉山校区：徐州市泉山区西三环路297号,沛县校区：徐州市沛县张寨镇区,云龙校区：徐州市云龙区云龙万达北学院路36号,新沂校区：徐州市新沂市沭东大道222号",
       "latitude": null,
       "longitude": null,
@@ -1388,11 +1736,14 @@
       "coord_matched_name": "",
       "baidu_address": "泉山校区：徐州市泉山区西三环路297号,沛县校区：徐州市沛县张寨镇区,云龙校区：徐州市云龙区云龙万达北学院路36号,新沂校区：徐州市新沂市沭东大道222号",
       "map_query": "徐州生物工程职业技术学院",
-      "source_url": "https://mp.weixin.qq.com/s/P4tlHAL9UigX_XT1p2J89w",
+      "source_url": "https://zsw.xzsw.net.cn/2026_02/10_15/content-32320.html",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-3347",
@@ -1414,8 +1765,15 @@
       "early_admission_year": null,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": true,
+      "admission_brochure_url": "https://www.jscst.edu.cn/xxzc/list.htm",
+      "admission_brochure_title": "学校章程",
+      "admission_brochure_confidence": "low",
+      "admission_plan_url": "https://zsb.jscst.edu.cn/2025/0626/c776a90769/page.htm",
+      "admission_plan_title": "2026年普高统招 各省招生计划(表格版)",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "提前招生",
+      "early_admission_evidence": "提前招生 学校章程 2026年普高统招 各省招生计划(表格版)",
       "address": "贾汪校区：江苏省徐州市贾汪区育才路1号,云龙校区：江苏省徐州市云龙区铜山路381号",
       "latitude": 34.2645359,
       "longitude": 117.2445721,
@@ -1429,7 +1787,10 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "提前招生简章/栏目：指向栏目页（会随官网更新，较稳定）",
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-3344",
@@ -1446,13 +1807,20 @@
       "school_type_raw": "财经类",
       "official_website": "https://www.yhvc.edu.cn/",
       "admission_website": "https://www.yhvc.edu.cn/list_83/",
-      "early_admission_url": "https://www.yhvc.edu.cn/list_83/1426.html",
-      "early_admission_title": "扬州中瑞酒店职业学院",
+      "early_admission_url": "https://www.yhvc.edu.cn/list_83/1425.html",
+      "early_admission_title": "2026︱扬州中瑞酒店职业学院报考指南",
       "early_admission_year": 2026,
-      "early_admission_confidence": "high",
+      "early_admission_confidence": "medium",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "https://www.yhvc.edu.cn/list_84/",
+      "admission_plan_title": "扬州中瑞酒店职业学院",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "校长倾情邀约！扬州中瑞酒店职业学院亮相“江苏好高职校长打call” 时间：2026-04-16浏览量：1250 4月14日，江苏2026年高职院校提前招生（第二轮）启动报名，中职职教高考文化统考在即。扬州中瑞酒店职业学院校长张正栋出镜“20",
+      "early_admission_evidence": "扬州中瑞酒店职业学院2026年提前招生校测考试成绩复核申请表.docx 扬州中瑞酒店职业学院2026年提前招生校测考试成绩复核申请表.docx 校长倾情邀约！扬州中瑞酒店职业学院亮相“江苏好高职校长打call” 时间：2026-04-16浏览量：1253 4月14日，江苏2026年高职院校提前招生（第二轮）启动报名，中",
       "address": "江苏省扬州市邗江区文汇西路608号",
       "latitude": 32.3709881,
       "longitude": 119.3499321,
@@ -1462,11 +1830,15 @@
       "coord_matched_name": "扬州中瑞酒店职业学院",
       "baidu_address": "江苏省扬州市邗江区文汇西路608号",
       "map_query": "扬州中瑞酒店职业学院",
-      "source_url": "https://www.yhvc.edu.cn/list_83/1426.html",
+      "source_url": "https://www.yhvc.edu.cn/list_83/1425.html",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "提前招生简章/栏目：该校未找到「简章/栏目」页，采用过程性页面（命中 第二轮、二轮、报名）并已降级为 medium",
+        "子代理复核：原链接是招生宣传新闻，已替换为同栏目《报考指南》（正文以图片承载，未能文本核验）"
+      ]
     },
     {
       "id": "jsvoc-1155",
@@ -1488,8 +1860,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zjc.ypi.edu.cn/zsjz/list.htm",
+      "admission_brochure_title": "招生章程",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zjc.ypi.edu.cn/zsjh/list.htm",
+      "admission_plan_title": "招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年提前招生简章",
+      "early_admission_evidence": "2026年提前招生简章 招生章程 招生计划",
       "address": "江苏省扬州市华扬西路199号扬子津科教园",
       "latitude": 32.3385086,
       "longitude": 119.3955924,
@@ -1503,7 +1882,10 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1459",
@@ -1525,8 +1907,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "http://www.jhu.cn/B07ZSC/show.aspx?TypeID=58&ID=1229",
+      "admission_brochure_title": "招生与就业处——江海学院",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "http://www.jhu.cn/B07ZSC/show.aspx?TypeID=48&ID=1244",
+      "admission_plan_title": "招生与就业处——江海学院",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年提前招生简章",
+      "early_admission_evidence": "2026年提前招生简章 2026年高考统招招生章程 2026年江苏省普高招生计划",
       "address": "江苏省扬州市扬子江南路5号",
       "latitude": 32.3273112,
       "longitude": 119.4294538,
@@ -1540,7 +1929,9 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "子代理复核：页面确为《2026年江海职业技术学院提前招生简章》全文，保留"
+      ]
     },
     {
       "id": "jsvoc-3348",
@@ -1562,8 +1953,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://www.jstc.edu.cn/zs/zsjzjzc.htm",
+      "admission_brochure_title": "招生简章及章程-招生信息网",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://www.jstc.edu.cn/zs/zsjh.htm",
+      "admission_plan_title": "招生计划-招生信息网",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年江苏旅游职业学院提前招生简章02-13",
+      "early_admission_evidence": "提前招生简章/栏目 提前招生简章/栏目 2026年江苏旅游职业学院提前招生简章02-13",
       "address": "九龙湖校区：江苏省扬州市毓秀路88号,扬子津校区：江苏省扬州市邗江区华扬西路196号",
       "latitude": 32.306192,
       "longitude": 119.4054639,
@@ -1577,7 +1975,10 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-2227",
@@ -1599,6 +2000,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "medium",
       "early_admission_third_party": true,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "https://www.jszs.com/n/476799.html",
       "early_admission_evidence": "考生登录省教育考试院高考综合业务信息管理系统…高职院校提前招生申请平台进行网上报名",
       "address": "江苏省无锡市滨湖区钱荣路80号",
@@ -1616,7 +2024,10 @@
       "last_verified": "2026-09-18",
       "notes": [
         "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）"
       ]
     },
     {
@@ -1634,13 +2045,20 @@
       "school_type_raw": "综合类",
       "official_website": "http://www.wsoc.edu.cn/",
       "admission_website": "http://zs.wsoc.edu.cn/",
-      "early_admission_url": "http://zs.wsoc.edu.cn/info/1045/1981.htm",
-      "early_admission_title": "填报指南 | 无锡南洋职业技术学院2026年高职提前招生（第二轮）-无锡南洋职业技术学院招生网",
+      "early_admission_url": "http://zs.wsoc.edu.cn/info/1045/1976.htm",
+      "early_admission_title": "2026年高职提前招生简章-无锡南洋职业技术学院招生网",
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "http://zs.wsoc.edu.cn/zszc.htm",
+      "admission_brochure_title": "招生章程-无锡南洋职业技术学院招生网",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "http://zs.wsoc.edu.cn/zsjh.htm",
+      "admission_plan_title": "招生计划-无锡南洋职业技术学院招生网",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "填报指南 | 无锡南洋职业技术学院2026年高职提前招生（第二轮）",
+      "early_admission_evidence": "提前招生简章/栏目 提前招生简章/栏目 2026年高职提前招生简章 招生章程 招生计划",
       "address": "江苏省无锡市滨湖区山水西路88号",
       "latitude": null,
       "longitude": null,
@@ -1650,11 +2068,14 @@
       "coord_matched_name": "",
       "baidu_address": "江苏省无锡市滨湖区山水西路88号",
       "map_query": "无锡南洋职业技术学院",
-      "source_url": "http://zs.wsoc.edu.cn/info/1045/1981.htm",
+      "source_url": "http://zs.wsoc.edu.cn/info/1045/1976.htm",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1589",
@@ -1676,8 +2097,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zs.wxic.edu.cn/814/list.htm",
+      "admission_brochure_title": "招生章程",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zs.wxic.edu.cn/815/list.htm",
+      "admission_plan_title": "招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "无锡商业职业技术学院2026年提前招生报考指南",
+      "early_admission_evidence": "无锡商业职业技术学院2026年提前招生报考指南 招生章程 招生计划",
       "address": "九龙校区：江苏省无锡市钱胡路809号,姚湾校区：江苏省无锡市滨湖区姚湾立交与西环路交叉口",
       "latitude": 31.5629724,
       "longitude": 120.1675627,
@@ -1691,7 +2119,10 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-2216",
@@ -1713,6 +2144,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
       "early_admission_evidence": "无锡城市职业技术学院2026年提前招生简章（发布2026-02-18）：为贯彻落实《省教育厅关于做好江苏省2026年高职院校提前招生改革试点工作的通知》…第一条…",
       "address": "北校区：江苏省无锡市惠山区钱藕路12号（无锡市职教园内）,南校区：无锡文良路45号",
@@ -1729,7 +2167,8 @@
       "data_year": 2026,
       "last_verified": "2026-09-18",
       "notes": [
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）"
       ]
     },
     {
@@ -1747,13 +2186,20 @@
       "school_type_raw": "艺术类",
       "official_website": "https://www.wxgyxy.edu.cn/",
       "admission_website": "https://zsxx.wxgyxy.edu.cn/",
-      "early_admission_url": "https://zsxx.wxgyxy.edu.cn/info/1004/5961.htm",
-      "early_admission_title": "2026年提前招生专业计划-招生就业处",
+      "early_admission_url": "https://zsxx.wxgyxy.edu.cn/info/1003/6051.htm",
+      "early_admission_title": "江苏省2026年高职院校提前招生工作问答-招生就业处",
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zsxx.wxgyxy.edu.cn/zszc1.htm",
+      "admission_brochure_title": "招生章程-招生就业处",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zsxx.wxgyxy.edu.cn/zsjh.htm",
+      "admission_plan_title": "招生计划-招生就业处",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年提前招生专业计划",
+      "early_admission_evidence": "提前招生简章/栏目 提前招生简章/栏目 江苏省2026年高职院校提前招生工作问答 招生章程 招生计划",
       "address": "江苏省宜兴市荆邑南路99号",
       "latitude": 31.3418503,
       "longitude": 119.8325666,
@@ -1763,11 +2209,14 @@
       "coord_matched_name": "无锡工艺职业技术学院",
       "baidu_address": "江苏省宜兴市荆邑南路99号",
       "map_query": "无锡工艺职业技术学院",
-      "source_url": "https://zsxx.wxgyxy.edu.cn/info/1004/5961.htm",
+      "source_url": "https://zsxx.wxgyxy.edu.cn/info/1003/6051.htm",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-3718",
@@ -1784,13 +2233,20 @@
       "school_type_raw": "师范类",
       "official_website": "http://www.wxnc.edu.cn/",
       "admission_website": "http://zsjy.wxnc.edu.cn/",
-      "early_admission_url": "http://zsjy.wxnc.edu.cn/info/1201/1822.htm",
-      "early_admission_title": "2026年提前招生第二轮报名公告-无锡师范高等专科学校招生就业处（校友会）",
-      "early_admission_year": 2026,
+      "early_admission_url": "http://zsjy.wxnc.edu.cn/zkzx/tqzs.htm",
+      "early_admission_title": "提前招生-无锡师范高等专科学校招生就业处（校友会）",
+      "early_admission_year": null,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": true,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "http://zsjy.wxnc.edu.cn/info/1191/1992.htm",
+      "admission_plan_title": "2026年普通高考招生计划-无锡师范高等专科学校招生就业处（校友会）",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年提前招生第二轮报名公告",
+      "early_admission_evidence": "提前招生 招生计划 招生计划 2026年普通高考招生计划",
       "address": "无锡市惠山区文良路45号（无锡职教园内）",
       "latitude": null,
       "longitude": null,
@@ -1800,11 +2256,14 @@
       "coord_matched_name": "",
       "baidu_address": "无锡市惠山区文良路45号（无锡职教园内）",
       "map_query": "无锡师范高等专科学校",
-      "source_url": "http://zsjy.wxnc.edu.cn/info/1201/1822.htm",
+      "source_url": "http://zsjy.wxnc.edu.cn/zkzx/tqzs.htm",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "提前招生简章/栏目：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1191",
@@ -1826,6 +2285,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zsb.wxstc.cn/zsxx/zsjz.htm",
+      "admission_brochure_title": "招生简章-招生就业处(（创新创业教育中心）",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zsb.wxstc.cn/zsxx/zsjh.htm",
+      "admission_plan_title": "招生计划-招生就业处(（创新创业教育中心）",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
       "early_admission_evidence": "标题《2026年无锡科技职业学院提前招生简章》，日期2026-03-02，正文按省厅2026提前招生改革试点通知制定",
       "address": "江苏省无锡市新锡路8号",
@@ -1841,7 +2307,10 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1453",
@@ -1863,8 +2332,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "http://www.jnys.cn/zsxxw/zsjz.htm",
+      "admission_brochure_title": "招生简章-江南影视艺术学院招生信息网",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "http://www.jnys.cn/zsxxw/zsjh.htm",
+      "admission_plan_title": "招生计划-江南影视艺术学院招生信息网",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "江南影视艺术职业学院2026年提前招生报...",
+      "early_admission_evidence": "江南影视艺术职业学院2026年提前招生报... 招生简章 招生计划",
       "address": "江苏省无锡市藕塘职教园区钱胡路812号",
       "latitude": 31.5715056,
       "longitude": 120.1710669,
@@ -1878,7 +2354,10 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1406",
@@ -1895,13 +2374,20 @@
       "school_type_raw": "理工类",
       "official_website": "https://www.jsit.edu.cn/",
       "admission_website": "https://zsxx.jsit.edu.cn/",
-      "early_admission_url": "https://zsxx.jsit.edu.cn/info/1035/1741.htm",
-      "early_admission_title": "2026年提前招生第二轮计划表-招生信息网",
+      "early_admission_url": "https://zsxx.jsit.edu.cn/info/1036/1717.htm",
+      "early_admission_title": "2026年江苏信息职业技术学院高职院校提前招生简章-招生信息网",
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "http://zsxx.jsit.edu.cn/info/1036/1749.htm",
+      "admission_brochure_title": "江苏信息职业技术学院2026年全日制普通专科招生章程-招生信息网",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zsxx.jsit.edu.cn/zsjh.htm",
+      "admission_plan_title": "招生计划-招生信息网",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年提前招生第二轮计划表",
+      "early_admission_evidence": "提前招生简章/栏目 提前招生简章/栏目 2026年江苏信息职业技术学院高职院校提前招... 招生简章/章程 招生简章/章程 江苏信息职业技术学院2026年全日制普通专科...",
       "address": "藕塘校区：江苏省无锡市惠山区钱藕路1号,东亭校区：江苏省无锡市锡山区春笋中路18号",
       "latitude": 31.5715296,
       "longitude": 120.1636501,
@@ -1911,11 +2397,13 @@
       "coord_matched_name": "江苏信息职业技术学院",
       "baidu_address": "藕塘校区：江苏省无锡市惠山区钱藕路1号,东亭校区：江苏省无锡市锡山区春笋中路18号",
       "map_query": "江苏信息职业技术学院",
-      "source_url": "https://zsxx.jsit.edu.cn/info/1035/1741.htm",
+      "source_url": "https://zsxx.jsit.edu.cn/info/1036/1717.htm",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-2215",
@@ -1932,13 +2420,20 @@
       "school_type_raw": "理工类",
       "official_website": "https://www.jypc.edu.cn/",
       "admission_website": "https://zsb.jypc.edu.cn/",
-      "early_admission_url": "https://zsb.jypc.edu.cn/info/1042/5243.htm",
-      "early_admission_title": "江阴职业技术学院2026年提前招生空中乘务专业招生办法-招生信息网",
-      "early_admission_year": 2026,
+      "early_admission_url": "https://zsb.jypc.edu.cn/tqzs/zsjz.htm",
+      "early_admission_title": "招生简章-招生信息网",
+      "early_admission_year": null,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": true,
+      "admission_brochure_url": "https://zsb.jypc.edu.cn/zjgk/zsjz.htm",
+      "admission_brochure_title": "招生简章-招生信息网",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zsb.jypc.edu.cn/tqzs/zsjh.htm",
+      "admission_plan_title": "招生计划-招生信息网",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "江阴职业技术学院2026年提前招生空中乘务专业招生办法",
+      "early_admission_evidence": "招生简章 招生简章 招生计划",
       "address": "江苏省无锡市江阴锡澄路168号",
       "latitude": null,
       "longitude": null,
@@ -1948,11 +2443,15 @@
       "coord_matched_name": "",
       "baidu_address": "江苏省无锡市江阴锡澄路168号",
       "map_query": "江阴职业技术学院",
-      "source_url": "https://zsb.jypc.edu.cn/info/1042/5243.htm",
+      "source_url": "https://zsb.jypc.edu.cn/tqzs/zsjz.htm",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "提前招生简章/栏目：指向栏目页（会随官网更新，较稳定）",
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1051",
@@ -1974,6 +2473,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "medium",
       "early_admission_third_party": true,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "https://www.jszs.com/n/476824.html",
       "early_admission_evidence": "正文：江苏农牧科技职业学院2026年提前招生简章，报名第一轮3月12日至14日",
       "address": "凤凰路校区：江苏省泰州市凤凰东路8号,迎宾路校区：江苏省泰州市海陵区迎宾路58号",
@@ -1993,7 +2499,11 @@
         "首页抓取失败 https://www.jsahvc.edu.cn/zsxx/main.htm: GET https://www.jsahvc.edu.cn/zsxx/main.htm 失败: <HTTPError 412: 'Precondition Failed'>",
         "首页抓取失败 https://www.jsahvc.edu.cn/: GET https://www.jsahvc.edu.cn/ 失败: <HTTPError 412: 'Precondition Failed'>",
         "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）",
+        "上一轮补回的链接实为过程性页面（校考/校测等），已回滚"
       ]
     },
     {
@@ -2016,8 +2526,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zs.tzpc.edu.cn/529/list.htm",
+      "admission_brochure_title": "招生章程",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zs.tzpc.edu.cn/531/list.htm",
+      "admission_plan_title": "招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年提前招生简章",
+      "early_admission_evidence": "2026年提前招生简章 招生章程 招生计划",
       "address": "江苏省泰州市医药高新区天星路8号",
       "latitude": 32.3759384,
       "longitude": 119.8882184,
@@ -2031,7 +2548,10 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-3273",
@@ -2053,8 +2573,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zs.jscn.edu.cn/info/1091/1808.htm",
+      "admission_brochure_title": "江苏护理职业学院2026年全日制普通专科招生章程-招生信息网-江苏护理职业学院",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zs.jscn.edu.cn/index/zsjh.htm",
+      "admission_plan_title": "招生计划-招生信息网-江苏护理职业学院",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026-03-01 江苏护理职业学院2026年提前招生简章",
+      "early_admission_evidence": "提前招生简章/栏目 提前招生简章/栏目 2026-03-01 江苏护理职业学院2026年提前招生简章 招生简章/章程 招生简章/章程 2026-06-22 江苏护理职业学院2026年全日制普通专科招生章程 招生计划",
       "address": "科技路校区：江苏省淮安市清江浦区科技大道9号,黄河路校区：江苏省淮安市淮阴区黄河西路2号",
       "latitude": 33.5358883,
       "longitude": 119.0420556,
@@ -2068,7 +2595,9 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-2210",
@@ -2085,13 +2614,20 @@
       "school_type_raw": "理工类",
       "official_website": "https://www.jsei.edu.cn/",
       "admission_website": "https://zs.jsei.edu.cn/",
-      "early_admission_url": "https://zs.jsei.edu.cn/info/1006/1855.htm",
-      "early_admission_title": "2026年江苏省提前招生批次专业计划表-江苏电子信息职业学院招生网",
+      "early_admission_url": "https://zs.jsei.edu.cn/info/1005/1854.htm",
+      "early_admission_title": "2026年江苏电子信息职业学院普通高考提前招生章程-江苏电子信息职业学院招生网",
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zs.jsei.edu.cn/zszc1.htm",
+      "admission_brochure_title": "招生章程-江苏电子信息职业学院招生网",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zs.jsei.edu.cn/zsjh.htm",
+      "admission_plan_title": "招生计划-江苏电子信息职业学院招生网",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026-03-012026年江苏省提前招生批次专业计划表",
+      "early_admission_evidence": "提前招生简章/栏目 提前招生简章/栏目 2026-03-012026年江苏电子信息职业学院普通高考提前招生章程 招生章程 招生计划",
       "address": "江苏省淮安市科教产业园枚乘东路3号",
       "latitude": 33.5537722,
       "longitude": 119.0411571,
@@ -2101,11 +2637,15 @@
       "coord_matched_name": "江苏电子信息职业学院",
       "baidu_address": "江苏省淮安市科教产业园枚乘东路3号",
       "map_query": "江苏电子信息职业学院",
-      "source_url": "https://zs.jsei.edu.cn/info/1006/1855.htm",
+      "source_url": "https://zs.jsei.edu.cn/info/1005/1854.htm",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-2219",
@@ -2127,6 +2667,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
       "early_admission_evidence": "标题『2026年江苏财经职业技术学院提前招生简章』，发布时间2026-02-16，正文含『提前招生简章』并指向 http://zs.jscj.edu.cn/Post/8/253",
       "address": "江苏省淮安市高教园区枚乘东路8号",
@@ -2143,9 +2690,12 @@
       "data_year": 2026,
       "last_verified": "2026-09-18",
       "notes": [
-        "首页抓取失败 https://www.jscj.edu.cn/: GET https://www.jscj.edu.cn/ 失败: TimeoutError('The read operation timed out')",
+        "首页抓取失败 https://www.jscj.edu.cn/: GET https://www.jscj.edu.cn/ 失败: IncompleteRead(36721 bytes read)",
         "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）"
       ]
     },
     {
@@ -2168,8 +2718,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zs.jsfpc.edu.cn/2026/0616/c837a89102/page.htm",
+      "admission_brochure_title": "江苏食品药品职业技术学院招生章程(2026 年)",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "权威发布｜江苏食品药品职业技术学院2026年提前招生报考指南",
+      "early_admission_evidence": "权威发布｜江苏食品药品职业技术学院2026年提前招生报考指南 江苏食品药品职业技术学院招生章程(2...",
       "address": "江苏省淮安市高教园区枚乘路4号",
       "latitude": 33.5472696,
       "longitude": 119.0406187,
@@ -2183,7 +2740,9 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）"
+      ]
     },
     {
       "id": "jsvoc-933",
@@ -2205,8 +2764,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "http://www.yhjyjt.cn/zsb/zszx/zszc.htm",
+      "admission_brochure_title": "招生章程-招生就业网——炎黄职业技术学院",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "http://www.yhjyjt.cn/zsb/info/1031/2409.htm",
+      "admission_plan_title": "2026年提前招生专业计划表-招生就业网——炎黄职业技术学院",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "炎黄职业技术学院 2026年高职院校提前招生简章",
+      "early_admission_evidence": "提前招生简章/栏目 提前招生简章/栏目 炎黄职业技术学院 2026年高职院校提前招生简章 招生章程 招生计划 招生计划 2026年提前招生专业计划表",
       "address": "江苏省淮安市涟水炎黄大道东1号",
       "latitude": 33.7867219,
       "longitude": 119.2966204,
@@ -2220,7 +2786,9 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-2557",
@@ -2237,13 +2805,20 @@
       "school_type_raw": "理工类",
       "official_website": "https://www.mdut.cn/",
       "admission_website": "https://zsks.mdut.cn/",
-      "early_admission_url": "https://zsks.mdut.cn//bkzn/webinfo/2025/03/1743078976717563.htm",
-      "early_admission_title": "明达职业技术学院-招生办",
+      "early_admission_url": "http://zsks.mdut.cn/zszc/webinfo/2026/02/1772645062562292.htm",
+      "early_admission_title": "明达职业技术学院2026年提前招生简章",
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zsks.mdut.cn//zszc/C3302index_1.htm",
+      "admission_brochure_title": "明达职业技术学院-招生办",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "明达职业技术学院2026年提前招生校... 2026.03.11",
+      "early_admission_evidence": "明达职业技术学院2026年提前招生校... 2026.03.11 招生章程",
       "address": "江苏省盐城市射阳经济开发区668号",
       "latitude": null,
       "longitude": null,
@@ -2253,11 +2828,15 @@
       "coord_matched_name": "",
       "baidu_address": "江苏省盐城市射阳经济开发区668号",
       "map_query": "明达职业技术学院",
-      "source_url": "https://zsks.mdut.cn//bkzn/webinfo/2025/03/1743078976717563.htm",
+      "source_url": "http://zsks.mdut.cn/zszc/webinfo/2026/02/1772645062562292.htm",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "子代理复核：原链接是校测通知（过程性），已替换为《2026年提前招生简章》"
+      ]
     },
     {
       "id": "jsvoc-2218",
@@ -2277,10 +2856,17 @@
       "early_admission_url": "https://zs.ycpc.edu.cn/2026/0304/c1308a61824/page.htm",
       "early_admission_title": "2026年高职提前招生章程",
       "early_admission_year": 2026,
-      "early_admission_confidence": "high",
+      "early_admission_confidence": "medium",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年高职提前招生章程",
+      "early_admission_evidence": "",
       "address": "江苏省盐城市解放南路285号",
       "latitude": 33.3229219,
       "longitude": 120.1693704,
@@ -2294,7 +2880,15 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "首页抓取失败 https://zs.ycpc.edu.cn/: GET https://zs.ycpc.edu.cn/ 失败: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)'))",
+        "首页抓取失败 https://www.ycpc.edu.cn/: GET https://www.ycpc.edu.cn/ 失败: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)'))",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）"
+      ]
     },
     {
       "id": "jsvoc-3342",
@@ -2311,13 +2905,20 @@
       "school_type_raw": "师范类",
       "official_website": "https://www.yyz.edu.cn/",
       "admission_website": "https://zsjyc.yyz.edu.cn/",
-      "early_admission_url": "https://zsjyc.yyz.edu.cn/2026/0312/c1466a26570/page.htm",
-      "early_admission_title": "提前招生|2026年提前招生专业及计划",
+      "early_admission_url": "https://zsjyc.yyz.edu.cn/2026/0214/c1458a26545/page.htm",
+      "early_admission_title": "盐城幼儿师范高等专科学校 2026年提前招生简章",
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zsjyc.yyz.edu.cn/1460/list.htm",
+      "admission_brochure_title": "招生章程",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zsjyc.yyz.edu.cn/2026/0623/c1463a27417/page.htm",
+      "admission_plan_title": "高考招生|2026年普通高考（江苏省外）招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "提前招生|2026年提前招生专业及计划",
+      "early_admission_evidence": "盐城幼儿师范高等专科学校 2026年提前招生简章 招生章程 高考招生|2026年普通高考（江苏省外）招生计划",
       "address": "学海路校区：江苏省盐城市高职园区学海路28号,海洋路校区：江苏省盐城市高职园区海洋路28号",
       "latitude": null,
       "longitude": null,
@@ -2327,11 +2928,13 @@
       "coord_matched_name": "",
       "baidu_address": "学海路校区：江苏省盐城市高职园区学海路28号,海洋路校区：江苏省盐城市高职园区海洋路28号",
       "map_query": "盐城幼儿师范高等专科学校",
-      "source_url": "https://zsjyc.yyz.edu.cn/2026/0312/c1466a26570/page.htm",
+      "source_url": "https://zsjyc.yyz.edu.cn/2026/0214/c1458a26545/page.htm",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-2229",
@@ -2353,8 +2956,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "http://zsfw.dyc.edu.cn/2026/0604/c161a13446/page.htm",
+      "admission_brochure_title": "昆山登云科技职业学院2026安徽高考简章",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "http://zsfw.dyc.edu.cn/156/list.htm",
+      "admission_plan_title": "招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "昆山登云科技职业学院2026年提前招生简章 2026-02-27",
+      "early_admission_evidence": "昆山登云科技职业学院2026年提前招生简章 2026-02-27 昆山登云科技职业学院2026安徽高考简章 招生计划",
       "address": "江苏省苏州市昆山市马鞍山西路1058号",
       "latitude": 31.3939714,
       "longitude": 120.887304,
@@ -2368,7 +2978,9 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-2206",
@@ -2390,8 +3002,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zs.szit.edu.cn/pgtz/zszc1.htm",
+      "admission_brochure_title": "招生章程-沙洲职业工学院招生网",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zs.szit.edu.cn/tqzs/zsjh.htm",
+      "admission_plan_title": "招生计划-沙洲职业工学院招生网",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "沙洲职业工学院2026年提前招生报考指南",
+      "early_admission_evidence": "提前招生简章/栏目 提前招生简章/栏目 沙洲职业工学院2026年提前招生报考指南 招生章程 招生计划",
       "address": "江苏省苏州市张家港市福新路1号",
       "latitude": 31.8964412,
       "longitude": 120.5658279,
@@ -2405,7 +3024,10 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-2225",
@@ -2427,6 +3049,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "medium",
       "early_admission_third_party": true,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "http://zs.usl.edu.cn/zsjz",
+      "admission_brochure_title": "硅湖职业技术学院-招生简章",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "http://zs.usl.edu.cn/zsjh",
+      "admission_plan_title": "硅湖职业技术学院-招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "https://app.gaokaozhitongche.com/newsguide/h/YGJD8WEX",
       "early_admission_evidence": "正文：硅湖职业技术学院2026年高职院校提前招生报考指南，报名2026年3月12日至14日",
       "address": "江苏省昆山市花桥国际商务城绿地大道168号",
@@ -2443,8 +3072,11 @@
       "data_year": 2026,
       "last_verified": "2026-09-18",
       "notes": [
+        "首页抓取失败 https://www.usl.edu.cn/: GET https://www.usl.edu.cn/ 失败: <HTTPError 403: 'Forbidden'>",
         "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）"
       ]
     },
     {
@@ -2462,13 +3094,20 @@
       "school_type_raw": "理工类",
       "official_website": "https://www.szitu.edu.cn/",
       "admission_website": "https://www.szitu.edu.cn/news/7/11",
-      "early_admission_url": "https://www.szitu.edu.cn/detail/10574",
-      "early_admission_title": "苏州信息职业技术学院",
+      "early_admission_url": "https://www.szitu.edu.cn/detail/10483",
+      "early_admission_title": "2026年苏州信息职业技术学院提前招生简章",
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "苏州信息职业技术学院2026年提前招生考试（校测）第一轮考试通知",
+      "early_admission_evidence": "苏州信息职业技术学院2026年第一轮提前招生资格审核结果公布",
       "address": "江苏省苏州市吴江区鲈乡南路1237号",
       "latitude": 31.1372364,
       "longitude": 120.6286874,
@@ -2478,12 +3117,13 @@
       "coord_matched_name": "苏州信息职业技术学院",
       "baidu_address": "江苏省苏州市吴江区鲈乡南路1237号",
       "map_query": "苏州信息职业技术学院",
-      "source_url": "https://www.szitu.edu.cn/detail/10574",
+      "source_url": "https://www.szitu.edu.cn/detail/10483",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
       "notes": [
-        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）"
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "子代理复核：原链接实为资格审核结果公告，已替换为当年提前招生简章"
       ]
     },
     {
@@ -2506,8 +3146,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://www.csit.edu.cn/zsjyc/1116/list.htm",
+      "admission_brochure_title": "招生章程",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://www.csit.edu.cn/zsjyc/1105/list.htm",
+      "admission_plan_title": "招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "苏州健雄职业技术学院2026年高职提前招生计划...",
+      "early_admission_evidence": "苏州健雄职业技术学院2026年高职提前招生计划... 招生章程 招生计划",
       "address": "江苏省太仓市科教新城健雄路1号",
       "latitude": 31.4143344,
       "longitude": 121.1302479,
@@ -2521,7 +3168,11 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1449",
@@ -2541,10 +3192,17 @@
       "early_admission_url": "https://zsc.szai.edu.cn/zsw/ztzs/tqzs.htm",
       "early_admission_title": "提前招生-苏农招生网",
       "early_admission_year": null,
-      "early_admission_confidence": "high",
+      "early_admission_confidence": "medium",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://www.szai.com/xygk/xyzc.htm",
+      "admission_brochure_title": "学院章程-苏州农业职业技术学院",
+      "admission_brochure_confidence": "low",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "提前招生",
+      "early_admission_evidence": ">学院章程",
       "address": "校本部：江苏省苏州市姑苏区西园路279号,东山校区：苏州市吴中区东山镇环山公路318号,相城校区：江苏省苏州市相城区园中路699号",
       "latitude": 31.3163191,
       "longitude": 120.5787715,
@@ -2558,7 +3216,13 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "首页抓取失败 https://zsc.szai.edu.cn/zsw/: GET https://zsc.szai.edu.cn/zsw/ 失败: TimeoutError('The read operation timed out')",
+        "子页抓取失败 http://zsc.szai.edu.cn/zsw: GET http://zsc.szai.edu.cn/zsw 失败: TimeoutError('timed out')",
+        "子页抓取失败 http://zsc.szai.edu.cn/zsw/: GET http://zsc.szai.edu.cn/zsw/ 失败: TimeoutError('timed out')",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）"
+      ]
     },
     {
       "id": "jsvoc-1388",
@@ -2580,8 +3244,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zs.szhct.edu.cn/zsstatus/news/",
+      "admission_brochure_title": "苏州卫生职业技术学院招生网",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zs.szhct.edu.cn/information/plan/",
+      "admission_plan_title": "苏州卫生职业技术学院招生网",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "苏州卫生职业技术学院2026年提前招生简章",
+      "early_admission_evidence": "苏州卫生职业技术学院2026年提前招生简章 招生简章 招生计划",
       "address": "石湖校区：江苏省苏州市国际教育园北区科华路28号,书院校区：江苏省苏州市姑苏区书院巷20号,木渎校区：江苏省苏州市吴中区宝带西路1108号",
       "latitude": 31.3008368,
       "longitude": 120.6174534,
@@ -2595,7 +3266,11 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）",
+        "子代理复核：页面确为《2026年提前招生简章》全文（2026-02-12 发布），保留"
+      ]
     },
     {
       "id": "jsvoc-2662",
@@ -2617,6 +3292,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "http://www.siso.edu.cn/zswn/zszn/zsjz.htm",
+      "admission_brochure_title": "招生简章-苏州工业园区服务外包职业学院招生信息网",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "http://www.siso.edu.cn/zswn/zszn/zsjh.htm",
+      "admission_plan_title": "招生计划-苏州工业园区服务外包职业学院招生信息网",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
       "early_admission_evidence": "标题《2026年苏州工业园区服务外包职业学院提前招生简章》，时间2026-02-13，正文含『2016年开始实施提前招生』",
       "address": "苏州市工业园区科教创新区松涛街208号",
@@ -2632,7 +3314,13 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "首页抓取失败 http://zs.siso.edu.cn/#/: GET http://zs.siso.edu.cn/#/ 失败: <HTTPError 404: 'Not Found'>",
+        "子页抓取失败 http://zs.siso.edu.cn/#/: GET http://zs.siso.edu.cn/#/ 失败: <HTTPError 404: 'Not Found'>",
+        "提前招生简章/栏目：指向栏目页（会随官网更新，较稳定）",
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-2211",
@@ -2654,6 +3342,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zs.ivt.edu.cn/newsDetails?id=452",
+      "admission_brochure_title": "招生政策",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zs.ivt.edu.cn/newsList?id=4#href-4",
+      "admission_plan_title": "招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
       "early_admission_evidence": "正文『苏州工业园区职业技术学院2026年高职院校提前招生章程…2026年我校继续开展高职院校提前招生改革试点工作』",
       "address": "江苏省苏州市工业园区独墅湖科教创新区若水路1号",
@@ -2669,7 +3364,9 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1359",
@@ -2689,10 +3386,17 @@
       "early_admission_url": "https://zs.siit.edu.cn/gzdz/list.htm",
       "early_admission_title": "提前招生",
       "early_admission_year": null,
-      "early_admission_confidence": "high",
+      "early_admission_confidence": "medium",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "http://www.siit.cn/3577/list.htm",
+      "admission_brochure_title": "招生章程及特殊类型招生办法，分批次、分科类招生计划",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "http://www.siit.edu.cn/3577/list.htm",
+      "admission_plan_title": "招生章程及特殊类型招生办法，分批次、分科类招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "提前招生",
+      "early_admission_evidence": "招生章程及特殊类型招生办法，分批次、分科... 招生章程及特殊类型招生办法，分批次、分科类招生计划",
       "address": "江苏省苏州市吴中大道（越湖路）国际教育园致能大道1号",
       "latitude": 31.2215809,
       "longitude": 120.5871677,
@@ -2706,7 +3410,13 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "首页抓取失败 https://zs.siit.edu.cn/: GET https://zs.siit.edu.cn/ 失败: <HTTPError 502: 'Bad Gateway'>",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）"
+      ]
     },
     {
       "id": "jsvoc-2202",
@@ -2726,10 +3436,17 @@
       "early_admission_url": "https://zsjy.sgmart.edu.cn/info/1021/2477.htm",
       "early_admission_title": "2026年苏州工艺美术职业技术学院提前招生简章-招生就业办",
       "early_admission_year": 2026,
-      "early_admission_confidence": "high",
+      "early_admission_confidence": "medium",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年苏州工艺美术职业技术学院提前招生简章",
+      "early_admission_evidence": "",
       "address": "江苏省苏州市吴中大道国际教育园南区致能大道189号",
       "latitude": 31.2331092,
       "longitude": 120.5815491,
@@ -2743,7 +3460,15 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "首页抓取失败 https://zsjy.sgmart.edu.cn/: GET https://zsjy.sgmart.edu.cn/ 失败: TimeoutError('The read operation timed out')",
+        "首页抓取失败 https://www.sgmart.edu.cn/: GET https://www.sgmart.edu.cn/ 失败: TimeoutError('The read operation timed out')",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）"
+      ]
     },
     {
       "id": "jsvoc-3343",
@@ -2765,6 +3490,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://www.szys.net/zqdh/gljg/xgc/zsjy/zszt/old-zszc2",
+      "admission_brochure_title": "招生章程_招生直通_招生就业_学生工作处_管理机构_苏州幼儿师范高等专科学校",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://www.szys.net/zqdh/gljg/xgc/zsjy/zszt/old-lxwm3/content_24139",
+      "admission_plan_title": "2026年招生专业及相应咨询电话_联系我们_招生直通_招生就业_学生工作处_管理机构_苏州幼儿师范高等专科学校",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
       "early_admission_evidence": "栏目名“提前招生”；列表含“苏州幼儿师范高等专科学校2026年高职提前招生简章”(2026-02-25)",
       "address": "苏州市相城区华元路2号",
@@ -2781,8 +3513,8 @@
       "data_year": 2026,
       "last_verified": "2026-09-18",
       "notes": [
-        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+        "提前招生简章/栏目：指向栏目页（会随官网更新，较稳定）",
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）"
       ]
     },
     {
@@ -2805,6 +3537,13 @@
       "early_admission_year": 2025,
       "early_admission_confidence": "medium",
       "early_admission_third_party": true,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "https://www.gx211.cn/news/20250310/n17415870679393.html",
       "early_admission_evidence": "考生通过江苏省教育考试院网站…高职院校提前招生申请平台选择1969…进行填报",
       "address": "江苏省苏州市昆山市巴城湖滨北路288号",
@@ -2822,7 +3561,7 @@
       "last_verified": "2026-09-18",
       "notes": [
         "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）"
       ]
     },
     {
@@ -2840,13 +3579,20 @@
       "school_type_raw": "综合类",
       "official_website": "http://www.szlyzyxy.cn/",
       "admission_website": "http://www.szlyzyxy.cn/zsgz.html",
-      "early_admission_url": "https://www.szlyzyxy.cn/news/177511683471871325.html",
-      "early_admission_title": "苏州旅游职业学院2026年提前招生预录取结果公告 - 苏州旅游与财经高等职业技术学校 - 招生公告",
+      "early_admission_url": "https://www.szlyzyxy.cn/news/177285813998360453.html",
+      "early_admission_title": "苏州旅游职业学院2026年提前招生简章",
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://www.szlyzyxy.cn/news/177917806483066384.html",
+      "admission_brochure_title": "苏州旅游职业学院2026年全日制普通专科招生章程 - 苏州旅游与财经高等职业技术学校 - 招生章程",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://www.szlyzyxy.cn/news/178237441831230464.html",
+      "admission_plan_title": "苏州旅游职业学院2026年普通高考招生计划（省外） - 苏州旅游与财经高等职业技术学校 - 招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "苏州旅游职业学院2026年提前招生预录取结果公告",
+      "early_admission_evidence": "苏州旅游职业学院2026年提前招生预录取结果公告 苏州旅游职业学院2026年全日制普通专科招生章程 苏州旅游职业学院2026年普通高考招生计划（省外）",
       "address": "江苏省苏州市吴中区国际教育园南区致能大道101号",
       "latitude": null,
       "longitude": null,
@@ -2856,11 +3602,15 @@
       "coord_matched_name": "",
       "baidu_address": "江苏省苏州市吴中区国际教育园南区致能大道101号",
       "map_query": "苏州旅游职业学院",
-      "source_url": "https://www.szlyzyxy.cn/news/177511683471871325.html",
+      "source_url": "https://www.szlyzyxy.cn/news/177285813998360453.html",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "提前招生简章/栏目：该校未找到「简章/栏目」页，采用过程性页面（命中 录取）并已降级为 medium",
+        "子代理复核：原链接是《预录取结果公告》（过程性），已替换为当年提前招生简章"
+      ]
     },
     {
       "id": "jsvoc-1097",
@@ -2882,6 +3632,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zjw.scc.edu.cn/283/list.htm",
+      "admission_brochure_title": "招生简章",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zjw.scc.edu.cn/251/list.htm",
+      "admission_plan_title": "招生专业",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
       "early_admission_evidence": "页面大标题及正文首行：苏州百年职业学院2026年高职提前招生简章",
       "address": "江苏省苏州市苏州工业园区仁爱路1号",
@@ -2899,7 +3656,9 @@
       "last_verified": "2026-09-18",
       "notes": [
         "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+        "提前招生简章/栏目：仅找到 2024 年文档（非当年），已降级为 medium",
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
       ]
     },
     {
@@ -2917,13 +3676,20 @@
       "school_type_raw": "财经类",
       "official_website": "https://www.szjm.edu.cn",
       "admission_website": "https://www.szjm.edu.cn/zsjyc/",
-      "early_admission_url": "https://www.szjm.edu.cn/zsjyc/info/1106/2722.htm",
-      "early_admission_title": "2026年学院提前招生校考通知-苏州经贸职业技术学院招生信息网",
-      "early_admission_year": 2026,
-      "early_admission_confidence": "high",
+      "early_admission_url": "https://www.szjm.edu.cn/zsjyc/info/1107/2705.htm",
+      "early_admission_title": "（搜索索引线索，未验证）苏州经贸职业技术学院2026年提前招生简章",
+      "early_admission_year": null,
+      "early_admission_confidence": "low",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年学院提前招生校考通知",
+      "early_admission_evidence": "",
       "address": "江苏省苏州市国际教育园北区学府路287号",
       "latitude": 31.2544089,
       "longitude": 120.5624727,
@@ -2933,11 +3699,21 @@
       "coord_matched_name": "苏州经贸职业技术学院",
       "baidu_address": "江苏省苏州市国际教育园北区学府路287号",
       "map_query": "苏州经贸职业技术学院",
-      "source_url": "https://www.szjm.edu.cn/zsjyc/info/1106/2722.htm",
+      "source_url": "https://www.szjm.edu.cn/zsjyc/info/1107/2705.htm",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "首页抓取失败 https://www.szjm.edu.cn/zsjyc/: GET https://www.szjm.edu.cn/zsjyc/ 失败: <HTTPError 421: 'Misdirected Request'>",
+        "首页抓取失败 https://www.szjm.edu.cn: GET https://www.szjm.edu.cn 失败: <HTTPError 421: 'Misdirected Request'>",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）",
+        "上一轮补回的链接实为过程性页面（校考/校测等），已回滚",
+        "⚠️ 未验证：该校官网在核验期间整站返回 HTTP 421「网站正在升级维护中」，该链接来自搜索索引、未能实际打开。站点恢复后请人工确认或替换。"
+      ]
     },
     {
       "id": "jsvoc-2559",
@@ -2954,13 +3730,20 @@
       "school_type_raw": "理工类",
       "official_website": "http://www.gist.edu.cn/",
       "admission_website": "http://zs.gist.edu.cn/",
-      "early_admission_url": "http://zs.gist.edu.cn/2026/0321/c1375a59443/page.htm",
-      "early_admission_title": "2026年提前招生校测办法",
+      "early_admission_url": "http://zs.gist.edu.cn/2026/0226/c1375a59090/page.htm",
+      "early_admission_title": "2026年高职提前招生简章",
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "http://zs.gist.edu.cn/202/list.htm",
+      "admission_brochure_title": "招生简章",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "http://zs.gist.edu.cn/zsjh1/list.htm",
+      "admission_plan_title": "招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年提前招生校测办法",
+      "early_admission_evidence": "2026年高职提前招生简章 招生简章 招生计划",
       "address": "江苏省苏州市高新区科技城青山路5号",
       "latitude": 31.325988,
       "longitude": 120.4134445,
@@ -2970,11 +3753,14 @@
       "coord_matched_name": "苏州高博职业学院",
       "baidu_address": "江苏省苏州市高新区科技城青山路5号",
       "map_query": "苏州高博职业学院",
-      "source_url": "http://zs.gist.edu.cn/2026/0321/c1375a59443/page.htm",
+      "source_url": "http://zs.gist.edu.cn/2026/0226/c1375a59090/page.htm",
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-3224",
@@ -2996,8 +3782,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": true,
+      "admission_brochure_url": "https://www.jscfa.edu.cn/zsxxw/2026/0625/c2208a41285/page.htm",
+      "admission_brochure_title": "江苏财会职业学院 2026年江苏省普通高校招生章程",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://www.jscfa.edu.cn/zsxxw/2026/0625/c2199a41308/page.htm",
+      "admission_plan_title": "2026年我校分省分专业计划详情表",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "2026年江苏财会职业学院提前招生章程",
+      "early_admission_evidence": "2026年江苏财会职业学院提前招生章程 江苏财会职业学院 2026年江苏省普通高校招生章程 2026年我校分省分专业计划详情表",
       "address": "连云港市海州区春晖路8号",
       "latitude": 34.6522595,
       "longitude": 119.2326684,
@@ -3011,7 +3804,12 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "提前招生简章/栏目：指向栏目页（会随官网更新，较稳定）",
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）",
+        "子代理复核：URL 路径含 2025 但页面实为《2026年提前招生章程》（发布 2026-02-26），保留"
+      ]
     },
     {
       "id": "jsvoc-2203",
@@ -3033,6 +3831,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://www.lygtc.edu.cn/zsxxw/info/1124/2536.htm",
+      "admission_brochure_title": "连职院2026年招生简章-招生信息网",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://www.lygtc.edu.cn/zsxxw/info/1126/2535.htm",
+      "admission_plan_title": "连职院2026年全国各省普通高考招生计划-招生信息网",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
       "early_admission_evidence": "页面标题『连职院2026年江苏省提前招生报考指南』，发布日期2026-03-03",
       "address": "江苏省连云港市晨光路2号",
@@ -3048,7 +3853,11 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "提前招生简章/栏目：指向栏目页（会随官网更新，较稳定）",
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
+      ]
     },
     {
       "id": "jsvoc-1434",
@@ -3068,10 +3877,17 @@
       "early_admission_url": "https://zsw.jsafc.edu.cn/tqzs.htm",
       "early_admission_title": "提前招生-江苏农林职业技术学院招生网欢迎你！",
       "early_admission_year": null,
-      "early_admission_confidence": "high",
+      "early_admission_confidence": "medium",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "",
+      "admission_brochure_title": "",
+      "admission_brochure_confidence": "none",
+      "admission_plan_url": "",
+      "admission_plan_title": "",
+      "admission_plan_confidence": "none",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "提前招生",
+      "early_admission_evidence": "",
       "address": "校本部：江苏省句容市文昌东路19号,茅山校区：江苏省镇江市句容市茅山镇",
       "latitude": 31.959885,
       "longitude": 119.1664724,
@@ -3085,7 +3901,15 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "首页抓取失败 https://zsw.jsafc.edu.cn/: GET https://zsw.jsafc.edu.cn/ 失败: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)'))",
+        "首页抓取失败 https://www.jsafc.edu.cn/: GET https://www.jsafc.edu.cn/ 失败: URLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)'))",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "未在招生网/官网找到任何可用的栏目或文章链接",
+        "本轮抓取未命中，沿用上一轮已核验结果（保守标记为 medium）"
+      ]
     },
     {
       "id": "jsvoc-3346",
@@ -3107,6 +3931,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zs.jatc.edu.cn/609/list.htm",
+      "admission_brochure_title": "招生章程",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zs.jatc.edu.cn/610/list.htm",
+      "admission_plan_title": "招生计划",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
       "early_admission_evidence": "标题：江苏航空职业技术学院2026年高职院校提前招生简章（发布时间2026-02-28）",
       "address": "江苏省镇江瑞城路88号",
@@ -3124,7 +3955,8 @@
       "last_verified": "2026-09-18",
       "notes": [
         "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）"
       ]
     },
     {
@@ -3147,6 +3979,13 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://www.jscu.cn/show.php?id=6186",
+      "admission_brochure_title": "金山职业技术学院2026年提前招生简章",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://www.jscu.cn/show.php?id=6189",
+      "admission_plan_title": "智能应用工程学院2026年招生专业介绍",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
       "early_admission_evidence": "标题：金山职业技术学院2026年提前招生简章（发布时间2026-02-25）；正文含「特制定本招生简章」",
       "address": "江苏省镇江市扬中金山路1号",
@@ -3163,9 +4002,7 @@
       "data_year": 2026,
       "last_verified": "2026-09-18",
       "notes": [
-        "首页抓取失败 https://www.jscu.cn/bmindex.php?cid=3&lid=27&bmid=27: GET https://www.jscu.cn/bmindex.php?cid=3&lid=27&bmid=27 失败: <HTTPError 404: 'Not Found'>",
-        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
-        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+        "首页抓取失败 https://www.jscu.cn/bmindex.php?cid=3&lid=27&bmid=27: GET https://www.jscu.cn/bmindex.php?cid=3&lid=27&bmid=27 失败: <HTTPError 404: 'Not Found'>"
       ]
     },
     {
@@ -3188,8 +4025,15 @@
       "early_admission_year": 2026,
       "early_admission_confidence": "high",
       "early_admission_third_party": false,
+      "early_admission_is_section": false,
+      "admission_brochure_url": "https://zsw.zjc.edu.cn/list/zszc.htm",
+      "admission_brochure_title": "镇江市高等专科学校招生信息网",
+      "admission_brochure_confidence": "high",
+      "admission_plan_url": "https://zsw.zjc.edu.cn/list/zsjh.htm",
+      "admission_plan_title": "镇江市高等专科学校招生信息网",
+      "admission_plan_confidence": "high",
       "early_admission_reference_url": "",
-      "early_admission_evidence": "镇江市高等专科学校2026年提前招生招生简章",
+      "early_admission_evidence": "镇江市高等专科学校2026年提前招生招生简章 招生章程 招生计划",
       "address": "校本部：江苏省镇江市高校园区长香西大道518号,丹阳校区：江苏省镇江市丹阳市齐梁路1号",
       "latitude": 32.1239642,
       "longitude": 119.3600435,
@@ -3203,7 +4047,11 @@
       "source_list_url": "https://api.eol.cn/gkcx/api/?uri=apidata/api/gk/school/lists&province_id=32&level=2002",
       "data_year": 2026,
       "last_verified": "2026-09-18",
-      "notes": []
+      "notes": [
+        "招生简章/章程：指向栏目页（会随官网更新，较稳定）",
+        "招生计划：指向栏目页（会随官网更新，较稳定）",
+        "子代理复核：页面确为《2026年提前招生简章》全文，保留"
+      ]
     }
   ]
 }

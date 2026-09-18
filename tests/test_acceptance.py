@@ -93,7 +93,8 @@ def test_1_search_nanjing(qapp: QApplication, tmp_path: Path) -> None:
     shown = cards(window)
     assert shown, "搜索南京不应为空"
     assert all(c.school.city == "南京" for c in shown)
-    assert len(shown) == 15
+    expected = [s for s in real_dataset()["schools"] if s.get("city") == "南京"]
+    assert len(shown) == len(expected)
 
 
 # =============================================================== 测试 2
@@ -105,7 +106,8 @@ def test_2_filter_private_only(qapp: QApplication, tmp_path: Path) -> None:
     shown = cards(window)
     assert shown
     assert all(c.school.ownership == "民办" for c in shown)
-    assert len(shown) == 22
+    expected = [s for s in real_dataset()["schools"] if s.get("ownership") == "民办"]
+    assert len(shown) == len(expected)
 
 
 # =============================================================== 测试 3
@@ -197,7 +199,7 @@ def test_6_falls_back_to_admission_site_without_early_admission_page(
     window, recorder = build_window(qapp, tmp_path, data_file=dataset)
     school = cards(window)[0].school
 
-    assert school.admission_entry == ("https://zs.example.edu.cn/", "打开学校招生官网")
+    assert school.admission_entry == ("https://zs.example.edu.cn/", "打开招生网")
     window._open_admission(school)  # noqa: SLF001
     assert recorder.urls == ["https://zs.example.edu.cn/"]
 
@@ -215,7 +217,7 @@ def test_7_offline_startup_still_shows_local_data(
 
     window, _ = build_window(qapp, tmp_path, data_file=real_dataset())
     shown = cards(window)
-    assert len(shown) == 84, "断网也必须能显示本地数据"
+    assert len(shown) == len(real_dataset()["schools"]), "断网也必须能显示本地数据"
     # update_url 为空 → 启动时不应发起任何检查
     assert window.config_service.load().update_url == ""
     assert window._update_worker is None  # noqa: SLF001
@@ -271,10 +273,44 @@ def test_8_broken_school_url_does_not_crash(qapp: QApplication, tmp_path: Path) 
 
 
 # =============================================================== 附加
+def test_9_brochure_and_plan_entries(qapp: QApplication, tmp_path: Path) -> None:
+    """招生简章 / 招生计划：有则能正确打开（用户新增需求）。"""
+    window, recorder = build_window(qapp, tmp_path, data_file=real_dataset())
+    school = next(
+        c.school for c in cards(window) if c.school.has_brochure and c.school.has_plan
+    )
+    window._open_external(school, school.admission_brochure_url)  # noqa: SLF001
+    window._open_external(school, school.admission_plan_url)  # noqa: SLF001
+    assert recorder.urls == [
+        school.admission_brochure_url,
+        school.admission_plan_url,
+    ]
+
+
+def test_10_entry_label_distinguishes_section_page() -> None:
+    """主按钮文案区分「提前招生简章」与「提前招生栏目」，不误导用户。"""
+    section = School.from_dict(
+        {
+            "name": "A",
+            "early_admission_url": "https://a.edu.cn/tqzs.htm",
+            "early_admission_is_section": True,
+        }
+    )
+    assert section.admission_entry == ("https://a.edu.cn/tqzs.htm", "提前招生栏目")
+
+    article = School.from_dict(
+        {"name": "B", "early_admission_url": "https://b.edu.cn/2026/jz.htm"}
+    )
+    assert article.admission_entry[1] == "提前招生简章"
+
+    fallback = School.from_dict({"name": "C", "admission_website": "https://c.edu.cn/"})
+    assert fallback.admission_entry == ("https://c.edu.cn/", "打开招生网")
+
+
 def test_dataset_loads_without_repository_error(tmp_path: Path) -> None:
     repo = SchoolRepository(
         Path(__file__).resolve().parents[1] / "data" / "schools.json"
     )
     loaded = repo.load()
-    assert len(loaded.schools) == 84
+    assert len(loaded.schools) == len(real_dataset()["schools"])
     assert loaded.data_year == 2026

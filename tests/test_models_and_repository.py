@@ -73,7 +73,7 @@ def test_admission_entry_fallback_order() -> None:
     with_admission = School.from_dict(
         {"name": "X", "admission_website": "https://b.cn", "official_website": "https://a.cn"}
     )
-    assert with_admission.admission_entry == ("https://b.cn", "打开学校招生官网")
+    assert with_admission.admission_entry == ("https://b.cn", "打开招生网")
 
     with_early = School.from_dict(
         {
@@ -82,7 +82,7 @@ def test_admission_entry_fallback_order() -> None:
             "admission_website": "https://b.cn",
         }
     )
-    assert with_early.admission_entry == ("https://c.cn", "打开提前招生官网")
+    assert with_early.admission_entry == ("https://c.cn", "提前招生简章")
 
     assert School.from_dict({"name": "X"}).admission_entry == ("", "暂无官网链接")
 
@@ -99,7 +99,7 @@ def test_third_party_url_is_not_treated_as_official() -> None:
     assert school.has_early_admission_reference
     assert not school.has_official_early_admission_page
     # 第三方链接不能冒充官方入口，按钮应回退到招生网
-    assert school.admission_entry == ("https://official.example.edu.cn/", "打开学校招生官网")
+    assert school.admission_entry == ("https://official.example.edu.cn/", "打开招生网")
 
 
 def test_search_blob_contains_key_fields() -> None:

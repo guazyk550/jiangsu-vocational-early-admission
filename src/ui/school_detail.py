@@ -139,8 +139,11 @@ class SchoolDetailDialog(QDialog):
             ("招生网站", school.admission_website),
             (
                 "提前招生页面",
-                school.early_admission_url or "未找到明确的提前招生页面",
+                school.early_admission_url
+                or "未找到明确的提前招生页面（将从招生网进入）",
             ),
+            ("招生简章/章程", school.admission_brochure_url or "未找到"),
+            ("招生计划", school.admission_plan_url or "未找到"),
         ]
         if school.early_admission_title:
             rows.append(("页面标题", school.early_admission_title))
@@ -205,9 +208,23 @@ class SchoolDetailDialog(QDialog):
         secondary_row = QHBoxLayout()
         secondary_row.setSpacing(8)
 
+        # 逐级提供常用官方入口（没有的链接直接不显示，不做死按钮）
+        for label, url in (
+            ("学校官网", school.official_website),
+            ("招生网", school.admission_website),
+            ("招生简章", school.admission_brochure_url),
+            ("招生计划", school.admission_plan_url),
+        ):
+            if not url:
+                continue
+            button = QPushButton(label)
+            button.setObjectName("SecondaryButton")
+            button.setCursor(Qt.CursorShape.PointingHandCursor)
+            button.setToolTip(url)
+            button.clicked.connect(lambda _checked=False, target=url: self._open(target))
+            secondary_row.addWidget(button)
+
         for label, enabled, handler in (
-            ("打开官网", bool(school.official_website), lambda: self._open(school.official_website)),
-            ("打开招生网", bool(school.admission_website), lambda: self._open(school.admission_website)),
             ("复制学校信息", True, self._copy_info),
             ("复制网址", True, self._copy_url),
         ):
@@ -268,10 +285,11 @@ class SchoolDetailDialog(QDialog):
     # ------------------------------------------------------------------ 辅助
     @staticmethod
     def _separator() -> QFrame:
+        """分隔线：颜色交给主题 QSS，避免深色模式下露出硬编码的浅色。"""
         line = QFrame()
-        line.setFrameShape(QFrame.Shape.HLine)
-        line.setFrameShadow(QFrame.Shadow.Plain)
-        line.setStyleSheet("color: #e5e7eb;")
+        line.setObjectName("Separator")
+        line.setFrameShape(QFrame.Shape.NoFrame)
+        line.setFixedHeight(1)
         return line
 
     def _refresh_favorite_text(self) -> None:
@@ -334,6 +352,8 @@ class SchoolDetailDialog(QDialog):
             f"官方网站：{school.official_website or '暂无数据'}",
             f"招生网站：{school.admission_website or '暂无数据'}",
             f"提前招生页面：{school.early_admission_url or '暂无数据'}",
+            f"招生简章/章程：{school.admission_brochure_url or '暂无数据'}",
+            f"招生计划：{school.admission_plan_url or '暂无数据'}",
             f"数据年份：{school.data_year or '暂无数据'}",
             "",
             DISCLAIMER_TEXT,
@@ -441,7 +461,7 @@ class DataSourceDialog(QDialog):
 
         for group_title, items in groups:
             title_label = QLabel(group_title)
-            title_label.setObjectName("SidebarTitle")
+            title_label.setObjectName("SectionTitle")
             content_layout.addWidget(title_label)
             for item in items:
                 content_layout.addWidget(self._source_row(item))

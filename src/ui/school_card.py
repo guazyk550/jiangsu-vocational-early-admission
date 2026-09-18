@@ -1,7 +1,13 @@
 """院校卡片控件（列表中的一项）。
 
-每个卡片展示：校名 / 城市·办学性质 / 地址 / 直线距离 / 三个操作按钮 + 收藏。
-所有交互都通过信号抛给主窗口处理，卡片本身不直接打开浏览器（便于测试与集中处理异常）。
+每个卡片展示：校名 / 城市·办学性质 / 地址 / 直线距离 / 操作按钮 + 收藏。
+按钮策略（卡片上不放太多，避免拥挤；完整入口在详情页）：
+
+- 主按钮：提前招生简章 / 提前招生栏目 / 打开招生网（逐级回退）；
+- 招生计划：仅当该校有招生计划页时出现；
+- 百度地图 / 查看详情。
+
+所有交互都通过信号抛给主窗口处理，卡片本身不直接打开浏览器。
 """
 
 from __future__ import annotations
@@ -30,6 +36,7 @@ class SchoolCard(QFrame):
     """单个院校卡片。"""
 
     openAdmissionRequested = Signal(object)
+    openExternalRequested = Signal(object, str)  # (school, url)：打开任意收录链接
     openMapRequested = Signal(object)
     detailRequested = Signal(object)
     favoriteToggled = Signal(object)
@@ -124,10 +131,36 @@ class SchoolCard(QFrame):
         admission_button.setCursor(Qt.CursorShape.PointingHandCursor)
         if not entry_url:
             admission_button.setToolTip("该校未收录到可用链接")
+        elif school.early_admission_title:
+            admission_button.setToolTip(school.early_admission_title)
         admission_button.clicked.connect(
-            lambda: self.openAdmissionRequested.emit(self.school)
+            lambda: self.openExternalRequested.emit(self.school, entry_url)
         )
         button_row.addWidget(admission_button)
+
+        if school.has_plan:
+            plan_button = QPushButton("招生计划")
+            plan_button.setCursor(Qt.CursorShape.PointingHandCursor)
+            plan_button.setToolTip(school.admission_plan_title or "打开该校招生计划页面")
+            plan_button.clicked.connect(
+                lambda: self.openExternalRequested.emit(
+                    self.school, school.admission_plan_url
+                )
+            )
+            button_row.addWidget(plan_button)
+
+        if school.has_brochure:
+            brochure_button = QPushButton("招生简章")
+            brochure_button.setCursor(Qt.CursorShape.PointingHandCursor)
+            brochure_button.setToolTip(
+                school.admission_brochure_title or "打开该校招生简章/章程"
+            )
+            brochure_button.clicked.connect(
+                lambda: self.openExternalRequested.emit(
+                    self.school, school.admission_brochure_url
+                )
+            )
+            button_row.addWidget(brochure_button)
 
         map_button = QPushButton("百度地图")
         map_button.setCursor(Qt.CursorShape.PointingHandCursor)

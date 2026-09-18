@@ -1,0 +1,42 @@
+[
+  {
+    "name": "苏州经贸职业技术学院",
+    "found": false,
+    "url": null,
+    "title": null,
+    "year": null,
+    "is_section_page": false,
+    "evidence": "",
+    "note": "任务给出的官网 www.szm.edu.cn 无法解析（不存在）。该校真实域名为 www.szjm.edu.cn，但 2026-09 抓取时整站返回 HTTP 421「网站正在升级维护中」（websaas.cn 防护），所有路径（/、/zsjyc/、info/1107/2705.htm 等）均打不开；r.jina.ai、corsproxy、allorigins、codetabs 代理均超时或被同样拦截，Wayback 无该页快照。故未能用 web_fetch 打开任何含「提前招生」的页面，found=false。搜索索引线索（未核验）：https://www.szjm.edu.cn/zsjyc/info/1107/2705.htm"
+  },
+  {
+    "name": "南京机电职业技术学院",
+    "found": true,
+    "url": "http://www.nimt.edu.cn/zhaoban/2026/0228/c314a54740/page.htm",
+    "title": "南京机电职业技术学院2026年江苏高职提前招生简章",
+    "year": 2026,
+    "is_section_page": false,
+    "evidence": "标题：南京机电职业技术学院2026年江苏高职提前招生简章（招考信息栏目，2026-02-12）",
+    "note": "在招生网「招考信息」列表 /zhaoban/314/list.htm 第2页找到并打开核实。用于替代现链接《关于2026年提前招生严正声明》。"
+  },
+  {
+    "name": "苏州旅游职业学院",
+    "found": true,
+    "url": "https://www.szlyzyxy.cn/news/177285813998360453.html",
+    "title": "苏州旅游职业学院2026年提前招生简章",
+    "year": 2026,
+    "is_section_page": false,
+    "evidence": "页面为2026年提前招生简章：依据苏教考函〔2026〕1号、报名3月12-14日、校测3月28日/4月18日",
+    "note": "页面为 GBK 编码，web_fetch 按 UTF-8 解码导致正文显示乱码；标题经站内栏目与搜索引擎一致确认为「苏州旅游职业学院2026年提前招生简章」。用于替代现链接《预录取结果公告》。招生工作栏目页 https://www.szlyzyxy.cn/zsgz.html"
+  },
+  {
+    "name": "苏州信息职业技术学院",
+    "found": true,
+    "url": "https://www.szitu.edu.cn/detail/10483",
+    "title": "2026年苏州信息职业技术学院提前招生简章",
+    "year": 2026,
+    "is_section_page": false,
+    "evidence": "标题：2026年苏州信息职业技术学院提前招生简章（招生工作，2026-02-12，信息来源：招生就业处）",
+    "note": "主站 /detail/10483 与 dwbg.szitu.edu.cn/detail/10483 均返回同一全文。用于替代现链接（标题仅校名的 /detail/10566，实为资格审核结果公告）。"
+  }
+]

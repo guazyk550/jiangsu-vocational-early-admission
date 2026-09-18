@@ -43,6 +43,14 @@ VALID_OWNERSHIP = {"公办", "民办"}
 URL_RE = re.compile(r"^https?://[^\s/$.?#].[^\s]*$", re.IGNORECASE)
 NON_VOCATIONAL_HINTS = ("大学", "本科")
 
+#: 提前招生入口的「标题」里出现这些词，说明它很可能是过程性页面
+#: （第二轮、校测、成绩、录取公示…）而不是简章/栏目页——
+#: 正是用户反馈过的问题（“打开的是第二轮招生”），所以纳入体检。
+PROCESS_TITLE_HINTS = (
+    "第二轮", "二轮", "校测", "校考", "成绩", "录取", "公示", "准考证",
+    "征集", "补录", "严正声明", "声明", "须知", "报名", "考试",
+)
+
 LEVEL_ERROR = "ERROR"
 LEVEL_WARN = "WARN"
 
@@ -86,19 +94,35 @@ def check_school(raw: dict, index: int) -> list[Issue]:
         )
 
     # ---- URL 检查 ----
-    for field, label in (
-        ("official_website", "官网"),
-        ("admission_website", "招生网"),
-        ("early_admission_url", "提前招生页面"),
+    # ---- 链接检查（全部招生相关入口）----
+    for field, label, fatal in (
+        ("official_website", "官网", False),
+        ("admission_website", "招生网", False),
+        ("early_admission_url", "提前招生页面", True),
+        ("admission_brochure_url", "招生简章/章程", False),
+        ("admission_plan_url", "招生计划", False),
     ):
         value = str(raw.get(field) or "").strip()
         if not value:
-            level = LEVEL_WARN if field != "early_admission_url" else LEVEL_ERROR
-            issues.append(Issue(level, scope, f"{label}（{field}）为空"))
+            issues.append(
+                Issue(LEVEL_ERROR if fatal else LEVEL_WARN, scope, f"{label}（{field}）为空")
+            )
         elif not URL_RE.match(value):
             issues.append(
                 Issue(LEVEL_ERROR, scope, f"{label}（{field}）格式可疑：{value[:80]}")
             )
+
+    # 入口标题的“过程性页面”体检（只对提前招生入口做，其他入口无标题字段）
+    entry_title = str(raw.get("early_admission_title") or "")
+    hits = [word for word in PROCESS_TITLE_HINTS if word in entry_title]
+    if hits:
+        issues.append(
+            Issue(
+                LEVEL_WARN,
+                scope,
+                f"提前招生入口标题疑似过程性页面（命中 {'、'.join(hits)}）：{entry_title[:40]}",
+            )
+        )
 
     if not str(raw.get("address") or "").strip():
         issues.append(Issue(LEVEL_WARN, scope, "地址为空"))

@@ -90,7 +90,14 @@ class School:
     early_admission_year: int | None = None
     early_admission_confidence: str = CONFIDENCE_NONE
     early_admission_third_party: bool = False
+    early_admission_is_section: bool = False
     early_admission_evidence: str = ""
+    admission_brochure_url: str = ""
+    admission_brochure_title: str = ""
+    admission_brochure_confidence: str = CONFIDENCE_NONE
+    admission_plan_url: str = ""
+    admission_plan_title: str = ""
+    admission_plan_confidence: str = CONFIDENCE_NONE
     address: str = ""
     latitude: float | None = None
     longitude: float | None = None
@@ -144,7 +151,18 @@ class School:
             early_admission_third_party=_as_bool(
                 raw.get("early_admission_third_party")
             ),
+            early_admission_is_section=_as_bool(raw.get("early_admission_is_section")),
             early_admission_evidence=_as_str(raw.get("early_admission_evidence")),
+            admission_brochure_url=_as_str(raw.get("admission_brochure_url")),
+            admission_brochure_title=_as_str(raw.get("admission_brochure_title")),
+            admission_brochure_confidence=_as_str(
+                raw.get("admission_brochure_confidence")
+            )
+            or CONFIDENCE_NONE,
+            admission_plan_url=_as_str(raw.get("admission_plan_url")),
+            admission_plan_title=_as_str(raw.get("admission_plan_title")),
+            admission_plan_confidence=_as_str(raw.get("admission_plan_confidence"))
+            or CONFIDENCE_NONE,
             address=_as_str(raw.get("address")),
             latitude=latitude,
             longitude=longitude,
@@ -173,7 +191,14 @@ class School:
             "early_admission_year": self.early_admission_year,
             "early_admission_confidence": self.early_admission_confidence,
             "early_admission_third_party": self.early_admission_third_party,
+            "early_admission_is_section": self.early_admission_is_section,
             "early_admission_evidence": self.early_admission_evidence,
+            "admission_brochure_url": self.admission_brochure_url,
+            "admission_brochure_title": self.admission_brochure_title,
+            "admission_brochure_confidence": self.admission_brochure_confidence,
+            "admission_plan_url": self.admission_plan_url,
+            "admission_plan_title": self.admission_plan_title,
+            "admission_plan_confidence": self.admission_plan_confidence,
             "address": self.address,
             "latitude": self.latitude,
             "longitude": self.longitude,
@@ -197,17 +222,27 @@ class School:
 
     @property
     def admission_entry(self) -> tuple[str, str]:
-        """返回「提前招生/招生」按钮应打开的 (url, 按钮文案)。
+        """返回主按钮应打开的 (url, 文案)。
 
         优先级：提前招生页面（自有域名）→ 招生网 → 官网；都没有则返回空。
+        文案区分「简章」与「栏目页」，避免让用户以为点开的一定是当年度简章。
         """
         if self.has_official_early_admission_page:
-            return self.early_admission_url, "打开提前招生官网"
+            label = "提前招生栏目" if self.early_admission_is_section else "提前招生简章"
+            return self.early_admission_url, label
         if self.admission_website:
-            return self.admission_website, "打开学校招生官网"
+            return self.admission_website, "打开招生网"
         if self.official_website:
             return self.official_website, "打开学校官网"
         return "", "暂无官网链接"
+
+    @property
+    def has_brochure(self) -> bool:
+        return bool(self.admission_brochure_url)
+
+    @property
+    def has_plan(self) -> bool:
+        return bool(self.admission_plan_url)
 
     @property
     def has_early_admission_reference(self) -> bool:

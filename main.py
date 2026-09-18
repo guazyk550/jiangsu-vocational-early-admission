@@ -22,6 +22,7 @@ from src.services.config_service import ConfigService
 from src.services.favorites_service import FavoritesService, RecentService
 from src.services.browser_service import BrowserService
 from src.ui.main_window import MainWindow
+from src.ui.style import build_palette, system_prefers_dark, theme_for
 
 APP_NAME = "江苏高职提前招生院校导航器"
 ORG_NAME = "JSVocNav"
@@ -88,6 +89,11 @@ def run_selftest(output_path: str) -> int:
     except Exception as exc:  # noqa: BLE001
         lines.append(f"配置读取失败：{exc}")
 
+    try:
+        lines.append(f"系统主题 = {theme_for(system_prefers_dark()).name}")
+    except Exception as exc:  # noqa: BLE001
+        lines.append(f"主题检测失败：{exc}")
+
     Path(output_path).write_text("\n".join(lines) + "\n", encoding="utf-8")
     return 0 if ok else 1
 
@@ -104,6 +110,9 @@ def main() -> int:
     app.setApplicationName(APP_NAME)
     app.setApplicationDisplayName(APP_NAME)
     app.setOrganizationName(ORG_NAME)
+
+    # 先应用与系统一致的调色板，避免启动瞬间的浅色闪烁（QSS 由主窗口再叠加）
+    app.setPalette(build_palette(theme_for(system_prefers_dark())))
 
     icon_path = _icon_path()
     if icon_path is not None:

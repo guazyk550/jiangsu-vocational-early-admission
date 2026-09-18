@@ -199,6 +199,26 @@ def main() -> int:
             "early_admission_year": verification.get("early_admission_year"),
             "early_admission_confidence": confidence,
             "early_admission_third_party": bool(verification.get("third_party")),
+            "early_admission_is_section": bool(
+                next(
+                    (
+                        e.get("is_section_page")
+                        for e in (verification.get("evidence") or [])
+                        if e.get("url") == verification.get("early_admission_url")
+                    ),
+                    False,
+                )
+            ),
+            "admission_brochure_url": verification.get("admission_brochure_url") or "",
+            "admission_brochure_title": verification.get("admission_brochure_title") or "",
+            "admission_brochure_confidence": verification.get(
+                "admission_brochure_confidence"
+            )
+            or "none",
+            "admission_plan_url": verification.get("admission_plan_url") or "",
+            "admission_plan_title": verification.get("admission_plan_title") or "",
+            "admission_plan_confidence": verification.get("admission_plan_confidence")
+            or "none",
             "early_admission_reference_url": (
                 verification.get("early_admission_url")
                 if verification.get("third_party")
@@ -252,6 +272,15 @@ def main() -> int:
                 level: sum(1 for r in included if r["coord_confidence"] == level)
                 for level in ("high", "medium", "low", "none")
             },
+            "link_coverage": {
+                "early_admission": sum(1 for r in included if r["early_admission_url"]),
+                "admission_brochure": sum(
+                    1 for r in included if r["admission_brochure_url"]
+                ),
+                "admission_plan": sum(1 for r in included if r["admission_plan_url"]),
+                "official_website": sum(1 for r in included if r["official_website"]),
+                "admission_website": sum(1 for r in included if r["admission_website"]),
+            },
             "scope": "江苏省内已核验到 2026 年提前招生相关页面的高职（专科）院校",
             "disclaimer": (
                 "本数据集为公开信息整理，非官方招生平台发布。招生政策、计划、报考条件"
@@ -293,6 +322,7 @@ def main() -> int:
     print(f"[公办/民办] {output['meta']['ownership_summary']}")
     print(f"[提前招生置信度] {output['meta']['early_admission_confidence_summary']}")
     print(f"[坐标置信度] {output['meta']['coord_confidence_summary']}")
+    print(f"[链接覆盖] {output['meta']['link_coverage']}")
     return 0
 
 

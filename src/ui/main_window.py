@@ -25,6 +25,7 @@ from typing import Any, Mapping
 from PySide6.QtCore import Qt, QThread, QTimer, Signal
 from PySide6.QtGui import QGuiApplication
 from PySide6.QtWidgets import (
+    QApplication,
     QButtonGroup,
     QComboBox,
     QFrame,
@@ -62,7 +63,12 @@ from src.ui.school_detail import (
     SchoolDetailDialog,
     SimpleTextDialog,
 )
-from src.ui.style import APP_STYLE
+from src.ui.style import (
+    build_palette,
+    build_stylesheet,
+    system_prefers_dark,
+    theme_for,
+)
 
 SEARCH_DEBOUNCE_MS = 250
 SCOPE_ALL = "all"
@@ -122,12 +128,42 @@ class MainWindow(QMainWindow):
 
         self.setWindowTitle("江苏高职提前招生院校导航器")
         self.resize(1180, 780)
-        self.setStyleSheet(APP_STYLE)
+        self._theme_name = ""
+        self._apply_theme()
+        self._watch_system_theme()
 
         self._build_ui()
         self._load_data()
         self._restore_geometry()
         self._maybe_check_updates()
+
+    # ------------------------------------------------------------------ 主题
+    def _apply_theme(self) -> None:
+        """按系统当前主题（浅色/深色）重新应用 QSS 与调色板。
+
+        同时设置 app 级 QPalette：QSS 只精细控制主要控件，palette 负责兜底，
+        这样在深色系统下也不会出现「未被 QSS 覆盖的控件露出系统深色底 + 深色字」。
+        """
+        theme = theme_for(system_prefers_dark())
+        app = QApplication.instance()
+        if app is not None:
+            app.setPalette(build_palette(theme))
+        self.setStyleSheet(build_stylesheet(theme))
+        self._theme_name = theme.name
+
+    def _watch_system_theme(self) -> None:
+        """跟随系统主题切换（Qt 6.5+ 的 colorSchemeChanged）。"""
+        try:
+            hints = QGuiApplication.styleHints()
+        except Exception:  # noqa: BLE001
+            return
+        signal = getattr(hints, "colorSchemeChanged", None)
+        if signal is not None:
+            signal.connect(self._on_color_scheme_changed)
+
+    def _on_color_scheme_changed(self, *_: object) -> None:
+        """系统主题变化时重刷样式（已存在的控件由 QSS 级联自动更新）。"""
+        self._apply_theme()
 
     # ------------------------------------------------------------------ 构建
     def _build_ui(self) -> None:
@@ -431,7 +467,7 @@ class MainWindow(QMainWindow):
                 distance_text=distance_texts.get(school.id, ""),
                 is_favorite=school.id in favorite_ids,
             )
-            card.openAdmissionRequested.connect(self._open_admission)
+            card.openExternalRequested.connect(self._open_external)
             card.openMapRequested.connect(self._open_map)
             card.detailRequested.connect(self._show_detail)
             card.favoriteToggled.connect(self._toggle_favorite_clicked)
@@ -479,6 +515,10 @@ class MainWindow(QMainWindow):
 
     def _open_admission(self, school: School) -> None:
         url, _ = school.admission_entry
+        self._open_external(school, url)
+
+    def _open_external(self, school: School, url: str) -> None:
+        """打开卡片/详情页上的某个收录链接（统一处理失败与复制）。"""
         if not url:
             QMessageBox.information(self, "暂无链接", "该校未收录到可打开的链接。")
             return
