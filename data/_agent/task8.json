@@ -1,0 +1,22 @@
+[
+  {
+    "name": "江苏航空职业技术学院",
+    "found": true,
+    "url": "https://zs.jatc.edu.cn/2026/0228/c1015a20760/page.htm",
+    "title": "江苏航空职业技术学院2026年高职院校提前招生简章",
+    "year": 2026,
+    "page_mentions_early_admission": true,
+    "evidence": "标题：江苏航空职业技术学院2026年高职院校提前招生简章（发布时间2026-02-28）",
+    "note": "位于招生网「通知公告」栏目(/tzgg/list2.htm 第2页列出)；招生网导航无「提前招生」专栏，2026提前招生章程未列于「招生章程」栏目，此简章页为2026年提前招生正式简章"
+  },
+  {
+    "name": "金山职业技术学院",
+    "found": true,
+    "url": "https://www.jscu.cn/show.php?id=6186",
+    "title": "金山职业技术学院2026年提前招生简章",
+    "year": 2026,
+    "page_mentions_early_admission": true,
+    "evidence": "标题：金山职业技术学院2026年提前招生简章（发布时间2026-02-25）；正文含「特制定本招生简章」",
+    "note": "位于官网「招生就业-招生信息」栏目(list.php?cid=9&lid=53)；原给出的招生网 /bmindex.php 路径返回404，改用官网栏目定位"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "name": "苏州百年职业学院",
+    "ownership_verified": "中外合作办学",
+    "evidence": "根据教育部公布的高等学校信息可知：苏州百年职业学院是中外合作办学。主管部门为江苏省教育厅",
+    "source": "大学生必备网 www.dxsbb.com（转述教育部高校名单）",
+    "source_kind": "third_party",
+    "note": "与初始标记一致（中外合作办学）"
+  },
+  {
+    "name": "昆山登云科技职业学院",
+    "ownership_verified": "民办",
+    "evidence": "昆山登云科技职业学院是民办专科大学",
+    "source": "高考100 www.gk100.com",
+    "source_kind": "third_party",
+    "note": "与初始标记一致"
+  },
+  {
+    "name": "明达职业技术学院",
+    "ownership_verified": "民办",
+    "evidence": "明达职业技术学院是民办学校，位于江苏省盐城市",
+    "source": "高考100 www.gk100.com",
+    "source_kind": "third_party",
+    "note": "与初始标记一致"
+  },
+  {
+    "name": "炎黄职业技术学院",
+    "ownership_verified": "民办",
+    "evidence": "经江苏省人民政府批准建立，教育部核准正式备案的一所全日制民办普通高等院校",
+    "source": "360百科 baike.so.com/doc/1119241",
+    "source_kind": "third_party",
+    "note": "与初始标记一致"
+  },
+  {
+    "name": "建东职业技术学院",
+    "ownership_verified": "民办",
+    "evidence": "由江苏省人民政府批准建立、教育部备案、从事高等教育的民办全日制普通高校",
+    "source": "360百科 baike.so.com/doc/889999",
+    "source_kind": "third_party",
+    "note": "与初始标记一致"
+  },
+  {
+    "name": "太湖创意职业技术学院",
+    "ownership_verified": "民办",
+    "evidence": "经江苏省人民政府批准、教育部备案的全日制民办普通高等职业院校",
+    "source": "高考100 www.gk100.com",
+    "source_kind": "third_party",
+    "note": "与初始标记一致"
+  },
+  {
+    "name": "无锡城市职业技术学院",
+    "ownership_verified": "公办",
+    "evidence": "公办。无锡城市职业技术学院是经江苏省人民政府批准，由无锡市人民政府举办的高职(专科)层次全日制普通高校",
+    "source": "掌上高考 www.gaokao.cn",
+    "source_kind": "third_party",
+    "note": "与初始标记（民办）不一致：实际为公办；中国教育在线亦称其性质为公办。"
+  },
+  {
+    "name": "苏州高博职业学院",
+    "ownership_verified": "民办",
+    "evidence": "苏州高博职业学院是民办专科大学",
+    "source": "高考100 www.gk100.com",
+    "source_kind": "third_party",
+    "note": "与初始标记一致"
+  },
+  {
+    "name": "扬州中瑞酒店职业学院",
+    "ownership_verified": "民办",
+    "evidence": "扬州中瑞酒店职业学院是民办学校",
+    "source": "高考100 www.gk100.com；掌上高考 www.gaokao.cn",
+    "source_kind": "third_party",
+    "note": "与初始标记一致"
+  },
+  {
+    "name": "正德职业技术学院",
+    "ownership_verified": "民办",
+    "evidence": "是1998年经江苏省人民政府批准,国家教育部备案的一所全日制民办普通高等院校",
+    "source": "学校官网 www.zdxy.cn（学校简介）",
+    "source_kind": "official",
+    "note": "与初始标记一致"
+  },
+  {
+    "name": "苏州信息职业技术学院",
+    "ownership_verified": "公办",
+    "evidence": "经江苏省人民政府批准、教育部备案的一所公办全日制普通高等职业院校，隶属于江苏省教育厅",
+    "source": "高考100 www.gk100.com",
+    "source_kind": "third_party",
+    "note": "与初始标记（民办）不一致：实际为公办；360 AI问答亦称其为公办大学。"
+  }
+]

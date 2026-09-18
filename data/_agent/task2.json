@@ -1,0 +1,32 @@
+[
+  {
+    "name": "江苏城市职业学院",
+    "found": true,
+    "url": "http://zs.jscvc.cn/2026/0129/c3780a222995/page.htm",
+    "title": "江苏城市职业学院2026年高职院校提前招生简章",
+    "year": 2026,
+    "page_mentions_early_admission": true,
+    "evidence": "江苏城市职业学院2026年高职院校提前招生简章（2026-02-27，正文含招生计划/校测/录取）",
+    "note": "该页由招生网「提前招生」栏目页 http://zs.jscvc.cn/tqlq/list.htm 进入（栏目页亦含2026各条提前招生通知）。均实际用 web_fetch 打开确认。"
+  },
+  {
+    "name": "江苏经贸职业技术学院",
+    "found": true,
+    "url": "https://zb.jvic.edu.cn/ddzs/2026/0212/c62a2205/page.htm",
+    "title": "江苏经贸职业技术学院2026年高职提前招生简章",
+    "year": 2026,
+    "page_mentions_early_admission": true,
+    "evidence": "江苏经贸职业技术学院2026年高职提前招生简章（2026-02-11）",
+    "note": "该校服务器对 web_fetch 直连一律返回 HTTP 412（含首页、栏目页、具体文章页，http/https 皆然，代理亦超时），【未能直接打开正文】。该 URL 由360搜索结果（标题《江苏经贸职业技术学院2026年高职提前招生简章》及《2026年提前招生计划表》）经 so.com/link 重定向解析得到，确认真实存在；提前招生栏目短路径为 https://zb.jvic.edu.cn/ddzs/。请以能否直接访问为准复核。"
+  },
+  {
+    "name": "金肯职业技术学院",
+    "found": false,
+    "url": null,
+    "title": null,
+    "year": null,
+    "page_mentions_early_admission": false,
+    "evidence": "",
+    "note": "官网 http://www.njjku.com/ 与招生网 http://www.njjku.com/html/jkzsw/ 的列表/文章为JS动态加载，web_fetch 仅得到页面框架、无正文；360/必应 site:njjku.com 均无官网『提前招生』收录，无法定位官网提前招生页或简章。仅在第三方站『江苏招生考试网』www.jszs.com 见《金肯职业技术学院2026年提前招生简章》(非官网)，未采用。"
+  }
+]

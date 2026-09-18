@@ -1,0 +1,32 @@
+[
+  {
+    "name": "江苏商贸职业学院",
+    "found": false,
+    "url": null,
+    "title": null,
+    "year": null,
+    "page_mentions_early_admission": false,
+    "evidence": "",
+    "note": "官网 https://www.jsbc.edu.cn 与招生网 https://zsc.jsbc.edu.cn 的所有路径均返回 HTTP 412（Precondition Failed，疑似 WAF/防护拦截），web_fetch 无法打开任何页面，故无法满足『必须实际打开过并含「提前招生」』的要求。bing 搜索被无关结果污染、江苏省教育考试院站内搜索无结果、搜狗需验证码、百度重定向、archive.org/r.jina.ai 超时；360 搜索仅返回第三方转载（掌上高考 gaokao.cn、大学生必备网 dxsbb.com、掌上帮教 zsbjiao.cn），非学校官方页面，未采用。"
+  },
+  {
+    "name": "宿迁泽达职业技术学院",
+    "found": true,
+    "url": "http://www.zdct.cn/jzzy/zsjh/tqzs.htm",
+    "title": "提前招生-宿迁泽达职业技术学院招生信息网",
+    "year": 2026,
+    "page_mentions_early_admission": true,
+    "evidence": "标题「提前招生-宿迁泽达职业技术学院招生信息网」，列有《宿迁泽达职业技术学院2026年提前招生计划表》(2026-03-01)等",
+    "note": "2026年提前招生章程尚未单列（信息公告中最新提前招生章程为2025年，2025-02-19）；2026年提前招生计划表详情页为 http://www.zdct.cn/jzzy/info/1012/1125.htm"
+  },
+  {
+    "name": "常州幼儿师范高等专科学校",
+    "found": true,
+    "url": "http://zsjypxc.cyzedu.cn/zsw/zhaoshengjihua/tqzs.htm",
+    "title": "提前招生-常州幼儿师范高等专科学校招生就业培训处",
+    "year": 2026,
+    "page_mentions_early_admission": true,
+    "evidence": "标题「提前招生-常州幼儿师范高等专科学校招生就业培训处」，含《2026年常州幼儿师范高等专科学校高职提前招生简章》等",
+    "note": "用户给出的招生网 https://zsw.cyzedu.cn/zsxx.htm 返回 403 Forbidden；实际招生网域名为 zsjypxc.cyzedu.cn。2026年高职提前招生简章详情页为 http://zsjypxc.cyzedu.cn/info/1094/1224.htm"
+  }
+]

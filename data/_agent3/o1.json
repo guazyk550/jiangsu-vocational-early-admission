@@ -1,0 +1,79 @@
+[
+  {
+    "name": "苏州工业园区职业技术学院",
+    "ownership_verified": "民办",
+    "evidence": "官网招生网：『学校荣获\"2025年度标杆型民办高校\"荣誉称号』；其招生章程『办学性质:民办普通高等学校』",
+    "source": "https://zs.ivt.edu.cn/ （官网招生网新闻标题）；招生章程文本『办学性质:民办普通高等学校』见掌上高考 gaokao.cn/360文库转录",
+    "source_kind": "official"
+  },
+  {
+    "name": "金肯职业技术学院",
+    "ownership_verified": "民办",
+    "evidence": "是一所经江苏省人民政府批准、教育部备案的省属全日制民办普通高职院校。办学性质：民办普通高等学校",
+    "source": "金肯职业技术学院2026年普高招生章程（高考100 gk100.com 转录；官网 www.njjku.com 首页为JS空壳无法直接取文）",
+    "source_kind": "third_party"
+  },
+  {
+    "name": "无锡南洋职业技术学院",
+    "ownership_verified": "民办",
+    "evidence": "努力把学校建设成为高质量有特色的国内知名、省内领先民办高职强校",
+    "source": "http://www.wsoc.edu.cn/xxgk1/xxjj.htm（学校简介页）",
+    "source_kind": "official"
+  },
+  {
+    "name": "钟山职业技术学院",
+    "ownership_verified": "民办",
+    "evidence": "是经江苏省人民政府批准，教育部备案的全日制民办普通高校",
+    "source": "http://www.njzs.edu.cn/xxgk/xxjj.htm（学校简介页）",
+    "source_kind": "official"
+  },
+  {
+    "name": "江南影视艺术职业学院",
+    "ownership_verified": "民办",
+    "evidence": "2003年经江苏省人民政府批准教育部备案，为全日制民办普通高职院校",
+    "source": "http://www.jnys.edu.cn:8008/xygk/xxjj.htm（学校简介页）",
+    "source_kind": "official"
+  },
+  {
+    "name": "九州职业技术学院",
+    "ownership_verified": "民办",
+    "evidence": "九州职业技术学院是一所具有独立颁发国家承认专科文凭资格的全日制省属民办高校",
+    "source": "http://www.jzp.edu.cn（官网首页描述文字，经搜索引擎呈现；官网『学校简介』页仅称『江苏省属全日制高校』未含民办字样）",
+    "source_kind": "official"
+  },
+  {
+    "name": "江海职业技术学院",
+    "ownership_verified": "民办",
+    "evidence": "办学性质：民办普通高等学校",
+    "source": "http://www.jhu.cn/B07ZSC/show.aspx?TypeID=58&ID=1229（2026年高考统招招生章程）",
+    "source_kind": "official"
+  },
+  {
+    "name": "南京视觉艺术职业学院",
+    "ownership_verified": "民办",
+    "evidence": "是一所创建于1999年民办全日制专科大学；招生章程『办学类型：省属民办高校』",
+    "source": "南京视觉艺术职业学院注册入学/招生章程（大学生必备网 dxsbb.com、360文库转录；官网域名 niva.edu.cn 解析失败无法实开）",
+    "source_kind": "third_party"
+  },
+  {
+    "name": "宿迁泽达职业技术学院",
+    "ownership_verified": "民办",
+    "evidence": "是经江苏省人民政府批准、教育部备案、独立设置专科层次的全日制民办普通高等院校",
+    "source": "宿迁泽达职业技术学院招生章程（中国教育在线转载；官网 www.zdct.cn 返回空 body）",
+    "source_kind": "third_party"
+  },
+  {
+    "name": "硅湖职业技术学院",
+    "ownership_verified": "民办",
+    "evidence": "是江苏省最早的民办院校之一，2002年经教育部核准定名为硅湖职业技术学院，是一所全日制民办普通高等院校",
+    "source": "http://www.usl.edu.cn/index.php?c=category&id=30（关于学校/学校简介页）",
+    "source_kind": "official"
+  },
+  {
+    "name": "苏州托普信息职业技术学院",
+    "ownership_verified": "民办",
+    "evidence": "苏州托普信息职业技术学院性质为民办，层次为专科，类型是专科（高职）",
+    "source": "中国教育在线 gaokao.eol.cn（学校性质页；官网 szitop.com 解析失败无法实开）",
+    "source_kind": "third_party"
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "generated_at": "2026-09-18T21:56:11+08:00",
+    "reason": "未核验到明确的 2026 提前招生页面，按用户口径暂不收录",
+    "count": 4
+  },
+  "excluded": [
+    {
+      "name": "江苏医药职业学院",
+      "city": "盐城",
+      "official_website": "https://www.jsmc.edu.cn/",
+      "admission_website": "https://zsjy.jsmc.edu.cn/",
+      "reason": "未核验到明确的提前招生页面（未收录）",
+      "verification_notes": [
+        "首页抓取失败 https://zsjy.jsmc.edu.cn/: GET https://zsjy.jsmc.edu.cn/ 失败: <HTTPError 504: 'Gateway Time-out'>",
+        "首页抓取失败 https://www.jsmc.edu.cn/: GET https://www.jsmc.edu.cn/ 失败: <HTTPError 504: 'Gateway Time-out'>",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接",
+        "子代理复核：招生网 https://zsjy.jsmc.edu.cn/ 及其线索页 https://zsjy.jsmc.edu.cn/5489/list.htm 多次抓取均返回 504 Gateway Time-out（知道创宇云防御节点→源站连接超时）；主站 www.jsmc.edu.cn 同样 504，顶点域名 jsmc.edu.cn 无解析；jina 只读代理亦超时。360搜索显示存在『江苏医药职业学院2026年提前招生简章』页面(约2026-02-24，来源 zsjy.jsmc.edu.cn)，但因全站不可达无法打开确认，故不采纳为结果。",
+        "子代理复核：招生网 https://zsjy.jsmc.edu.cn/ 及其线索页 https://zsjy.jsmc.edu.cn/5489/list.htm 多次抓取均返回 504 Gateway Time-out（知道创宇云防御节点→源站连接超时）；主站 www.jsmc.edu.cn 同样 504，顶点域名 jsmc.edu.cn 无解析；jina 只读代理亦超时。360搜索显示存在『江苏医药职业学院2026年提前招生简章』页面(约2026-02-24，来源 zsjy.jsmc.edu.cn)，但因全站不可达无法打开确认，故不采纳为结果。"
+      ],
+      "agent_note": "招生网 https://zsjy.jsmc.edu.cn/ 及其线索页 https://zsjy.jsmc.edu.cn/5489/list.htm 多次抓取均返回 504 Gateway Time-out（知道创宇云防御节点→源站连接超时）；主站 www.jsmc.edu.cn 同样 504，顶点域名 jsmc.edu.cn 无解析；jina 只读代理亦超时。360搜索显示存在『江苏医药职业学院2026年提前招生简章』页面(约2026-02-24，来源 zsjy.jsmc.edu.cn)，但因全站不可达无法打开确认，故不采纳为结果。",
+      "joined_early_admission_hint": "",
+      "checked_at": "2026-09-18"
+    },
+    {
+      "name": "江苏司法警官职业学院",
+      "city": "南京",
+      "official_website": "https://www.jssfjy.cn/default.html",
+      "admission_website": "https://www.jssfjy.cn/type/10002318.html",
+      "reason": "未核验到明确的提前招生页面（未收录）",
+      "verification_notes": [
+        "首页抓取失败 https://www.jssfjy.cn/type/10002318.html: GET https://www.jssfjy.cn/type/10002318.html 失败: URLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1082)'))",
+        "首页抓取失败 https://www.jssfjy.cn/default.html: GET https://www.jssfjy.cn/default.html 失败: URLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1082)'))",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接",
+        "子代理复核：未找到该校参加高职提前招生的任何证据，但也无法打开官网直接排除：(1) 360 搜索「江苏司法警官职业学院 2026/提前招生简章/高职提前招生」，结果全为普通「招生简章/招生章程」，其中提到「提前批警察类专业」(指高考提前批公安司法类，非江苏高职院校提前招生)，无任何高职提前招生简章；(2) site:jssfjy.cn 提前招生 → 返回「未找到相关搜索结果」；(3) 官网 https://www.jssfjy.cn/default.html 及招生网 https://www.jssfjy.cn/type/10002318.html 直连与 http 均报 TLS handshake failure，r.jina.ai 代理超时，无法核验其招生栏目。倾向未参加（政法类院校多走高考提前批/普通批），但未获决定性证据，故填 unknown。",
+        "子代理复核：未找到该校参加高职提前招生的任何证据，但也无法打开官网直接排除：(1) 360 搜索「江苏司法警官职业学院 2026/提前招生简章/高职提前招生」，结果全为普通「招生简章/招生章程」，其中提到「提前批警察类专业」(指高考提前批公安司法类，非江苏高职院校提前招生)，无任何高职提前招生简章；(2) site:jssfjy.cn 提前招生 → 返回「未找到相关搜索结果」；(3) 官网 https://www.jssfjy.cn/default.html 及招生网 https://www.jssfjy.cn/type/10002318.html 直连与 http 均报 TLS handshake failure，r.jina.ai 代理超时，无法核验其招生栏目。倾向未参加（政法类院校多走高考提前批/普通批），但未获决定性证据，故填 unknown。"
+      ],
+      "agent_note": "未找到该校参加高职提前招生的任何证据，但也无法打开官网直接排除：(1) 360 搜索「江苏司法警官职业学院 2026/提前招生简章/高职提前招生」，结果全为普通「招生简章/招生章程」，其中提到「提前批警察类专业」(指高考提前批公安司法类，非江苏高职院校提前招生)，无任何高职提前招生简章；(2) site:jssfjy.cn 提前招生 → 返回「未找到相关搜索结果」；(3) 官网 https://www.jssfjy.cn/default.html 及招生网 https://www.jssfjy.cn/type/10002318.html 直连与 http 均报 TLS handshake failure，r.jina.ai 代理超时，无法核验其招生栏目。倾向未参加（政法类院校多走高考提前批/普通批），但未获决定性证据，故填 unknown。",
+      "joined_early_admission_hint": "unknown",
+      "checked_at": "2026-09-18"
+    },
+    {
+      "name": "盐城农业科技职业学院",
+      "city": "盐城",
+      "official_website": "http://www.ycnzy.com/",
+      "admission_website": "http://www.ycnzy.com/zsjy/",
+      "reason": "未核验到明确的提前招生页面（未收录）",
+      "verification_notes": [
+        "首页抓取失败 http://www.ycnzy.com/zsjy/: GET http://www.ycnzy.com/zsjy/ 失败: <HTTPError 404: 'Not Found'>",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接",
+        "子代理复核：官网招生网 https://www.ycac.edu.cn/zsjy/ 。其『提前招生』栏目为 http://www.ycac.edu.cn/zsjy/enroll/zszc/ ，该栏目页及各种翻页/入口(list.htm、index.shtml、index.htm)在本环境均返回空白(200空body或404)，无法取得具体文章页 URL。文章页URL形如 /zsjy/enroll/zszc/YYYYMMDD/HHMMSS.shtml(普通高考栏目文章 /zsjy/enroll/zsjz/20260630/054754.shtml 可正常抓取，其中导航含『提前招生』指向 zszc 栏目)。360显示 ycac.edu.cn 仅约1个网页被收录，Bing/百度/搜狗/Google 均无法带出提前招生文章；故无法验证2026年提前招生简章具体页面，按未找到处理。",
+        "子代理复核：官网招生网 https://www.ycac.edu.cn/zsjy/ 。其『提前招生』栏目为 http://www.ycac.edu.cn/zsjy/enroll/zszc/ ，该栏目页及各种翻页/入口(list.htm、index.shtml、index.htm)在本环境均返回空白(200空body或404)，无法取得具体文章页 URL。文章页URL形如 /zsjy/enroll/zszc/YYYYMMDD/HHMMSS.shtml(普通高考栏目文章 /zsjy/enroll/zsjz/20260630/054754.shtml 可正常抓取，其中导航含『提前招生』指向 zszc 栏目)。360显示 ycac.edu.cn 仅约1个网页被收录，Bing/百度/搜狗/Google 均无法带出提前招生文章；故无法验证2026年提前招生简章具体页面，按未找到处理。"
+      ],
+      "agent_note": "官网招生网 https://www.ycac.edu.cn/zsjy/ 。其『提前招生』栏目为 http://www.ycac.edu.cn/zsjy/enroll/zszc/ ，该栏目页及各种翻页/入口(list.htm、index.shtml、index.htm)在本环境均返回空白(200空body或404)，无法取得具体文章页 URL。文章页URL形如 /zsjy/enroll/zszc/YYYYMMDD/HHMMSS.shtml(普通高考栏目文章 /zsjy/enroll/zsjz/20260630/054754.shtml 可正常抓取，其中导航含『提前招生』指向 zszc 栏目)。360显示 ycac.edu.cn 仅约1个网页被收录，Bing/百度/搜狗/Google 均无法带出提前招生文章；故无法验证2026年提前招生简章具体页面，按未找到处理。",
+      "joined_early_admission_hint": "",
+      "checked_at": "2026-09-18"
+    },
+    {
+      "name": "常州铁道职业技术学院",
+      "city": "常州",
+      "official_website": "http://www.cztdxy.cn/207/list.htm",
+      "admission_website": "http://www.cztdxy.cn/zsw/",
+      "reason": "未核验到明确的提前招生页面（未收录）",
+      "verification_notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接",
+        "子代理复核：多次检索均无提前招生痕迹：(1) 360 搜索「常州铁道职业技术学院 2026/提前招生」「常州铁道职业技术学院+提前招生简章」，结果只有「2026年招生简章」「2025年全日制普通专科招生章程」等普通高考招生内容，均未出现「提前招生」；(2) site:cztdxy.cn 提前招生 → 360 返回「未找到相关搜索结果」；(3) 结合此前已确认官网招生网 www.cztdxy.cn/zsw 无「提前招生」栏目。该校为 2024 年新设专科（原常州铁道高等职业技术学校），仅走普通高考/职教招生，判定未参加江苏高职提前招生。",
+        "子代理复核：多次检索均无提前招生痕迹：(1) 360 搜索「常州铁道职业技术学院 2026/提前招生」「常州铁道职业技术学院+提前招生简章」，结果只有「2026年招生简章」「2025年全日制普通专科招生章程」等普通高考招生内容，均未出现「提前招生」；(2) site:cztdxy.cn 提前招生 → 360 返回「未找到相关搜索结果」；(3) 结合此前已确认官网招生网 www.cztdxy.cn/zsw 无「提前招生」栏目。该校为 2024 年新设专科（原常州铁道高等职业技术学校），仅走普通高考/职教招生，判定未参加江苏高职提前招生。"
+      ],
+      "agent_note": "多次检索均无提前招生痕迹：(1) 360 搜索「常州铁道职业技术学院 2026/提前招生」「常州铁道职业技术学院+提前招生简章」，结果只有「2026年招生简章」「2025年全日制普通专科招生章程」等普通高考招生内容，均未出现「提前招生」；(2) site:cztdxy.cn 提前招生 → 360 返回「未找到相关搜索结果」；(3) 结合此前已确认官网招生网 www.cztdxy.cn/zsw 无「提前招生」栏目。该校为 2024 年新设专科（原常州铁道高等职业技术学校），仅走普通高考/职教招生，判定未参加江苏高职提前招生。",
+      "joined_early_admission_hint": "no",
+      "checked_at": "2026-09-18"
+    }
+  ]
+}

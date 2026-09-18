@@ -1,0 +1,2494 @@
+{
+  "meta": {
+    "generated_at": "2026-09-18T21:45:25+08:00",
+    "target_year": 2026,
+    "method": "抓取招生网+官网首页及其招生栏目子页，按关键词打分并实际请求验证",
+    "count": 88,
+    "confidence_summary": {
+      "high": 77,
+      "none": 4,
+      "medium": 7
+    },
+    "merged_at": "2026-09-18T21:45:31+08:00",
+    "agent_review_count": 28
+  },
+  "results": [
+    {
+      "eol_id": 1370,
+      "name": "南京交通职业技术学院",
+      "city": "南京",
+      "admission_website": "https://zs.njitt.edu.cn/",
+      "official_website": "https://www.njitt.edu.cn/",
+      "early_admission_url": "https://zs.njitt.edu.cn/2026/0402/c1167a94198/page.htm",
+      "early_admission_title": "2026年提前招生录取查询",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年提前招生录取查询",
+          "url": "https://zs.njitt.edu.cn/2026/0402/c1167a94198/page.htm",
+          "score": 93,
+          "source_page": "https://zs.njitt.edu.cn/",
+          "status": 200,
+          "page_title": "2026年提前招生录取查询",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T21:45:23+08:00"
+    },
+    {
+      "eol_id": 1376,
+      "name": "南京信息职业技术学院",
+      "city": "南京",
+      "admission_website": "https://zs.njcit.cn/",
+      "official_website": "https://www.njcit.cn/",
+      "early_admission_url": "http://zs.njcit.cn/2026/0211/c2201a161575/page.htm",
+      "early_admission_title": "2026年南京信息职业技术学院提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年南京信息职业技术学院提前招生简章（2026-02-11，招生网『提前招生』栏目）",
+          "url": "http://zs.njcit.cn/2026/0211/c2201a161575/page.htm",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "首页抓取失败 https://zs.njcit.cn/: GET https://zs.njcit.cn/ 失败: TimeoutError('The read operation timed out')",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T20:29:34+08:00",
+      "agent_note": "另见官方『提前招生』栏目页 http://zs.njcit.cn/ddzs/list.htm（已实开，标题即『提前招生』，内含2026年提前招生简章/计划表等）",
+      "agent_evidence": "2026年南京信息职业技术学院提前招生简章（2026-02-11，招生网『提前招生』栏目）",
+      "third_party": false
+    },
+    {
+      "eol_id": 3143,
+      "name": "南京城市职业学院",
+      "city": "南京",
+      "admission_website": "https://zjc.ncc.edu.cn",
+      "official_website": "https://www.ncc.edu.cn/",
+      "early_admission_url": "https://zjc.ncc.edu.cn/2026/0212/c3421a58798/page.htm",
+      "early_admission_title": "南京城市职业学院2026年高职院校提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "南京城市职业学院2026年高职院校提前招生简章",
+          "url": "https://zjc.ncc.edu.cn/2026/0212/c3421a58798/page.htm",
+          "score": 173,
+          "source_page": "https://zjc.ncc.edu.cn",
+          "status": 200,
+          "page_title": "南京城市职业学院2026年高职院校提前招生简章",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:11+08:00"
+    },
+    {
+      "eol_id": 2539,
+      "name": "南京旅游职业学院",
+      "city": "南京",
+      "admission_website": "https://zs.nith.edu.cn/",
+      "official_website": "https://www.nith.edu.cn/",
+      "early_admission_url": "https://zs.nith.edu.cn/infor/lmxw/2026013000002.htm",
+      "early_admission_title": "2026年南京旅游职业学院提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "第二条 本简章适用于我校2026年江苏省高职提前招生工作（发布2026-02-13）",
+          "url": "https://zs.nith.edu.cn/infor/lmxw/2026013000002.htm",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T20:27:05+08:00",
+      "agent_note": "官方招生网页面为GBK编码，web_fetch返回乱码；标题/正文经第三方转载 https://www.jszs.com/n/476776.html（已实开，UTF-8）逐字对照，确认官方页与之同一篇『2026年…提前招生简章』。2025年对应官方页 https://zs.nith.edu.cn/infor/lmxw/2025011800002.htm（『2025年…提前招生章程』，已实开验证URL规律）",
+      "agent_evidence": "第二条 本简章适用于我校2026年江苏省高职提前招生工作（发布2026-02-13）",
+      "third_party": false
+    },
+    {
+      "eol_id": 2220,
+      "name": "南京机电职业技术学院",
+      "city": "南京",
+      "admission_website": "http://www.nimt.edu.cn/zhaoban/main.htm",
+      "official_website": "http://www.nimt.edu.cn/",
+      "early_admission_url": "http://www.nimt.edu.cn/zhaoban/2026/0304/c330a54759/page.htm",
+      "early_admission_title": "南京机电职业技术学院关于2026年提前招生严正声明",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "南京机电职业技术学院关于2026年提前招生严正声明",
+          "url": "http://www.nimt.edu.cn/zhaoban/2026/0304/c330a54759/page.htm",
+          "score": 138,
+          "source_page": "http://www.nimt.edu.cn/zhaoban/main.htm",
+          "status": 200,
+          "page_title": "南京机电职业技术学院关于2026年提前招生严正声明",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:13+08:00"
+    },
+    {
+      "eol_id": 2212,
+      "name": "南京科技职业学院",
+      "city": "南京",
+      "admission_website": "https://www.njpi.edu.cn/zjb/",
+      "official_website": "https://www.njpi.edu.cn/",
+      "early_admission_url": "https://www.njpi.edu.cn/zjb/f2/76/c2907a127606/page.htm",
+      "early_admission_title": "南京科技职业学院2026年提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "南京科技职业学院2026年提前招生简章",
+          "url": "https://www.njpi.edu.cn/zjb/f2/76/c2907a127606/page.htm",
+          "score": 173,
+          "source_page": "https://www.njpi.edu.cn/zjb/",
+          "status": 200,
+          "page_title": "南京科技职业学院2026年提前招生简章",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:16+08:00"
+    },
+    {
+      "eol_id": 2230,
+      "name": "南京视觉艺术职业学院",
+      "city": "南京",
+      "admission_website": "http://www.niva.cn/zsxx.html",
+      "official_website": "http://www.niva.cn/",
+      "early_admission_url": "http://www.niva.cn/article/624.html",
+      "early_admission_title": "南京视觉艺术职业学院2026年提前招生简章 南京视觉艺术职业学院",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "26 2026.02 南京视觉艺术职业学院2026年提前招生简章",
+          "url": "http://www.niva.cn/article/624.html",
+          "score": 173,
+          "source_page": "http://www.niva.cn/zsxx.html",
+          "status": 200,
+          "page_title": "南京视觉艺术职业学院2026年提前招生简章 南京视觉艺术职业学院",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:20+08:00"
+    },
+    {
+      "eol_id": 1141,
+      "name": "南京铁道职业技术学院",
+      "city": "南京",
+      "admission_website": "https://ntyzs.njrts.edu.cn/",
+      "official_website": "https://www.njrts.edu.cn/",
+      "early_admission_url": "https://ntyzs.njrts.edu.cn/info/1003/2053.htm",
+      "early_admission_title": "2026年提前招生简章-南京铁道职业技术学院-招生网",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年提前招生简章 (02-10)",
+          "url": "https://ntyzs.njrts.edu.cn/info/1003/2053.htm",
+          "score": 173,
+          "source_page": "https://ntyzs.njrts.edu.cn/",
+          "status": 200,
+          "page_title": "2026年提前招生简章-南京铁道职业技术学院-招生网",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:11+08:00"
+    },
+    {
+      "eol_id": 2228,
+      "name": "正德职业技术学院",
+      "city": "南京",
+      "admission_website": "https://zs.zdxy.cn/",
+      "official_website": "https://zd.nuaa.edu.cn/",
+      "early_admission_url": "https://zs.zdxy.cn/contents/2929/772.html",
+      "early_admission_title": "正德职业技术学院招生网",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "正德职业技术学院2026年提前招生（第二轮）报考指南",
+          "url": "https://zs.zdxy.cn/contents/2929/772.html",
+          "score": 173,
+          "source_page": "https://zs.zdxy.cn/",
+          "status": 200,
+          "page_title": "正德职业技术学院招生网",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:21+08:00"
+    },
+    {
+      "eol_id": 2221,
+      "name": "江苏卫生健康职业学院",
+      "city": "南京",
+      "admission_website": "https://www.jshvc.edu.cn/zsxxw/",
+      "official_website": "https://www.jshvc.edu.cn/",
+      "early_admission_url": "https://www.jshvc.edu.cn/zsxxw/2026/0317/c5410a28467558/page.htm",
+      "early_admission_title": "【提前招生】2026年江苏卫生健康职业学院提前招生校测通知",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "【提前招生】2026年江苏卫生健康职业学院提前招生校测通知 03-17",
+          "url": "https://www.jshvc.edu.cn/zsxxw/2026/0317/c5410a28467558/page.htm",
+          "score": 143,
+          "source_page": "https://www.jshvc.edu.cn/zsxxw/",
+          "status": 200,
+          "page_title": "【提前招生】2026年江苏卫生健康职业学院提前招生校测通知",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:10+08:00"
+    },
+    {
+      "eol_id": 3694,
+      "name": "江苏司法警官职业学院",
+      "city": "南京",
+      "admission_website": "https://www.jssfjy.cn/type/10002318.html",
+      "official_website": "https://www.jssfjy.cn/default.html",
+      "early_admission_url": null,
+      "early_admission_title": "",
+      "early_admission_year": null,
+      "confidence": "none",
+      "evidence": [],
+      "notes": [
+        "首页抓取失败 https://www.jssfjy.cn/type/10002318.html: GET https://www.jssfjy.cn/type/10002318.html 失败: URLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1082)'))",
+        "首页抓取失败 https://www.jssfjy.cn/default.html: GET https://www.jssfjy.cn/default.html 失败: URLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1082)'))",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接",
+        "子代理复核：未找到该校参加高职提前招生的任何证据，但也无法打开官网直接排除：(1) 360 搜索「江苏司法警官职业学院 2026/提前招生简章/高职提前招生」，结果全为普通「招生简章/招生章程」，其中提到「提前批警察类专业」(指高考提前批公安司法类，非江苏高职院校提前招生)，无任何高职提前招生简章；(2) site:jssfjy.cn 提前招生 → 返回「未找到相关搜索结果」；(3) 官网 https://www.jssfjy.cn/default.html 及招生网 https://www.jssfjy.cn/type/10002318.html 直连与 http 均报 TLS handshake failure，r.jina.ai 代理超时，无法核验其招生栏目。倾向未参加（政法类院校多走高考提前批/普通批），但未获决定性证据，故填 unknown。",
+        "子代理复核：未找到该校参加高职提前招生的任何证据，但也无法打开官网直接排除：(1) 360 搜索「江苏司法警官职业学院 2026/提前招生简章/高职提前招生」，结果全为普通「招生简章/招生章程」，其中提到「提前批警察类专业」(指高考提前批公安司法类，非江苏高职院校提前招生)，无任何高职提前招生简章；(2) site:jssfjy.cn 提前招生 → 返回「未找到相关搜索结果」；(3) 官网 https://www.jssfjy.cn/default.html 及招生网 https://www.jssfjy.cn/type/10002318.html 直连与 http 均报 TLS handshake failure，r.jina.ai 代理超时，无法核验其招生栏目。倾向未参加（政法类院校多走高考提前批/普通批），但未获决定性证据，故填 unknown。"
+      ],
+      "checked_at": "2026-09-18T20:27:17+08:00",
+      "agent_note": "未找到该校参加高职提前招生的任何证据，但也无法打开官网直接排除：(1) 360 搜索「江苏司法警官职业学院 2026/提前招生简章/高职提前招生」，结果全为普通「招生简章/招生章程」，其中提到「提前批警察类专业」(指高考提前批公安司法类，非江苏高职院校提前招生)，无任何高职提前招生简章；(2) site:jssfjy.cn 提前招生 → 返回「未找到相关搜索结果」；(3) 官网 https://www.jssfjy.cn/default.html 及招生网 https://www.jssfjy.cn/type/10002318.html 直连与 http 均报 TLS handshake failure，r.jina.ai 代理超时，无法核验其招生栏目。倾向未参加（政法类院校多走高考提前批/普通批），但未获决定性证据，故填 unknown。",
+      "agent_evidence": "仅见普通招生简章/章程，含「提前批警察类专业」（高考提前批），无「高职提前招生」",
+      "joined_early_admission_agent": "unknown"
+    },
+    {
+      "eol_id": 1543,
+      "name": "江苏城市职业学院",
+      "city": "南京",
+      "admission_website": "http://zs.jscvc.cn/",
+      "official_website": "http://www.jscvc.cn",
+      "early_admission_url": "http://zs.jscvc.cn/2026/0129/c3780a222995/page.htm",
+      "early_admission_title": "江苏城市职业学院2026年高职院校提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "江苏城市职业学院2026年高职院校提前招生简章（2026-02-27，正文含招生计划/校测/录取）",
+          "url": "http://zs.jscvc.cn/2026/0129/c3780a222995/page.htm",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "首页抓取失败 http://zs.jscvc.cn/: GET http://zs.jscvc.cn/ 失败: URLError(gaierror(11001, 'getaddrinfo failed'))",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T20:27:09+08:00",
+      "agent_note": "该页由招生网「提前招生」栏目页 http://zs.jscvc.cn/tqlq/list.htm 进入（栏目页亦含2026各条提前招生通知）。均实际用 web_fetch 打开确认。",
+      "agent_evidence": "江苏城市职业学院2026年高职院校提前招生简章（2026-02-27，正文含招生计划/校测/录取）",
+      "third_party": false
+    },
+    {
+      "eol_id": 1436,
+      "name": "江苏海事职业技术学院",
+      "city": "南京",
+      "admission_website": "https://zs.jmi.edu.cn/",
+      "official_website": "https://www.jmi.edu.cn/",
+      "early_admission_url": "https://zs.jmi.edu.cn/4131/list.htm",
+      "early_admission_title": "提前招生",
+      "early_admission_year": null,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "提前招生",
+          "url": "https://zs.jmi.edu.cn/4131/list.htm",
+          "score": 108,
+          "source_page": "https://zs.jmi.edu.cn/",
+          "status": 200,
+          "page_title": "提前招生",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": null
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:10+08:00"
+    },
+    {
+      "eol_id": 1591,
+      "name": "江苏经贸职业技术学院",
+      "city": "南京",
+      "admission_website": "https://zb.jvic.edu.cn/",
+      "official_website": "https://www.jvic.edu.cn/",
+      "early_admission_url": "https://zb.jvic.edu.cn/ddzs/2026/0212/c62a2205/page.htm",
+      "early_admission_title": "江苏经贸职业技术学院2026年高职提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "medium",
+      "evidence": [
+        {
+          "text": "江苏经贸职业技术学院2026年高职提前招生简章（2026-02-11）",
+          "url": "https://zb.jvic.edu.cn/ddzs/2026/0212/c62a2205/page.htm",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "首页抓取失败 https://zb.jvic.edu.cn/: GET https://zb.jvic.edu.cn/ 失败: <HTTPError 412: 'Precondition Failed'>",
+        "首页抓取失败 https://www.jvic.edu.cn/: GET https://www.jvic.edu.cn/ 失败: <HTTPError 412: 'Precondition Failed'>",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接",
+        "人工下调置信度：子代理未能实际打开（站点对抓取一律返回 412），URL 由搜索引擎索引确认存在",
+        "人工下调置信度：子代理未能实际打开（站点对抓取一律返回 412），URL 由搜索引擎索引确认存在"
+      ],
+      "checked_at": "2026-09-18T20:27:04+08:00",
+      "agent_note": "该校服务器对 web_fetch 直连一律返回 HTTP 412（含首页、栏目页、具体文章页，http/https 皆然，代理亦超时），【未能直接打开正文】。该 URL 由360搜索结果（标题《江苏经贸职业技术学院2026年高职提前招生简章》及《2026年提前招生计划表》）经 so.com/link 重定向解析得到，确认真实存在；提前招生栏目短路径为 https://zb.jvic.edu.cn/ddzs/。请以能否直接访问为准复核。",
+      "agent_evidence": "江苏经贸职业技术学院2026年高职提前招生简章（2026-02-11）",
+      "third_party": false
+    },
+    {
+      "eol_id": 1397,
+      "name": "金肯职业技术学院",
+      "city": "南京",
+      "admission_website": "http://www.njjku.com/html/jkzsw/",
+      "official_website": "http://www.njjku.com/",
+      "early_admission_url": "https://www.jszs.com/n/476779.html",
+      "early_admission_title": "金肯职业技术学院2026年提前招生简章_提前招生_江苏招生考试网",
+      "early_admission_year": 2026,
+      "confidence": "medium",
+      "evidence": [
+        {
+          "text": "正文：金肯职业技术学院2026年提前招生简章，报名第一轮2026年3月12日至14日",
+          "url": "https://www.jszs.com/n/476779.html",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": false,
+          "reached": true,
+          "confidence": "medium",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T20:27:05+08:00",
+      "agent_note": "招生网 http://www.njjku.com/html/jkzsw/ 可访问(200)但正文由JS动态渲染，list.html?HType=2&CId=5530 仅返回页面骨架、无条目内容；360 site:njjku.com 提前招生检索无结果，现有页面/JS接口均无法取到“提前招生”内容。仅第三方江苏招生考试网(jszs.com)含2026提前招生简章全文，标注is_third_party=true。自有域名未验证到2026提前招生URL。",
+      "agent_evidence": "正文：金肯职业技术学院2026年提前招生简章，报名第一轮2026年3月12日至14日",
+      "third_party": true
+    },
+    {
+      "eol_id": 1154,
+      "name": "钟山职业技术学院",
+      "city": "南京",
+      "admission_website": "https://zs.zscollege.com/",
+      "official_website": "https://www.zscollege.com/",
+      "early_admission_url": "https://zs.zscollege.com/info/1022/1910.htm",
+      "early_admission_title": "【高职提前招生】2026年招生计划-招生网",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "【高职提前招生】2026年招生计划",
+          "url": "https://zs.zscollege.com/info/1022/1910.htm",
+          "score": 143,
+          "source_page": "https://zs.zscollege.com/",
+          "status": 200,
+          "page_title": "【高职提前招生】2026年招生计划-招生网",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:17+08:00"
+    },
+    {
+      "eol_id": 3767,
+      "name": "南通卫生健康职业学院",
+      "city": "南通",
+      "admission_website": "https://zs.ntwzy.com/",
+      "official_website": "http://www.nthvc.cn/",
+      "early_admission_url": "https://zs.ntwzy.com/2026/0301/c1638a50694/page.htm",
+      "early_admission_title": "南通卫生健康职业学院2026年提前招生报考指南",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "南通卫生健康职业学院2026年提前招生报考指南 2026.03.01",
+          "url": "https://zs.ntwzy.com/2026/0301/c1638a50694/page.htm",
+          "score": 173,
+          "source_page": "https://zs.ntwzy.com/",
+          "status": 200,
+          "page_title": "南通卫生健康职业学院2026年提前招生报考指南",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:23+08:00"
+    },
+    {
+      "eol_id": 3230,
+      "name": "南通师范高等专科学校",
+      "city": "南通",
+      "admission_website": "https://zjc.ntnc.edu.cn/",
+      "official_website": "https://www.ntnc.edu.cn",
+      "early_admission_url": "https://zjc.ntnc.edu.cn/2026/0410/c595a41377/page.htm",
+      "early_admission_title": "2026年高职提前招生考试公告（第二轮）院校代码：1315",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年高职提前招生考试公告（第二轮）院校...",
+          "url": "https://zjc.ntnc.edu.cn/2026/0410/c595a41377/page.htm",
+          "score": 143,
+          "source_page": "https://zjc.ntnc.edu.cn/",
+          "status": 200,
+          "page_title": "2026年高职提前招生考试公告（第二轮）院校代码：1315",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:14+08:00"
+    },
+    {
+      "eol_id": 2209,
+      "name": "南通科技职业学院",
+      "city": "南通",
+      "admission_website": "https://zs.ntst.edu.cn/",
+      "official_website": "https://www.ntst.edu.cn/",
+      "early_admission_url": "https://zs.ntst.edu.cn/2026/0211/c1121a52652/page.htm",
+      "early_admission_title": "南通科技职业学院2026年提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "南通科技职业学院2026年提前招生简章",
+          "url": "https://zs.ntst.edu.cn/2026/0211/c1121a52652/page.htm",
+          "score": 173,
+          "source_page": "https://zs.ntst.edu.cn/",
+          "status": 200,
+          "page_title": "南通科技职业学院2026年提前招生简章",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:16+08:00"
+    },
+    {
+      "eol_id": 2204,
+      "name": "南通职业大学",
+      "city": "南通",
+      "admission_website": "https://zsw.ntvu.edu.cn/",
+      "official_website": "https://www.ntvu.edu.cn",
+      "early_admission_url": "https://zsw.ntvu.edu.cn/2026_02/12_19/content-34602.html",
+      "early_admission_title": "南通职业大学2026年提前招生简章_招生简章_南通职业大学 招生信息网",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "南通职业大学2026年提前招生简章",
+          "url": "https://zsw.ntvu.edu.cn/2026_02/12_19/content-34602.html",
+          "score": 173,
+          "source_page": "https://zsw.ntvu.edu.cn/",
+          "status": 200,
+          "page_title": "南通职业大学2026年提前招生简章_招生简章_南通职业大学 招生信息网",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:14+08:00"
+    },
+    {
+      "eol_id": 3109,
+      "name": "江苏商贸职业学院",
+      "city": "南通",
+      "admission_website": "https://zsc.jsbc.edu.cn/",
+      "official_website": "https://www.jsbc.edu.cn/",
+      "early_admission_url": "https://www.jszs.com/n/476820.html",
+      "early_admission_title": "江苏商贸职业学院2026年提前招生简章_提前招生_江苏招生考试网",
+      "early_admission_year": 2026,
+      "confidence": "medium",
+      "evidence": [
+        {
+          "text": "标题及导航：江苏商贸职业学院2026年提前招生简章_提前招生(2026-02-28)",
+          "url": "https://www.jszs.com/n/476820.html",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": false,
+          "reached": true,
+          "confidence": "medium",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "首页抓取失败 https://zsc.jsbc.edu.cn/: GET https://zsc.jsbc.edu.cn/ 失败: <HTTPError 412: 'Precondition Failed'>",
+        "首页抓取失败 https://www.jsbc.edu.cn/: GET https://www.jsbc.edu.cn/ 失败: <HTTPError 412: 'Precondition Failed'>",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T20:27:04+08:00",
+      "agent_note": "官网 https://www.jsbc.edu.cn/(未直接打开)、招生网 https://zsc.jsbc.edu.cn/ 与 zs.jsbc.edu.cn 直连均返回412，代理(r.jina.ai/codetabs)超时不可达。通过360跳转解析出招生网原文URL(zs.jsbc.edu.cn)但直连仍412，未能实际打开，列入unverified_candidate_urls。第三方江苏招生考试网(jszs.com)标题含“提前招生”可读，标注is_third_party=true。",
+      "agent_evidence": "标题及导航：江苏商贸职业学院2026年提前招生简章_提前招生(2026-02-28)",
+      "third_party": true
+    },
+    {
+      "eol_id": 1069,
+      "name": "江苏工程职业技术学院",
+      "city": "南通",
+      "admission_website": "https://zsb.jcet.edu.cn/",
+      "official_website": "https://www.jcet.edu.cn/",
+      "early_admission_url": "https://zsb.jcet.edu.cn/info/1041/7652.htm",
+      "early_admission_title": "2026年提前招生简章-招生与就业处（招生网）",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年提前招生简章",
+          "url": "https://zsb.jcet.edu.cn/info/1041/7652.htm",
+          "score": 173,
+          "source_page": "https://zsb.jcet.edu.cn/",
+          "status": 200,
+          "page_title": "2026年提前招生简章-招生与就业处（招生网）",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:12+08:00"
+    },
+    {
+      "eol_id": 1418,
+      "name": "江苏航运职业技术学院",
+      "city": "南通",
+      "admission_website": "https://www.jssc.edu.cn/zhaosheng/main.htm",
+      "official_website": "https://www.jssc.edu.cn/",
+      "early_admission_url": "https://www.jssc.edu.cn/zhaosheng/2026/0210/c773a64375/page.htm",
+      "early_admission_title": "江苏航运职业技术学院2026年江苏省提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "江苏航运职业技术学院2026年江苏省提前招生简章 2026-02-10",
+          "url": "https://www.jssc.edu.cn/zhaosheng/2026/0210/c773a64375/page.htm",
+          "score": 173,
+          "source_page": "https://www.jssc.edu.cn/zhaosheng/main.htm",
+          "status": 200,
+          "page_title": "江苏航运职业技术学院2026年江苏省提前招生简章",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:10+08:00"
+    },
+    {
+      "eol_id": 3717,
+      "name": "宿迁幼儿师范高等专科学校",
+      "city": "宿迁",
+      "admission_website": "http://www.sqsf.cn/zsjy.htm",
+      "official_website": "http://www.sqsf.cn/",
+      "early_admission_url": "http://www.sqsf.cn/zsdt.htm",
+      "early_admission_title": "招生动态-宿迁幼儿师范高等专科学校",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "栏目含『2026年高职提前招生第二轮报考公告』『2026年高职提前招生第二轮考试成绩查询公告』(2026-04-10/04-23)",
+          "url": "http://www.sqsf.cn/zsdt.htm",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:23+08:00",
+      "agent_note": "官网无2026年独立『提前招生简章』，仅有2026提前招生报考指南(学校公众号 https://mp.weixin.qq.com/s/0WMTF0P5tzvwFGZMKrX9xA )与校考公告 http://www.sqsf.cn/info/1051/5375.htm 。原旧页为2025年简章 info/1278/4932.htm。因无专门提前招生栏目且招生动态持续更新，以招生动态栏目页代替。",
+      "agent_evidence": "栏目含『2026年高职提前招生第二轮报考公告』『2026年高职提前招生第二轮考试成绩查询公告』(2026-04-10/04-23)",
+      "third_party": false
+    },
+    {
+      "eol_id": 2663,
+      "name": "宿迁泽达职业技术学院",
+      "city": "宿迁",
+      "admission_website": "http://www.zdct.cn/jzzy/",
+      "official_website": "http://www.zdct.cn",
+      "early_admission_url": "http://www.zdct.cn/jzzy/zsjh/tqzs.htm",
+      "early_admission_title": "提前招生-宿迁泽达职业技术学院招生信息网",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "标题「提前招生-宿迁泽达职业技术学院招生信息网」，列有《宿迁泽达职业技术学院2026年提前招生计划表》(2026-03-01)等",
+          "url": "http://www.zdct.cn/jzzy/zsjh/tqzs.htm",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T20:27:09+08:00",
+      "agent_note": "2026年提前招生章程尚未单列（信息公告中最新提前招生章程为2025年，2025-02-19）；2026年提前招生计划表详情页为 http://www.zdct.cn/jzzy/info/1012/1125.htm",
+      "agent_evidence": "标题「提前招生-宿迁泽达职业技术学院招生信息网」，列有《宿迁泽达职业技术学院2026年提前招生计划表》(2026-03-01)等",
+      "third_party": false
+    },
+    {
+      "eol_id": 2213,
+      "name": "宿迁职业技术学院",
+      "city": "宿迁",
+      "admission_website": "https://www.sqzyxy.com/zs/",
+      "official_website": "https://www.sqzyxy.com/index.html",
+      "early_admission_url": "https://www.sqzyxy.com/xwdt/tzgg/2026/0302/1428.html",
+      "early_admission_title": "宿迁职业技术学院2026年提前招生简章 招生代码：1996",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "标题《宿迁职业技术学院2026年提前招生简章 招生代码：1996》，正文含2026年提前招生报名3/12-3/14、校测3/21-22",
+          "url": "https://www.sqzyxy.com/xwdt/tzgg/2026/0302/1428.html",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:21+08:00",
+      "agent_note": "原旧页为2022年简章(zsjz/2022/0401/951.html)。该2026简章发布在学校『通知公告』栏目，非招生简章栏目；招生简章栏目(zsjz/)本身仍停留在2024年，未更新。",
+      "agent_evidence": "标题《宿迁职业技术学院2026年提前招生简章 招生代码：1996》，正文含2026年提前招生报名3/12-3/14、校测3/21-22",
+      "third_party": false
+    },
+    {
+      "eol_id": 1239,
+      "name": "常州工业职业技术学院",
+      "city": "常州",
+      "admission_website": "https://zs.ciit.edu.cn/",
+      "official_website": "https://www.ciit.edu.cn/",
+      "early_admission_url": "https://zs.ciit.edu.cn/2026/0307/c1154a139848/page.htm",
+      "early_admission_title": "2026年提前招生宣传简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年提前招生宣传简章",
+          "url": "https://zs.ciit.edu.cn/2026/0307/c1154a139848/page.htm",
+          "score": 173,
+          "source_page": "https://zs.ciit.edu.cn/",
+          "status": 200,
+          "page_title": "2026年提前招生宣传简章",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:16+08:00"
+    },
+    {
+      "eol_id": 1151,
+      "name": "常州工程职业技术学院",
+      "city": "常州",
+      "admission_website": "https://zsjy.czie.edu.cn/",
+      "official_website": "https://www.czie.edu.cn/",
+      "early_admission_url": "https://www.czie.edu.cn/html/904/2026-03-28/content-48331.html",
+      "early_admission_title": "我校组织开展2026年提前招生考试_工程要闻_常州工程职业技术学院",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "我校组织开展2026年提前招生考试",
+          "url": "https://www.czie.edu.cn/html/904/2026-03-28/content-48331.html",
+          "score": 130,
+          "source_page": "https://zsjy.czie.edu.cn/",
+          "status": 200,
+          "page_title": "我校组织开展2026年提前招生考试_工程要闻_常州工程职业技术学院",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:12+08:00"
+    },
+    {
+      "eol_id": 3614,
+      "name": "常州幼儿师范高等专科学校",
+      "city": "常州",
+      "admission_website": "https://zsw.cyzedu.cn/zsxx.htm",
+      "official_website": "https://www.cyzedu.cn",
+      "early_admission_url": "http://zsjypxc.cyzedu.cn/zsw/zhaoshengjihua/tqzs.htm",
+      "early_admission_title": "提前招生-常州幼儿师范高等专科学校招生就业培训处",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "标题「提前招生-常州幼儿师范高等专科学校招生就业培训处」，含《2026年常州幼儿师范高等专科学校高职提前招生简章》等",
+          "url": "http://zsjypxc.cyzedu.cn/zsw/zhaoshengjihua/tqzs.htm",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "首页抓取失败 https://zsw.cyzedu.cn/zsxx.htm: GET https://zsw.cyzedu.cn/zsxx.htm 失败: <HTTPError 403: 'Forbidden'>",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T20:27:11+08:00",
+      "agent_note": "用户给出的招生网 https://zsw.cyzedu.cn/zsxx.htm 返回 403 Forbidden；实际招生网域名为 zsjypxc.cyzedu.cn。2026年高职提前招生简章详情页为 http://zsjypxc.cyzedu.cn/info/1094/1224.htm",
+      "agent_evidence": "标题「提前招生-常州幼儿师范高等专科学校招生就业培训处」，含《2026年常州幼儿师范高等专科学校高职提前招生简章》等",
+      "third_party": false
+    },
+    {
+      "eol_id": 2214,
+      "name": "常州机电职业技术学院",
+      "city": "常州",
+      "admission_website": "https://zt.czimt.edu.cn/zsw/",
+      "official_website": "https://www.czimt.edu.cn/",
+      "early_admission_url": "https://zt.czimt.edu.cn/zsw/2026/0212/c7486a181451/page.htm",
+      "early_admission_title": "2026年提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年提前招生简章",
+          "url": "https://zt.czimt.edu.cn/zsw/2026/0212/c7486a181451/page.htm",
+          "score": 173,
+          "source_page": "https://zt.czimt.edu.cn/zsw/",
+          "status": 200,
+          "page_title": "2026年提前招生简章",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:17+08:00"
+    },
+    {
+      "eol_id": 1121,
+      "name": "常州纺织服装职业技术学院",
+      "city": "常州",
+      "admission_website": "https://zs.cztgi.edu.cn/",
+      "official_website": "https://www.cztgi.edu.cn",
+      "early_admission_url": "https://zs.cztgi.edu.cn/2026/0212/c3202a85624/page.htm",
+      "early_admission_title": "常州纺织服装职业技术学院2026年提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "常州纺织服装职业技术学院2026年提前招生简章 2026-02-12",
+          "url": "https://zs.cztgi.edu.cn/2026/0212/c3202a85624/page.htm",
+          "score": 173,
+          "source_page": "https://zs.cztgi.edu.cn/",
+          "status": 200,
+          "page_title": "常州纺织服装职业技术学院2026年提前招生简章",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:12+08:00"
+    },
+    {
+      "eol_id": 3785,
+      "name": "常州铁道职业技术学院",
+      "city": "常州",
+      "admission_website": "http://www.cztdxy.cn/zsw/",
+      "official_website": "http://www.cztdxy.cn/207/list.htm",
+      "early_admission_url": null,
+      "early_admission_title": "",
+      "early_admission_year": null,
+      "confidence": "none",
+      "evidence": [],
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接",
+        "子代理复核：多次检索均无提前招生痕迹：(1) 360 搜索「常州铁道职业技术学院 2026/提前招生」「常州铁道职业技术学院+提前招生简章」，结果只有「2026年招生简章」「2025年全日制普通专科招生章程」等普通高考招生内容，均未出现「提前招生」；(2) site:cztdxy.cn 提前招生 → 360 返回「未找到相关搜索结果」；(3) 结合此前已确认官网招生网 www.cztdxy.cn/zsw 无「提前招生」栏目。该校为 2024 年新设专科（原常州铁道高等职业技术学校），仅走普通高考/职教招生，判定未参加江苏高职提前招生。",
+        "子代理复核：多次检索均无提前招生痕迹：(1) 360 搜索「常州铁道职业技术学院 2026/提前招生」「常州铁道职业技术学院+提前招生简章」，结果只有「2026年招生简章」「2025年全日制普通专科招生章程」等普通高考招生内容，均未出现「提前招生」；(2) site:cztdxy.cn 提前招生 → 360 返回「未找到相关搜索结果」；(3) 结合此前已确认官网招生网 www.cztdxy.cn/zsw 无「提前招生」栏目。该校为 2024 年新设专科（原常州铁道高等职业技术学校），仅走普通高考/职教招生，判定未参加江苏高职提前招生。"
+      ],
+      "checked_at": "2026-09-18T20:27:11+08:00",
+      "agent_note": "多次检索均无提前招生痕迹：(1) 360 搜索「常州铁道职业技术学院 2026/提前招生」「常州铁道职业技术学院+提前招生简章」，结果只有「2026年招生简章」「2025年全日制普通专科招生章程」等普通高考招生内容，均未出现「提前招生」；(2) site:cztdxy.cn 提前招生 → 360 返回「未找到相关搜索结果」；(3) 结合此前已确认官网招生网 www.cztdxy.cn/zsw 无「提前招生」栏目。该校为 2024 年新设专科（原常州铁道高等职业技术学校），仅走普通高考/职教招生，判定未参加江苏高职提前招生。",
+      "agent_evidence": "全网仅见该校普通专科招生简章/章程，无任何提前招生简章或栏目",
+      "joined_early_admission_agent": "no"
+    },
+    {
+      "eol_id": 1192,
+      "name": "建东职业技术学院",
+      "city": "常州",
+      "admission_website": "http://www.czjdu.com/html/node48.html",
+      "official_website": "http://www.czjdu.com",
+      "early_admission_url": "http://www.czjdu.com/html/article11648.html",
+      "early_admission_title": "建东职业技术学院 2026年高职提前招生批次招生简章-招生章程 - 建东职业技术学院",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "建东职业技术学院 2026年高职提前招生批次招生简章",
+          "url": "http://www.czjdu.com/html/article11648.html",
+          "score": 173,
+          "source_page": "http://www.czjdu.com/html/node48.html",
+          "status": 200,
+          "page_title": "建东职业技术学院 2026年高职提前招生批次招生简章-招生章程 - 建东职业技术学院",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:19+08:00"
+    },
+    {
+      "eol_id": 3345,
+      "name": "江苏城乡建设职业学院",
+      "city": "常州",
+      "admission_website": "http://zsw.jscc.edu.cn/",
+      "official_website": "http://www.jscc.edu.cn/",
+      "early_admission_url": "https://zsw.jscc.edu.cn/2026_02/11_09/content-86218.html",
+      "early_admission_title": "江苏城乡建设职业学院2026年高职提前招生简章_提前招生_招生信息网-江苏城乡建设职业学院",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "江苏城乡建设职业学院2026年高职提前招生简章",
+          "url": "https://zsw.jscc.edu.cn/2026_02/11_09/content-86218.html",
+          "score": 173,
+          "source_page": "http://zsw.jscc.edu.cn/",
+          "status": 200,
+          "page_title": "江苏城乡建设职业学院2026年高职提前招生简章_提前招生_招生信息网-江苏城乡建设职业学院",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:15+08:00"
+    },
+    {
+      "eol_id": 2226,
+      "name": "九州职业技术学院",
+      "city": "徐州",
+      "admission_website": "http://www.jzp.edu.cn/zsgzc/",
+      "official_website": "http://www.jzp.edu.cn/",
+      "early_admission_url": "http://www.jzp.edu.cn/zsgzc/2026/0227/c2162a31869/page.htm",
+      "early_admission_title": "九州职业技术学院2026年高职院校提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "九州职业技术学院2026年高职院校提前招生简章",
+          "url": "http://www.jzp.edu.cn/zsgzc/2026/0227/c2162a31869/page.htm",
+          "score": 173,
+          "source_page": "http://www.jzp.edu.cn/zsgzc/",
+          "status": 200,
+          "page_title": "九州职业技术学院2026年高职院校提前招生简章",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:19+08:00"
+    },
+    {
+      "eol_id": 1193,
+      "name": "徐州工业职业技术学院",
+      "city": "徐州",
+      "admission_website": "https://zsb.xzcit.cn/",
+      "official_website": "https://www.xzcit.edu.cn/",
+      "early_admission_url": "https://zsb.xzcit.cn/?article_39/810.html",
+      "early_admission_title": "2026年江苏省高职提前招生章程-江苏高中生-徐州工业职业技术学院招生信息与服务网-",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年江苏省高职提前招生章程",
+          "url": "https://zsb.xzcit.cn/?article_39/810.html",
+          "score": 173,
+          "source_page": "https://zsb.xzcit.cn/",
+          "status": 200,
+          "page_title": "2026年江苏省高职提前招生章程-江苏高中生-徐州工业职业技术学院招生信息与服务网-",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:15+08:00"
+    },
+    {
+      "eol_id": 3089,
+      "name": "徐州幼儿师范高等专科学校",
+      "city": "徐州",
+      "admission_website": "https://zjc.xzyz.edu.cn",
+      "official_website": "https://www.xzyz.edu.cn",
+      "early_admission_url": "https://zjc.xzyz.edu.cn/info/1098/4404.htm",
+      "early_admission_title": "2026年提前招生简章-徐州幼儿师范高等专科学校招就处",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年提前招生简章",
+          "url": "https://zjc.xzyz.edu.cn/info/1098/4404.htm",
+          "score": 173,
+          "source_page": "https://zjc.xzyz.edu.cn",
+          "status": 200,
+          "page_title": "2026年提前招生简章-徐州幼儿师范高等专科学校招就处",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:15+08:00"
+    },
+    {
+      "eol_id": 3090,
+      "name": "徐州生物工程职业技术学院",
+      "city": "徐州",
+      "admission_website": "https://zsw.xzsw.net.cn/",
+      "official_website": "https://www.xzsw.net.cn/",
+      "early_admission_url": "https://mp.weixin.qq.com/s/P4tlHAL9UigX_XT1p2J89w",
+      "early_admission_title": "徐州生物工程职业技术学院2026年提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "徐州生物工程职业技术学院2026年提前招生简章",
+          "url": "https://mp.weixin.qq.com/s/P4tlHAL9UigX_XT1p2J89w",
+          "score": 165,
+          "source_page": "https://www.xzsw.net.cn/",
+          "status": 200,
+          "page_title": "",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:18+08:00"
+    },
+    {
+      "eol_id": 3347,
+      "name": "江苏安全技术职业学院",
+      "city": "徐州",
+      "admission_website": "https://zsb.jscst.edu.cn/",
+      "official_website": "https://www.jscst.edu.cn/",
+      "early_admission_url": "https://zsb.jscst.edu.cn/777/list.htm",
+      "early_admission_title": "提前招生",
+      "early_admission_year": null,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "提前招生",
+          "url": "https://zsb.jscst.edu.cn/777/list.htm",
+          "score": 108,
+          "source_page": "https://zsb.jscst.edu.cn/",
+          "status": 200,
+          "page_title": "提前招生",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": null
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:17+08:00"
+    },
+    {
+      "eol_id": 3344,
+      "name": "扬州中瑞酒店职业学院",
+      "city": "扬州",
+      "admission_website": "https://www.yhvc.edu.cn/list_83/",
+      "official_website": "https://www.yhvc.edu.cn/",
+      "early_admission_url": "https://www.yhvc.edu.cn/list_83/1426.html",
+      "early_admission_title": "扬州中瑞酒店职业学院",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "校长倾情邀约！扬州中瑞酒店职业学院亮相“江苏好高职校长打call” 时间：2026-04-16浏览量：1250 4月14日，江苏2026年高职院校提前招生（第二轮）启动报名，中职职教高考文化统考在即。扬州中瑞酒店职业学院校长张正栋出镜“20",
+          "url": "https://www.yhvc.edu.cn/list_83/1426.html",
+          "score": 138,
+          "source_page": "https://www.yhvc.edu.cn/list_83/",
+          "status": 200,
+          "page_title": "扬州中瑞酒店职业学院",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:25+08:00"
+    },
+    {
+      "eol_id": 1155,
+      "name": "扬州工业职业技术学院",
+      "city": "扬州",
+      "admission_website": "https://zjc.ypi.edu.cn/main.htm",
+      "official_website": "http://www.ypi.edu.cn/",
+      "early_admission_url": "https://zjc.ypi.edu.cn/2026/0213/c4126a102511/page.htm",
+      "early_admission_title": "2026年提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年提前招生简章",
+          "url": "https://zjc.ypi.edu.cn/2026/0213/c4126a102511/page.htm",
+          "score": 173,
+          "source_page": "https://zjc.ypi.edu.cn/main.htm",
+          "status": 200,
+          "page_title": "2026年提前招生简章",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:11+08:00"
+    },
+    {
+      "eol_id": 1459,
+      "name": "江海职业技术学院",
+      "city": "扬州",
+      "admission_website": "http://www.jhu.cn/B07ZSC/",
+      "official_website": "http://www.jhu.cn/",
+      "early_admission_url": "http://www.jhu.cn/B07ZSC/show.aspx?TypeID=58&ID=1211",
+      "early_admission_title": "招生与就业处——江海学院",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年提前招生简章",
+          "url": "http://www.jhu.cn/B07ZSC/show.aspx?TypeID=58&ID=1211",
+          "score": 173,
+          "source_page": "http://www.jhu.cn/B07ZSC/",
+          "status": 200,
+          "page_title": "招生与就业处——江海学院",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:21+08:00"
+    },
+    {
+      "eol_id": 3348,
+      "name": "江苏旅游职业学院",
+      "city": "扬州",
+      "admission_website": "https://www.jstc.edu.cn/zs/",
+      "official_website": "https://www.jstc.edu.cn/",
+      "early_admission_url": "https://www.jstc.edu.cn/zs/info/1023/9841.htm",
+      "early_admission_title": "2026年江苏旅游职业学院提前招生简章-招生信息网",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年江苏旅游职业学院提前招生简章02-13",
+          "url": "https://www.jstc.edu.cn/zs/info/1023/9841.htm",
+          "score": 173,
+          "source_page": "https://www.jstc.edu.cn/zs/",
+          "status": 200,
+          "page_title": "2026年江苏旅游职业学院提前招生简章-招生信息网",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:16+08:00"
+    },
+    {
+      "eol_id": 2227,
+      "name": "太湖创意职业技术学院",
+      "city": "无锡",
+      "admission_website": "http://www.wxthcy.edu.cn/s/index",
+      "official_website": "http://www.wxthcy.edu.cn/",
+      "early_admission_url": "https://www.jszs.com/n/476799.html",
+      "early_admission_title": "太湖创意职业技术学院2026年高职院校提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "medium",
+      "evidence": [
+        {
+          "text": "考生登录省教育考试院高考综合业务信息管理系统…高职院校提前招生申请平台进行网上报名",
+          "url": "https://www.jszs.com/n/476799.html",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": false,
+          "reached": true,
+          "confidence": "medium",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T20:27:06+08:00",
+      "agent_note": "已用 web_fetch 实际打开并确认页面含「提前招生」：江苏招生考试网(jszs.com)第三方转载的《太湖创意职业技术学院2026年高职院校提前招生简章》(2026-02-28)，正文含「报名形式：考生登录省教育考试院高考综合业务信息系统(gk.jseea.cn)的高职院校提前招生申请平台进行网上报名」「第一轮：3月12日－14日」「考试地点：太湖创意职业技术学院」，学校代码1959。故该校明确参加提前招生，joined=yes。学校自有域名 http://www.wxthcy.edu.cn/ 及其招生页 http://www.wxthcy.edu.cn/s/index 直连仅返回标题(需鉴权/JS 渲染，内容为空壳)，r.jina.ai 代理超时；site:wxthcy.edu.cn 提前招生 返回「未找到相关搜索结果」，未能找到学校自有域名下的提前招生栏目页。章程内注明学校网址为 http://www.wxthcy.edu.cn。",
+      "agent_evidence": "考生登录省教育考试院高考综合业务信息管理系统…高职院校提前招生申请平台进行网上报名",
+      "third_party": true,
+      "joined_early_admission_agent": "yes"
+    },
+    {
+      "eol_id": 1597,
+      "name": "无锡南洋职业技术学院",
+      "city": "无锡",
+      "admission_website": "http://zs.wsoc.edu.cn/",
+      "official_website": "http://www.wsoc.edu.cn/",
+      "early_admission_url": "http://zs.wsoc.edu.cn/info/1045/1981.htm",
+      "early_admission_title": "填报指南 | 无锡南洋职业技术学院2026年高职提前招生（第二轮）-无锡南洋职业技术学院招生网",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "填报指南 | 无锡南洋职业技术学院2026年高职提前招生（第二轮）",
+          "url": "http://zs.wsoc.edu.cn/info/1045/1981.htm",
+          "score": 173,
+          "source_page": "http://zs.wsoc.edu.cn/",
+          "status": 200,
+          "page_title": "填报指南 | 无锡南洋职业技术学院2026年高职提前招生（第二轮）-无锡南洋职业技术学院招生网",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:17+08:00"
+    },
+    {
+      "eol_id": 1589,
+      "name": "无锡商业职业技术学院",
+      "city": "无锡",
+      "admission_website": "https://zs.wxic.edu.cn/",
+      "official_website": "https://www.wxic.edu.cn/",
+      "early_admission_url": "https://zs.wxic.edu.cn/_redirect?siteId=32&columnId=822&articleId=114902",
+      "early_admission_title": "无锡商业职业技术学院2026年提前招生报考指南",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "无锡商业职业技术学院2026年提前招生报考指南",
+          "url": "https://zs.wxic.edu.cn/_redirect?siteId=32&columnId=822&articleId=114902",
+          "score": 173,
+          "source_page": "https://zs.wxic.edu.cn/",
+          "status": 200,
+          "page_title": "",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:11+08:00"
+    },
+    {
+      "eol_id": 2216,
+      "name": "无锡城市职业技术学院",
+      "city": "无锡",
+      "admission_website": "http://zsjyc.wxcu.edu.cn/",
+      "official_website": "http://www.wxcu.edu.cn/",
+      "early_admission_url": "http://zsjyc.wxcu.edu.cn/default.php?mod=article&do=detail&tid=1042542",
+      "early_admission_title": "无锡城市职业技术学院2026年提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "无锡城市职业技术学院2026年提前招生简章（发布2026-02-18）：为贯彻落实《省教育厅关于做好江苏省2026年高职院校提前招生改革试点工作的通知》…第一条…",
+          "url": "http://zsjyc.wxcu.edu.cn/default.php?mod=article&do=detail&tid=1042542",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T21:45:25+08:00",
+      "agent_note": "官方招生网「提前自主招生」栏目页 http://zsjyc.wxcu.edu.cn/default.php?mod=article&fid=98 亦已实际打开并确认含2026年提前招生简章等条目。学校招生代码1214。",
+      "agent_evidence": "无锡城市职业技术学院2026年提前招生简章（发布2026-02-18）：为贯彻落实《省教育厅关于做好江苏省2026年高职院校提前招生改革试点工作的通知》…第一条…",
+      "third_party": false
+    },
+    {
+      "eol_id": 1361,
+      "name": "无锡工艺职业技术学院",
+      "city": "无锡",
+      "admission_website": "https://zsxx.wxgyxy.edu.cn/",
+      "official_website": "https://www.wxgyxy.edu.cn/",
+      "early_admission_url": "https://zsxx.wxgyxy.edu.cn/info/1004/5961.htm",
+      "early_admission_title": "2026年提前招生专业计划-招生就业处",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年提前招生专业计划",
+          "url": "https://zsxx.wxgyxy.edu.cn/info/1004/5961.htm",
+          "score": 143,
+          "source_page": "https://zsxx.wxgyxy.edu.cn/",
+          "status": 200,
+          "page_title": "2026年提前招生专业计划-招生就业处",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:14+08:00"
+    },
+    {
+      "eol_id": 3718,
+      "name": "无锡师范高等专科学校",
+      "city": "无锡",
+      "admission_website": "http://zsjy.wxnc.edu.cn/",
+      "official_website": "http://www.wxnc.edu.cn/",
+      "early_admission_url": "http://zsjy.wxnc.edu.cn/info/1201/1822.htm",
+      "early_admission_title": "2026年提前招生第二轮报名公告-无锡师范高等专科学校招生就业处（校友会）",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年提前招生第二轮报名公告",
+          "url": "http://zsjy.wxnc.edu.cn/info/1201/1822.htm",
+          "score": 143,
+          "source_page": "http://zsjy.wxnc.edu.cn/",
+          "status": 200,
+          "page_title": "2026年提前招生第二轮报名公告-无锡师范高等专科学校招生就业处（校友会）",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:22+08:00"
+    },
+    {
+      "eol_id": 1191,
+      "name": "无锡科技职业学院",
+      "city": "无锡",
+      "admission_website": "https://zsb.wxstc.cn/",
+      "official_website": "https://www.wxstc.cn/",
+      "early_admission_url": "https://zsb.wxstc.cn/info/1070/2065.htm",
+      "early_admission_title": "2026年无锡科技职业学院提前招生简章-招生就业处",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "标题《2026年无锡科技职业学院提前招生简章》，日期2026-03-02，正文按省厅2026提前招生改革试点通知制定",
+          "url": "https://zsb.wxstc.cn/info/1070/2065.htm",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:13+08:00",
+      "agent_note": "招生简章栏目(zsxx/zsjz.htm)2026条最新；另有『高职提前招生』栏目 https://zsb.wxstc.cn/gztqzs.htm 。原旧页为2025年简章 info/1070/1985.htm。",
+      "agent_evidence": "标题《2026年无锡科技职业学院提前招生简章》，日期2026-03-02，正文按省厅2026提前招生改革试点通知制定",
+      "third_party": false
+    },
+    {
+      "eol_id": 1453,
+      "name": "江南影视艺术职业学院",
+      "city": "无锡",
+      "admission_website": "http://www.jnys.cn/zsxxw/",
+      "official_website": "http://www.jnys.cn",
+      "early_admission_url": "https://mp.weixin.qq.com/s/nkNSmNccs1tn9gfvOUVGFA",
+      "early_admission_title": "江南影视艺术职业学院2026年提前招生报...",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "江南影视艺术职业学院2026年提前招生报...",
+          "url": "https://mp.weixin.qq.com/s/nkNSmNccs1tn9gfvOUVGFA",
+          "score": 130,
+          "source_page": "http://www.jnys.cn/zsxxw/",
+          "status": 200,
+          "page_title": "",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:18+08:00"
+    },
+    {
+      "eol_id": 1406,
+      "name": "江苏信息职业技术学院",
+      "city": "无锡",
+      "admission_website": "https://zsxx.jsit.edu.cn/",
+      "official_website": "https://www.jsit.edu.cn/",
+      "early_admission_url": "https://zsxx.jsit.edu.cn/info/1035/1741.htm",
+      "early_admission_title": "2026年提前招生第二轮计划表-招生信息网",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年提前招生第二轮计划表",
+          "url": "https://zsxx.jsit.edu.cn/info/1035/1741.htm",
+          "score": 143,
+          "source_page": "https://zsxx.jsit.edu.cn/",
+          "status": 200,
+          "page_title": "2026年提前招生第二轮计划表-招生信息网",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:13+08:00"
+    },
+    {
+      "eol_id": 2215,
+      "name": "江阴职业技术学院",
+      "city": "无锡",
+      "admission_website": "https://zsb.jypc.edu.cn/",
+      "official_website": "https://www.jypc.edu.cn/",
+      "early_admission_url": "https://zsb.jypc.edu.cn/info/1042/5243.htm",
+      "early_admission_title": "江阴职业技术学院2026年提前招生空中乘务专业招生办法-招生信息网",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "江阴职业技术学院2026年提前招生空中乘务专业招生办法",
+          "url": "https://zsb.jypc.edu.cn/info/1042/5243.htm",
+          "score": 173,
+          "source_page": "https://zsb.jypc.edu.cn/",
+          "status": 200,
+          "page_title": "江阴职业技术学院2026年提前招生空中乘务专业招生办法-招生信息网",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:19+08:00"
+    },
+    {
+      "eol_id": 1051,
+      "name": "江苏农牧科技职业学院",
+      "city": "泰州",
+      "admission_website": "https://www.jsahvc.edu.cn/zsxx/main.htm",
+      "official_website": "https://www.jsahvc.edu.cn/",
+      "early_admission_url": "https://www.jszs.com/n/476824.html",
+      "early_admission_title": "江苏农牧科技职业学院2026年提前招生简章_提前招生_江苏招生考试网",
+      "early_admission_year": 2026,
+      "confidence": "medium",
+      "evidence": [
+        {
+          "text": "正文：江苏农牧科技职业学院2026年提前招生简章，报名第一轮3月12日至14日",
+          "url": "https://www.jszs.com/n/476824.html",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": false,
+          "reached": true,
+          "confidence": "medium",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "首页抓取失败 https://www.jsahvc.edu.cn/zsxx/main.htm: GET https://www.jsahvc.edu.cn/zsxx/main.htm 失败: <HTTPError 412: 'Precondition Failed'>",
+        "首页抓取失败 https://www.jsahvc.edu.cn/: GET https://www.jsahvc.edu.cn/ 失败: <HTTPError 412: 'Precondition Failed'>",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T20:27:03+08:00",
+      "agent_note": "官网 https://www.jsahvc.edu.cn/ 及招生网 /zsxx/main.htm 直连返回412(WAF)，无www的jsahvc.edu.cn返回502；r.jina.ai、allorigins、codetabs、web.archive.org等代理/归档均超时不可达，无法实际打开官网原文页。通过360搜索跳转(https://www.so.com/link?m=...)解析出官网原文绝对URL，但直连仍412，未能打开，故列入unverified_candidate_urls。第三方江苏招生考试网(jszs.com)全文可读，标注is_third_party=true。",
+      "agent_evidence": "正文：江苏农牧科技职业学院2026年提前招生简章，报名第一轮3月12日至14日",
+      "third_party": true
+    },
+    {
+      "eol_id": 2207,
+      "name": "泰州职业技术学院",
+      "city": "泰州",
+      "admission_website": "https://zs.tzpc.edu.cn/",
+      "official_website": "https://www.tzpc.edu.cn",
+      "early_admission_url": "https://zs.tzpc.edu.cn/2026/0210/c535a34798/page.htm",
+      "early_admission_title": "2026年提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年提前招生简章",
+          "url": "https://zs.tzpc.edu.cn/2026/0210/c535a34798/page.htm",
+          "score": 173,
+          "source_page": "https://zs.tzpc.edu.cn/",
+          "status": 200,
+          "page_title": "2026年提前招生简章",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:14+08:00"
+    },
+    {
+      "eol_id": 3273,
+      "name": "江苏护理职业学院",
+      "city": "淮安",
+      "admission_website": "https://zs.jscn.edu.cn/",
+      "official_website": "https://www.jscn.edu.cn/",
+      "early_admission_url": "https://zs.jscn.edu.cn/info/1091/1770.htm",
+      "early_admission_title": "江苏护理职业学院2026年提前招生简章-招生信息网-江苏护理职业学院",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026-03-01 江苏护理职业学院2026年提前招生简章",
+          "url": "https://zs.jscn.edu.cn/info/1091/1770.htm",
+          "score": 173,
+          "source_page": "https://zs.jscn.edu.cn/",
+          "status": 200,
+          "page_title": "江苏护理职业学院2026年提前招生简章-招生信息网-江苏护理职业学院",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:12+08:00"
+    },
+    {
+      "eol_id": 2210,
+      "name": "江苏电子信息职业学院",
+      "city": "淮安",
+      "admission_website": "https://zs.jsei.edu.cn/",
+      "official_website": "https://www.jsei.edu.cn/",
+      "early_admission_url": "https://zs.jsei.edu.cn/info/1006/1855.htm",
+      "early_admission_title": "2026年江苏省提前招生批次专业计划表-江苏电子信息职业学院招生网",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026-03-012026年江苏省提前招生批次专业计划表",
+          "url": "https://zs.jsei.edu.cn/info/1006/1855.htm",
+          "score": 143,
+          "source_page": "https://zs.jsei.edu.cn/",
+          "status": 200,
+          "page_title": "2026年江苏省提前招生批次专业计划表-江苏电子信息职业学院招生网",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:15+08:00"
+    },
+    {
+      "eol_id": 2219,
+      "name": "江苏财经职业技术学院",
+      "city": "淮安",
+      "admission_website": "https://zs.jscj.edu.cn/",
+      "official_website": "https://www.jscj.edu.cn/",
+      "early_admission_url": "https://jjmyx.jscj.edu.cn/2026/0506/c1215a85660/page.htm",
+      "early_admission_title": "2026年江苏财经职业技术学院提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "标题『2026年江苏财经职业技术学院提前招生简章』，发布时间2026-02-16，正文含『提前招生简章』并指向 http://zs.jscj.edu.cn/Post/8/253",
+          "url": "https://jjmyx.jscj.edu.cn/2026/0506/c1215a85660/page.htm",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "首页抓取失败 https://www.jscj.edu.cn/: GET https://www.jscj.edu.cn/ 失败: TimeoutError('The read operation timed out')",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T20:28:30+08:00",
+      "agent_note": "该页为经管学院子站(jjmyx.jscj.edu.cn，官方域名 jscj.edu.cn)转载的提前招生简章，已实际打开核验。学校招生网正站 zs.jscj.edu.cn 为JS渲染，简章页 http://zs.jscj.edu.cn/Post/8/253 无法直读。另一已实际打开、标题含『提前招生』的官方页：https://www.jscj.edu.cn/_t138/2026/0309/c74a84171/page.htm （荔枝新闻转载『1560个招生计划！江苏财经职业技术学院2026年提前招生政策发布』）。",
+      "agent_evidence": "标题『2026年江苏财经职业技术学院提前招生简章』，发布时间2026-02-16，正文含『提前招生简章』并指向 http://zs.jscj.edu.cn/Post/8/253",
+      "third_party": false
+    },
+    {
+      "eol_id": 1330,
+      "name": "江苏食品药品职业技术学院",
+      "city": "淮安",
+      "admission_website": "https://zs.jsfpc.edu.cn/",
+      "official_website": "https://www.jsfpc.edu.cn/",
+      "early_admission_url": "https://mp.weixin.qq.com/s/e58PBmubyfXSA9ddYDSnQw",
+      "early_admission_title": "权威发布｜江苏食品药品职业技术学院2026年提前招生报考指南",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "权威发布｜江苏食品药品职业技术学院2026年提前招生报考指南",
+          "url": "https://mp.weixin.qq.com/s/e58PBmubyfXSA9ddYDSnQw",
+          "score": 165,
+          "source_page": "https://zs.jsfpc.edu.cn/",
+          "status": 200,
+          "page_title": "",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:13+08:00"
+    },
+    {
+      "eol_id": 933,
+      "name": "炎黄职业技术学院",
+      "city": "淮安",
+      "admission_website": "http://www.yhjyjt.cn/zsb/",
+      "official_website": "http://www.yhjyjt.cn/",
+      "early_admission_url": "http://www.yhjyjt.cn/zsb/info/1031/2389.htm",
+      "early_admission_title": "炎黄职业技术学院 2026年高职院校提前招生简章 -招生就业网——炎黄职业技术学院",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "炎黄职业技术学院 2026年高职院校提前招生简章",
+          "url": "http://www.yhjyjt.cn/zsb/info/1031/2389.htm",
+          "score": 173,
+          "source_page": "http://www.yhjyjt.cn/zsb/",
+          "status": 200,
+          "page_title": "炎黄职业技术学院 2026年高职院校提前招生简章 -招生就业网——炎黄职业技术学院",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:22+08:00"
+    },
+    {
+      "eol_id": 2557,
+      "name": "明达职业技术学院",
+      "city": "盐城",
+      "admission_website": "https://zsks.mdut.cn/",
+      "official_website": "https://www.mdut.cn/",
+      "early_admission_url": "https://zsks.mdut.cn//bkzn/webinfo/2025/03/1743078976717563.htm",
+      "early_admission_title": "明达职业技术学院-招生办",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "明达职业技术学院2026年提前招生校... 2026.03.11",
+          "url": "https://zsks.mdut.cn//bkzn/webinfo/2025/03/1743078976717563.htm",
+          "score": 138,
+          "source_page": "https://zsks.mdut.cn/",
+          "status": 200,
+          "page_title": "明达职业技术学院-招生办",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:21+08:00"
+    },
+    {
+      "eol_id": 1405,
+      "name": "江苏医药职业学院",
+      "city": "盐城",
+      "admission_website": "https://zsjy.jsmc.edu.cn/",
+      "official_website": "https://www.jsmc.edu.cn/",
+      "early_admission_url": null,
+      "early_admission_title": "",
+      "early_admission_year": null,
+      "confidence": "none",
+      "evidence": [],
+      "notes": [
+        "首页抓取失败 https://zsjy.jsmc.edu.cn/: GET https://zsjy.jsmc.edu.cn/ 失败: <HTTPError 504: 'Gateway Time-out'>",
+        "首页抓取失败 https://www.jsmc.edu.cn/: GET https://www.jsmc.edu.cn/ 失败: <HTTPError 504: 'Gateway Time-out'>",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接",
+        "子代理复核：招生网 https://zsjy.jsmc.edu.cn/ 及其线索页 https://zsjy.jsmc.edu.cn/5489/list.htm 多次抓取均返回 504 Gateway Time-out（知道创宇云防御节点→源站连接超时）；主站 www.jsmc.edu.cn 同样 504，顶点域名 jsmc.edu.cn 无解析；jina 只读代理亦超时。360搜索显示存在『江苏医药职业学院2026年提前招生简章』页面(约2026-02-24，来源 zsjy.jsmc.edu.cn)，但因全站不可达无法打开确认，故不采纳为结果。",
+        "子代理复核：招生网 https://zsjy.jsmc.edu.cn/ 及其线索页 https://zsjy.jsmc.edu.cn/5489/list.htm 多次抓取均返回 504 Gateway Time-out（知道创宇云防御节点→源站连接超时）；主站 www.jsmc.edu.cn 同样 504，顶点域名 jsmc.edu.cn 无解析；jina 只读代理亦超时。360搜索显示存在『江苏医药职业学院2026年提前招生简章』页面(约2026-02-24，来源 zsjy.jsmc.edu.cn)，但因全站不可达无法打开确认，故不采纳为结果。"
+      ],
+      "checked_at": "2026-09-18T20:27:30+08:00",
+      "agent_note": "招生网 https://zsjy.jsmc.edu.cn/ 及其线索页 https://zsjy.jsmc.edu.cn/5489/list.htm 多次抓取均返回 504 Gateway Time-out（知道创宇云防御节点→源站连接超时）；主站 www.jsmc.edu.cn 同样 504，顶点域名 jsmc.edu.cn 无解析；jina 只读代理亦超时。360搜索显示存在『江苏医药职业学院2026年提前招生简章』页面(约2026-02-24，来源 zsjy.jsmc.edu.cn)，但因全站不可达无法打开确认，故不采纳为结果。",
+      "agent_evidence": "504 无法访问，未能验证"
+    },
+    {
+      "eol_id": 3716,
+      "name": "盐城农业科技职业学院",
+      "city": "盐城",
+      "admission_website": "http://www.ycnzy.com/zsjy/",
+      "official_website": "http://www.ycnzy.com/",
+      "early_admission_url": null,
+      "early_admission_title": "",
+      "early_admission_year": null,
+      "confidence": "none",
+      "evidence": [],
+      "notes": [
+        "首页抓取失败 http://www.ycnzy.com/zsjy/: GET http://www.ycnzy.com/zsjy/ 失败: <HTTPError 404: 'Not Found'>",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接",
+        "子代理复核：官网招生网 https://www.ycac.edu.cn/zsjy/ 。其『提前招生』栏目为 http://www.ycac.edu.cn/zsjy/enroll/zszc/ ，该栏目页及各种翻页/入口(list.htm、index.shtml、index.htm)在本环境均返回空白(200空body或404)，无法取得具体文章页 URL。文章页URL形如 /zsjy/enroll/zszc/YYYYMMDD/HHMMSS.shtml(普通高考栏目文章 /zsjy/enroll/zsjz/20260630/054754.shtml 可正常抓取，其中导航含『提前招生』指向 zszc 栏目)。360显示 ycac.edu.cn 仅约1个网页被收录，Bing/百度/搜狗/Google 均无法带出提前招生文章；故无法验证2026年提前招生简章具体页面，按未找到处理。",
+        "子代理复核：官网招生网 https://www.ycac.edu.cn/zsjy/ 。其『提前招生』栏目为 http://www.ycac.edu.cn/zsjy/enroll/zszc/ ，该栏目页及各种翻页/入口(list.htm、index.shtml、index.htm)在本环境均返回空白(200空body或404)，无法取得具体文章页 URL。文章页URL形如 /zsjy/enroll/zszc/YYYYMMDD/HHMMSS.shtml(普通高考栏目文章 /zsjy/enroll/zsjz/20260630/054754.shtml 可正常抓取，其中导航含『提前招生』指向 zszc 栏目)。360显示 ycac.edu.cn 仅约1个网页被收录，Bing/百度/搜狗/Google 均无法带出提前招生文章；故无法验证2026年提前招生简章具体页面，按未找到处理。"
+      ],
+      "checked_at": "2026-09-18T20:27:11+08:00",
+      "agent_note": "官网招生网 https://www.ycac.edu.cn/zsjy/ 。其『提前招生』栏目为 http://www.ycac.edu.cn/zsjy/enroll/zszc/ ，该栏目页及各种翻页/入口(list.htm、index.shtml、index.htm)在本环境均返回空白(200空body或404)，无法取得具体文章页 URL。文章页URL形如 /zsjy/enroll/zszc/YYYYMMDD/HHMMSS.shtml(普通高考栏目文章 /zsjy/enroll/zsjz/20260630/054754.shtml 可正常抓取，其中导航含『提前招生』指向 zszc 栏目)。360显示 ycac.edu.cn 仅约1个网页被收录，Bing/百度/搜狗/Google 均无法带出提前招生文章；故无法验证2026年提前招生简章具体页面，按未找到处理。",
+      "agent_evidence": "内容为空，未能验证"
+    },
+    {
+      "eol_id": 2218,
+      "name": "盐城工业职业技术学院",
+      "city": "盐城",
+      "admission_website": "https://zs.ycpc.edu.cn/",
+      "official_website": "https://www.ycpc.edu.cn/",
+      "early_admission_url": "https://zs.ycpc.edu.cn/2026/0304/c1308a61824/page.htm",
+      "early_admission_title": "2026年高职提前招生章程",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年高职提前招生章程",
+          "url": "https://zs.ycpc.edu.cn/2026/0304/c1308a61824/page.htm",
+          "score": 173,
+          "source_page": "https://zs.ycpc.edu.cn/",
+          "status": 200,
+          "page_title": "2026年高职提前招生章程",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:18+08:00"
+    },
+    {
+      "eol_id": 3342,
+      "name": "盐城幼儿师范高等专科学校",
+      "city": "盐城",
+      "admission_website": "https://zsjyc.yyz.edu.cn/",
+      "official_website": "https://www.yyz.edu.cn/",
+      "early_admission_url": "https://zsjyc.yyz.edu.cn/2026/0312/c1466a26570/page.htm",
+      "early_admission_title": "提前招生|2026年提前招生专业及计划",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "提前招生|2026年提前招生专业及计划",
+          "url": "https://zsjyc.yyz.edu.cn/2026/0312/c1466a26570/page.htm",
+          "score": 143,
+          "source_page": "https://zsjyc.yyz.edu.cn/",
+          "status": 200,
+          "page_title": "提前招生|2026年提前招生专业及计划",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:17+08:00"
+    },
+    {
+      "eol_id": 2229,
+      "name": "昆山登云科技职业学院",
+      "city": "苏州",
+      "admission_website": "http://zsfw.dyc.edu.cn/",
+      "official_website": "https://www.dyc.edu.cn/",
+      "early_admission_url": "http://zsfw.dyc.edu.cn/2026/0227/c155a12543/page.htm",
+      "early_admission_title": "昆山登云科技职业学院2026年提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "昆山登云科技职业学院2026年提前招生简章 2026-02-27",
+          "url": "http://zsfw.dyc.edu.cn/2026/0227/c155a12543/page.htm",
+          "score": 173,
+          "source_page": "http://zsfw.dyc.edu.cn/",
+          "status": 200,
+          "page_title": "昆山登云科技职业学院2026年提前招生简章",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:21+08:00"
+    },
+    {
+      "eol_id": 2206,
+      "name": "沙洲职业工学院",
+      "city": "苏州",
+      "admission_website": "https://zs.szit.edu.cn/",
+      "official_website": "https://www.szit.edu.cn/",
+      "early_admission_url": "https://zs.szit.edu.cn/info/1005/5965.htm",
+      "early_admission_title": "沙洲职业工学院2026年提前招生报考指南-沙洲职业工学院招生网",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "沙洲职业工学院2026年提前招生报考指南",
+          "url": "https://zs.szit.edu.cn/info/1005/5965.htm",
+          "score": 173,
+          "source_page": "https://zs.szit.edu.cn/",
+          "status": 200,
+          "page_title": "沙洲职业工学院2026年提前招生报考指南-沙洲职业工学院招生网",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:19+08:00"
+    },
+    {
+      "eol_id": 2225,
+      "name": "硅湖职业技术学院",
+      "city": "苏州",
+      "admission_website": "http://zs.usl.edu.cn/",
+      "official_website": "https://www.usl.edu.cn/",
+      "early_admission_url": "https://app.gaokaozhitongche.com/newsguide/h/YGJD8WEX",
+      "early_admission_title": "硅湖职业技术学院2026年高职院校提前招生报考指南-高考直通车",
+      "early_admission_year": 2026,
+      "confidence": "medium",
+      "evidence": [
+        {
+          "text": "正文：硅湖职业技术学院2026年高职院校提前招生报考指南，报名2026年3月12日至14日",
+          "url": "https://app.gaokaozhitongche.com/newsguide/h/YGJD8WEX",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": false,
+          "reached": true,
+          "confidence": "medium",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T20:27:07+08:00",
+      "agent_note": "自有招生网 https://zs.usl.edu.cn/ 可访问(200)，但其“招生简章(/zsjz)/招生动态(/zsdt)/招生计划(/zsjh)”栏目经改版后仅有2026中职职教高考、普高招生，未见2026提前招生页(旧提前招生页已404)；仅2025及更早版本有“高职提前招生简章”。2026提前招生内容仅在第三方(高考直通车app.gaokaozhitongche.com，稿件署名来源为硅湖职业技术学院)找到，标注is_third_party=true。自有域名未验证到2026提前招生URL。",
+      "agent_evidence": "正文：硅湖职业技术学院2026年高职院校提前招生报考指南，报名2026年3月12日至14日",
+      "third_party": true
+    },
+    {
+      "eol_id": 2558,
+      "name": "苏州信息职业技术学院",
+      "city": "苏州",
+      "admission_website": "https://www.szitu.edu.cn/news/7/11",
+      "official_website": "https://www.szitu.edu.cn/",
+      "early_admission_url": "https://www.szitu.edu.cn/detail/10574",
+      "early_admission_title": "苏州信息职业技术学院",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "苏州信息职业技术学院2026年提前招生考试（校测）第一轮考试通知",
+          "url": "https://www.szitu.edu.cn/detail/10574",
+          "score": 143,
+          "source_page": "https://www.szitu.edu.cn/news/7/11",
+          "status": 200,
+          "page_title": "苏州信息职业技术学院",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）"
+      ],
+      "checked_at": "2026-09-18T20:27:05+08:00"
+    },
+    {
+      "eol_id": 2217,
+      "name": "苏州健雄职业技术学院",
+      "city": "苏州",
+      "admission_website": "https://www.csit.edu.cn/zsjyc/main.htm",
+      "official_website": "https://www.csit.edu.cn/",
+      "early_admission_url": "https://www.csit.edu.cn/zsjyc/2026/0318/c3771a52950/page.htm",
+      "early_admission_title": "苏州健雄职业技术学院2026年高职提前招生计划（含招生代码）",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "苏州健雄职业技术学院2026年高职提前招生计划...",
+          "url": "https://www.csit.edu.cn/zsjyc/2026/0318/c3771a52950/page.htm",
+          "score": 143,
+          "source_page": "https://www.csit.edu.cn/zsjyc/main.htm",
+          "status": 200,
+          "page_title": "苏州健雄职业技术学院2026年高职提前招生计划（含招生代码）",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:16+08:00"
+    },
+    {
+      "eol_id": 1449,
+      "name": "苏州农业职业技术学院",
+      "city": "苏州",
+      "admission_website": "https://zsc.szai.edu.cn/zsw/",
+      "official_website": "https://www.szai.com/",
+      "early_admission_url": "https://zsc.szai.edu.cn/zsw/ztzs/tqzs.htm",
+      "early_admission_title": "提前招生-苏农招生网",
+      "early_admission_year": null,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "提前招生",
+          "url": "https://zsc.szai.edu.cn/zsw/ztzs/tqzs.htm",
+          "score": 108,
+          "source_page": "https://zsc.szai.edu.cn/zsw/",
+          "status": 200,
+          "page_title": "提前招生-苏农招生网",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": null
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:10+08:00"
+    },
+    {
+      "eol_id": 1388,
+      "name": "苏州卫生职业技术学院",
+      "city": "苏州",
+      "admission_website": "https://zs.szhct.edu.cn/",
+      "official_website": "https://www.szhct.edu.cn/",
+      "early_admission_url": "https://zs.szhct.edu.cn/zsstatus/news/2026-02-12/651.html",
+      "early_admission_title": "苏州卫生职业技术学院招生网",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "苏州卫生职业技术学院2026年提前招生简章",
+          "url": "https://zs.szhct.edu.cn/zsstatus/news/2026-02-12/651.html",
+          "score": 173,
+          "source_page": "https://zs.szhct.edu.cn/",
+          "status": 200,
+          "page_title": "苏州卫生职业技术学院招生网",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:10+08:00"
+    },
+    {
+      "eol_id": 2662,
+      "name": "苏州工业园区服务外包职业学院",
+      "city": "苏州",
+      "admission_website": "http://zs.siso.edu.cn/#/",
+      "official_website": "http://www.siso.edu.cn/",
+      "early_admission_url": "https://www.siso.edu.cn/zswn/info/1045/3835.htm",
+      "early_admission_title": "2026年苏州工业园区服务外包职业学院提前招生简章-招生信息网",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "标题《2026年苏州工业园区服务外包职业学院提前招生简章》，时间2026-02-13，正文含『2016年开始实施提前招生』",
+          "url": "https://www.siso.edu.cn/zswn/info/1045/3835.htm",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:21+08:00",
+      "agent_note": "该校2026招生启用了新站 www.siso.edu.cn/zswn/ (招生微网)；旧站 zs.siso.edu.cn 通知公告最新仍为2025-06-24、未更新2026。原旧页为2025年章程 zs.siso.edu.cn/info/1002/3818.htm。",
+      "agent_evidence": "标题《2026年苏州工业园区服务外包职业学院提前招生简章》，时间2026-02-13，正文含『2016年开始实施提前招生』",
+      "third_party": false
+    },
+    {
+      "eol_id": 2211,
+      "name": "苏州工业园区职业技术学院",
+      "city": "苏州",
+      "admission_website": "https://zs.ivt.edu.cn/",
+      "official_website": "https://www.ivt.edu.cn/",
+      "early_admission_url": "https://zs.ivt.edu.cn/newsDetails?id=452",
+      "early_admission_title": "苏州工业园区职业技术学院2026年高职提前招生章程",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "正文『苏州工业园区职业技术学院2026年高职院校提前招生章程…2026年我校继续开展高职院校提前招生改革试点工作』",
+          "url": "https://zs.ivt.edu.cn/newsDetails?id=452",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:14+08:00",
+      "agent_note": "校方自有域名（招生网）。栏目『提前招生』(/newsList?id=2&class_two_id=1) 列表首条2026-03-30『2026年高职提前招生第二轮招生公告』(id=461)，本条为2026-02-27章程，正文完整可读。",
+      "agent_evidence": "正文『苏州工业园区职业技术学院2026年高职院校提前招生章程…2026年我校继续开展高职院校提前招生改革试点工作』",
+      "third_party": false
+    },
+    {
+      "eol_id": 1359,
+      "name": "苏州工业职业技术学院",
+      "city": "苏州",
+      "admission_website": "https://zs.siit.edu.cn/",
+      "official_website": "http://www.siit.cn/",
+      "early_admission_url": "https://zs.siit.edu.cn/gzdz/list.htm",
+      "early_admission_title": "提前招生",
+      "early_admission_year": null,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "提前招生",
+          "url": "https://zs.siit.edu.cn/gzdz/list.htm",
+          "score": 108,
+          "source_page": "https://zs.siit.edu.cn/",
+          "status": 200,
+          "page_title": "提前招生",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": null
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:11+08:00"
+    },
+    {
+      "eol_id": 2202,
+      "name": "苏州工艺美术职业技术学院",
+      "city": "苏州",
+      "admission_website": "https://zsjy.sgmart.edu.cn/",
+      "official_website": "https://www.sgmart.edu.cn/",
+      "early_admission_url": "https://zsjy.sgmart.edu.cn/info/1021/2477.htm",
+      "early_admission_title": "2026年苏州工艺美术职业技术学院提前招生简章-招生就业办",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年苏州工艺美术职业技术学院提前招生简章",
+          "url": "https://zsjy.sgmart.edu.cn/info/1021/2477.htm",
+          "score": 173,
+          "source_page": "https://zsjy.sgmart.edu.cn/ddzszl.htm",
+          "status": 200,
+          "page_title": "2026年苏州工艺美术职业技术学院提前招生简章-招生就业办",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:14+08:00"
+    },
+    {
+      "eol_id": 3343,
+      "name": "苏州幼儿师范高等专科学校",
+      "city": "苏州",
+      "admission_website": "https://www.szys.net/zqdh/gljg/xgc/zsjy",
+      "official_website": "https://www.szys.net",
+      "early_admission_url": "https://www.szys.net/zqdh/gljg/xgc/zsjy/zszt/tqzs",
+      "early_admission_title": "提前招生_招生直通_招生就业_学生工作处_管理机构_苏州幼儿师范高等专科学校",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "栏目名“提前招生”；列表含“苏州幼儿师范高等专科学校2026年高职提前招生简章”(2026-02-25)",
+          "url": "https://www.szys.net/zqdh/gljg/xgc/zsjy/zszt/tqzs",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T20:27:06+08:00",
+      "agent_note": "招生网>招生直通>“提前招生”栏目页，含2026年及2025年高职提前招生简章、报考指南、校测等公告。",
+      "agent_evidence": "栏目名“提前招生”；列表含“苏州幼儿师范高等专科学校2026年高职提前招生简章”(2026-02-25)",
+      "third_party": false
+    },
+    {
+      "eol_id": 2223,
+      "name": "苏州托普信息职业技术学院",
+      "city": "苏州",
+      "admission_website": "https://szetop.edu.cn/html/zsw/",
+      "official_website": "https://www.szetop.edu.cn/",
+      "early_admission_url": "https://www.gx211.cn/news/20250310/n17415870679393.html",
+      "early_admission_title": "苏州托普信息职业技术学院2025年高职院校提前招生章程",
+      "early_admission_year": 2025,
+      "confidence": "medium",
+      "evidence": [
+        {
+          "text": "考生通过江苏省教育考试院网站…高职院校提前招生申请平台选择1969…进行填报",
+          "url": "https://www.gx211.cn/news/20250310/n17415870679393.html",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": false,
+          "reached": true,
+          "confidence": "medium",
+          "year": 2025
+        }
+      ],
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T20:27:06+08:00",
+      "agent_note": "已用 web_fetch 实际打开并确认页面含「提前招生」：该页为中国高校之窗(gx211.cn)第三方转载的《苏州托普信息职业技术学院2025年高职院校提前招生章程》(2025-03-10)，正文明确「填报方式：考生通过江苏省教育考试院网站(www.jseea.cn)高职院校提前招生申请平台选择1969(苏州托普信息职业技术学院)进行填报」，学校代码1969，含职业适应性测试等。故该校确实参加提前招生，joined=yes。第三方另有 2019/2021 年提前招生简章(新浪教育)，均指向参加。学校自有域名方面：招生网 https://szetop.edu.cn/html/zsw/ 为 SPA，web_fetch 只得空壳(标题「苏州托普信息职业技术学院|招生网」)；site:szetop.edu.cn 提前招生返回「未找到相关搜索结果」，未能定位学校自有的提前招生栏目页。注：章程落款学校网址为 www.szetop.com(非 edu.cn)。未找到 2026 年版本，取最新可验证的 2025 年简章，故 year=2025。",
+      "agent_evidence": "考生通过江苏省教育考试院网站…高职院校提前招生申请平台选择1969…进行填报",
+      "third_party": true,
+      "joined_early_admission_agent": "yes"
+    },
+    {
+      "eol_id": 3786,
+      "name": "苏州旅游职业学院",
+      "city": "苏州",
+      "admission_website": "http://www.szlyzyxy.cn/zsgz.html",
+      "official_website": "http://www.szlyzyxy.cn/",
+      "early_admission_url": "https://www.szlyzyxy.cn/news/177511683471871325.html",
+      "early_admission_title": "苏州旅游职业学院2026年提前招生预录取结果公告 - 苏州旅游与财经高等职业技术学校 - 招生公告",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "苏州旅游职业学院2026年提前招生预录取结果公告",
+          "url": "https://www.szlyzyxy.cn/news/177511683471871325.html",
+          "score": 98,
+          "source_page": "http://www.szlyzyxy.cn/zsgz.html",
+          "status": 200,
+          "page_title": "苏州旅游职业学院2026年提前招生预录取结果公告 - 苏州旅游与财经高等职业技术学校 - 招生公告",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T21:45:24+08:00"
+    },
+    {
+      "eol_id": 1097,
+      "name": "苏州百年职业学院",
+      "city": "苏州",
+      "admission_website": "https://zjw.scc.edu.cn/",
+      "official_website": "https://www.scc.edu.cn/",
+      "early_admission_url": "http://zjw.scc.edu.cn/2026/0227/c258a7153/page.htm",
+      "early_admission_title": "苏州百年职业学院2026年高职提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "页面大标题及正文首行：苏州百年职业学院2026年高职提前招生简章",
+          "url": "http://zjw.scc.edu.cn/2026/0227/c258a7153/page.htm",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T20:27:04+08:00",
+      "agent_note": "由招生网“招生动态”第2页定位并实际用 web_fetch 打开确认；同站“招生章程”栏目另有《苏州百年职业学院2024年高职提前招生章程》(http://zjw.scc.edu.cn/2024/1031/c287a3895/page.htm)。",
+      "agent_evidence": "页面大标题及正文首行：苏州百年职业学院2026年高职提前招生简章",
+      "third_party": false
+    },
+    {
+      "eol_id": 1412,
+      "name": "苏州经贸职业技术学院",
+      "city": "苏州",
+      "admission_website": "https://www.szjm.edu.cn/zsjyc/",
+      "official_website": "https://www.szjm.edu.cn",
+      "early_admission_url": "https://www.szjm.edu.cn/zsjyc/info/1106/2722.htm",
+      "early_admission_title": "2026年学院提前招生校考通知-苏州经贸职业技术学院招生信息网",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年学院提前招生校考通知",
+          "url": "https://www.szjm.edu.cn/zsjyc/info/1106/2722.htm",
+          "score": 143,
+          "source_page": "https://www.szjm.edu.cn/zsjyc/",
+          "status": 200,
+          "page_title": "2026年学院提前招生校考通知-苏州经贸职业技术学院招生信息网",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:15+08:00"
+    },
+    {
+      "eol_id": 2559,
+      "name": "苏州高博职业学院",
+      "city": "苏州",
+      "admission_website": "http://zs.gist.edu.cn/",
+      "official_website": "http://www.gist.edu.cn/",
+      "early_admission_url": "http://zs.gist.edu.cn/2026/0321/c1375a59443/page.htm",
+      "early_admission_title": "2026年提前招生校测办法",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年提前招生校测办法",
+          "url": "http://zs.gist.edu.cn/2026/0321/c1375a59443/page.htm",
+          "score": 173,
+          "source_page": "http://zs.gist.edu.cn/",
+          "status": 200,
+          "page_title": "2026年提前招生校测办法",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:18+08:00"
+    },
+    {
+      "eol_id": 3224,
+      "name": "江苏财会职业学院",
+      "city": "连云港",
+      "admission_website": "https://www.jscfa.edu.cn/zsxxw/",
+      "official_website": "https://www.jscfa.edu.cn",
+      "early_admission_url": "https://www.jscfa.edu.cn/zsxxw/2025/0216/c2200a39288/page.htm",
+      "early_admission_title": "2026年江苏财会职业学院提前招生章程",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "2026年江苏财会职业学院提前招生章程",
+          "url": "https://www.jscfa.edu.cn/zsxxw/2025/0216/c2200a39288/page.htm",
+          "score": 173,
+          "source_page": "https://www.jscfa.edu.cn/zsxxw/",
+          "status": 200,
+          "page_title": "2026年江苏财会职业学院提前招生章程",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:17+08:00"
+    },
+    {
+      "eol_id": 2203,
+      "name": "连云港职业技术学院",
+      "city": "连云港",
+      "admission_website": "https://www.lygtc.edu.cn/zsxxw/",
+      "official_website": "https://www.lygtc.edu.cn/",
+      "early_admission_url": "https://www.lygtc.edu.cn/zsxxw/info/1124/2501.htm",
+      "early_admission_title": "连职院2026年江苏省提前招生报考指南-招生信息网",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "页面标题『连职院2026年江苏省提前招生报考指南』，发布日期2026-03-03",
+          "url": "https://www.lygtc.edu.cn/zsxxw/info/1124/2501.htm",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:17+08:00",
+      "agent_note": "校方自有域名。属招生信息网『报考指南』栏目，为2026年提前招生条目（同站另有『连职院2026年江苏省提前招生计划』info/1126/2500.htm）。站内『报考指南』列表可直达。",
+      "agent_evidence": "页面标题『连职院2026年江苏省提前招生报考指南』，发布日期2026-03-03",
+      "third_party": false
+    },
+    {
+      "eol_id": 1434,
+      "name": "江苏农林职业技术学院",
+      "city": "镇江",
+      "admission_website": "https://zsw.jsafc.edu.cn/",
+      "official_website": "https://www.jsafc.edu.cn/",
+      "early_admission_url": "https://zsw.jsafc.edu.cn/tqzs.htm",
+      "early_admission_title": "提前招生-江苏农林职业技术学院招生网欢迎你！",
+      "early_admission_year": null,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "提前招生",
+          "url": "https://zsw.jsafc.edu.cn/tqzs.htm",
+          "score": 108,
+          "source_page": "https://zsw.jsafc.edu.cn/",
+          "status": 200,
+          "page_title": "提前招生-江苏农林职业技术学院招生网欢迎你！",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": null
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:12+08:00"
+    },
+    {
+      "eol_id": 3346,
+      "name": "江苏航空职业技术学院",
+      "city": "镇江",
+      "admission_website": "https://zs.jatc.edu.cn/",
+      "official_website": "https://www.jatc.edu.cn/",
+      "early_admission_url": "https://zs.jatc.edu.cn/2026/0228/c1015a20760/page.htm",
+      "early_admission_title": "江苏航空职业技术学院2026年高职院校提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "标题：江苏航空职业技术学院2026年高职院校提前招生简章（发布时间2026-02-28）",
+          "url": "https://zs.jatc.edu.cn/2026/0228/c1015a20760/page.htm",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T20:27:06+08:00",
+      "agent_note": "位于招生网「通知公告」栏目(/tzgg/list2.htm 第2页列出)；招生网导航无「提前招生」专栏，2026提前招生章程未列于「招生章程」栏目，此简章页为2026年提前招生正式简章",
+      "agent_evidence": "标题：江苏航空职业技术学院2026年高职院校提前招生简章（发布时间2026-02-28）",
+      "third_party": false
+    },
+    {
+      "eol_id": 1199,
+      "name": "金山职业技术学院",
+      "city": "镇江",
+      "admission_website": "https://www.jscu.cn/bmindex.php?cid=3&lid=27&bmid=27",
+      "official_website": "https://www.jscu.cn/",
+      "early_admission_url": "https://www.jscu.cn/show.php?id=6186",
+      "early_admission_title": "金山职业技术学院2026年提前招生简章",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "标题：金山职业技术学院2026年提前招生简章（发布时间2026-02-25）；正文含「特制定本招生简章」",
+          "url": "https://www.jscu.cn/show.php?id=6186",
+          "score": null,
+          "source_page": "subagent_verification",
+          "status": 200,
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [
+        "首页抓取失败 https://www.jscu.cn/bmindex.php?cid=3&lid=27&bmid=27: GET https://www.jscu.cn/bmindex.php?cid=3&lid=27&bmid=27 失败: <HTTPError 404: 'Not Found'>",
+        "本次抓取已忽略 TLS 证书校验（部分院校证书链不完整）",
+        "未在招生网/官网找到任何含『提前招生/单招』的链接"
+      ],
+      "checked_at": "2026-09-18T20:27:07+08:00",
+      "agent_note": "位于官网「招生就业-招生信息」栏目(list.php?cid=9&lid=53)；原给出的招生网 /bmindex.php 路径返回404，改用官网栏目定位",
+      "agent_evidence": "标题：金山职业技术学院2026年提前招生简章（发布时间2026-02-25）；正文含「特制定本招生简章」",
+      "third_party": false
+    },
+    {
+      "eol_id": 2201,
+      "name": "镇江市高等专科学校",
+      "city": "镇江",
+      "admission_website": "https://zsw.zjc.edu.cn/",
+      "official_website": "https://www.zjc.edu.cn/",
+      "early_admission_url": "https://zsw.zjc.edu.cn/view/kmes0ex9i103.htm",
+      "early_admission_title": "镇江市高等专科学校招生信息网",
+      "early_admission_year": 2026,
+      "confidence": "high",
+      "evidence": [
+        {
+          "text": "镇江市高等专科学校2026年提前招生招生简章",
+          "url": "https://zsw.zjc.edu.cn/view/kmes0ex9i103.htm",
+          "score": 173,
+          "source_page": "https://zsw.zjc.edu.cn/",
+          "status": 200,
+          "page_title": "镇江市高等专科学校招生信息网",
+          "page_has_keyword": true,
+          "reached": true,
+          "confidence": "high",
+          "year": 2026
+        }
+      ],
+      "notes": [],
+      "checked_at": "2026-09-18T20:25:14+08:00"
+    }
+  ]
+}

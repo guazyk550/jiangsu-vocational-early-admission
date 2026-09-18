@@ -1,0 +1,27 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---- 测试/工具缓存 ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- IDE / 系统 ----
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
+
+# ---- PyInstaller 构建产物（体积大，不入库）----
+build/temp/
+dist/
+*.exe
+
+# ---- 本地运行期用户数据（收藏/最近浏览写在用户目录，此处兜底）----
+favorites.json
+recent.json
+config.local.json

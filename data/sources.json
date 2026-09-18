@@ -1,0 +1,72 @@
+{
+  "data_year": 2026,
+  "generated_at": "2026-09-18",
+  "scope_note": "本清单仅收录公开可访问的官方政策文件与数据来源入口，用于软件内「数据来源」按钮跳转。",
+  "policy_documents": [
+    {
+      "title": "省教育厅关于做好江苏省2026年高职院校提前招生改革试点工作的通知（苏教考函〔2026〕1号）",
+      "publisher": "江苏省教育厅 / 江苏省教育考试院",
+      "published": "2026-01-15",
+      "url": "https://www.jseea.cn/webfile/zcwj/2026-01-15/7417394735964229632.html",
+      "note": "核心政策文件。原文：『省内高职（专科）院校以及教育部批准的省外高职（专科）院校均可申请参加高职院校提前招生』"
+    },
+    {
+      "title": "江苏省2026年高职院校提前招生工作问答",
+      "publisher": "江苏省教育考试院",
+      "published": "2026-03-10",
+      "url": "https://www.jseea.cn/webfile/index/index_zkxx/2026-03-10/7437055691136700416.html"
+    },
+    {
+      "title": "2026年高职院校提前招生第二轮考生申请通告",
+      "publisher": "江苏省教育考试院",
+      "published": "2026-04-13",
+      "url": "https://www.jseea.cn/webfile/index/index_zkxx/2026-04-13/7449274443878109184.html"
+    },
+    {
+      "title": "2026年高职院校提前招生防骗预警",
+      "publisher": "江苏省教育考试院",
+      "published": "2026-03-26",
+      "url": "https://www.jseea.cn/webfile/index/index_zkxx/2026-03-26/7442551495792267264.html"
+    }
+  ],
+  "official_portals": [
+    {
+      "title": "江苏省教育考试院",
+      "url": "https://www.jseea.cn/",
+      "note": "提前招生政策、报名时间、招考日历的官方发布渠道"
+    },
+    {
+      "title": "江苏省教育考试院 - 考生服务平台",
+      "url": "https://gk.jseea.cn/",
+      "note": "官方指定的提前招生报名/志愿填报平台；官方说明『考生可登录该平台查看参加提前招生的院校名单』"
+    },
+    {
+      "title": "江苏省教育考试院 - 站内搜索",
+      "url": "https://www.jseea.cn/search/?wd=%E6%8F%90%E5%89%8D%E6%8B%9B%E7%94%9F",
+      "note": "按『提前招生』检索官方公告"
+    },
+    {
+      "title": "教育部 - 2026年全国高等学校名单",
+      "url": "http://www.moe.gov.cn/jyb_xxgk/s5743/s5744/A03/202606/t20260618_1441074.html",
+      "note": "用于核对院校名称、所在地、办学层次（本次用于交叉核验办学性质与城市）"
+    }
+  ],
+  "third_party_sources": [
+    {
+      "title": "掌上高考（院校列表/院校详情 API）",
+      "url": "https://www.gaokao.cn/",
+      "note": "基础名单、官网、招生网、地址的采集来源。属第三方公开教育信息平台，非官方数据，已在数据集中逐条标注 source_list_url"
+    },
+    {
+      "title": "static-data.gaokao.cn（院校详情静态数据）",
+      "url": "https://static-data.gaokao.cn/www/2.0/school/1388/info.json",
+      "note": "院校详情 JSON（school_site/site/address）"
+    },
+    {
+      "title": "OpenStreetMap via Photon（地理编码）",
+      "url": "https://photon.komoot.io/",
+      "note": "经纬度来源。OSM 社区数据，非官方，存在偏差可能；每条坐标均带 coord_confidence 与 coord_source_url，低置信未采用"
+    }
+  ],
+  "disclaimer": "本软件仅用于整理和导航江苏省高职院校提前招生相关公开信息，不属于江苏省教育考试院或任何高校官方招生平台。招生政策、招生计划、报考条件、校测方式及录取规则等信息可能发生变化，请以江苏省教育考试院及各招生院校官方发布的信息为准。"
+}

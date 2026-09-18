@@ -1,0 +1,50 @@
+[
+  {
+    "name": "江苏农牧科技职业学院",
+    "found": true,
+    "url": "https://www.jszs.com/n/476824.html",
+    "title": "江苏农牧科技职业学院2026年提前招生简章_提前招生_江苏招生考试网",
+    "year": 2026,
+    "is_third_party": true,
+    "evidence": "正文：江苏农牧科技职业学院2026年提前招生简章，报名第一轮3月12日至14日",
+    "note": "官网 https://www.jsahvc.edu.cn/ 及招生网 /zsxx/main.htm 直连返回412(WAF)，无www的jsahvc.edu.cn返回502；r.jina.ai、allorigins、codetabs、web.archive.org等代理/归档均超时不可达，无法实际打开官网原文页。通过360搜索跳转(https://www.so.com/link?m=...)解析出官网原文绝对URL，但直连仍412，未能打开，故列入unverified_candidate_urls。第三方江苏招生考试网(jszs.com)全文可读，标注is_third_party=true。",
+    "unverified_candidate_urls": [
+      "https://www.jsahvc.edu.cn/2026/0302/c2641a178146/pagem.htm"
+    ]
+  },
+  {
+    "name": "江苏商贸职业学院",
+    "found": true,
+    "url": "https://www.jszs.com/n/476820.html",
+    "title": "江苏商贸职业学院2026年提前招生简章_提前招生_江苏招生考试网",
+    "year": 2026,
+    "is_third_party": true,
+    "evidence": "标题及导航：江苏商贸职业学院2026年提前招生简章_提前招生(2026-02-28)",
+    "note": "官网 https://www.jsbc.edu.cn/(未直接打开)、招生网 https://zsc.jsbc.edu.cn/ 与 zs.jsbc.edu.cn 直连均返回412，代理(r.jina.ai/codetabs)超时不可达。通过360跳转解析出招生网原文URL(zs.jsbc.edu.cn)但直连仍412，未能实际打开，列入unverified_candidate_urls。第三方江苏招生考试网(jszs.com)标题含“提前招生”可读，标注is_third_party=true。",
+    "unverified_candidate_urls": [
+      "https://zs.jsbc.edu.cn/2026/0210/c176a60199/pagem.htm"
+    ]
+  },
+  {
+    "name": "硅湖职业技术学院",
+    "found": true,
+    "url": "https://app.gaokaozhitongche.com/newsguide/h/YGJD8WEX",
+    "title": "硅湖职业技术学院2026年高职院校提前招生报考指南-高考直通车",
+    "year": 2026,
+    "is_third_party": true,
+    "evidence": "正文：硅湖职业技术学院2026年高职院校提前招生报考指南，报名2026年3月12日至14日",
+    "note": "自有招生网 https://zs.usl.edu.cn/ 可访问(200)，但其“招生简章(/zsjz)/招生动态(/zsdt)/招生计划(/zsjh)”栏目经改版后仅有2026中职职教高考、普高招生，未见2026提前招生页(旧提前招生页已404)；仅2025及更早版本有“高职提前招生简章”。2026提前招生内容仅在第三方(高考直通车app.gaokaozhitongche.com，稿件署名来源为硅湖职业技术学院)找到，标注is_third_party=true。自有域名未验证到2026提前招生URL。",
+    "unverified_candidate_urls": []
+  },
+  {
+    "name": "金肯职业技术学院",
+    "found": true,
+    "url": "https://www.jszs.com/n/476779.html",
+    "title": "金肯职业技术学院2026年提前招生简章_提前招生_江苏招生考试网",
+    "year": 2026,
+    "is_third_party": true,
+    "evidence": "正文：金肯职业技术学院2026年提前招生简章，报名第一轮2026年3月12日至14日",
+    "note": "招生网 http://www.njjku.com/html/jkzsw/ 可访问(200)但正文由JS动态渲染，list.html?HType=2&CId=5530 仅返回页面骨架、无条目内容；360 site:njjku.com 提前招生检索无结果，现有页面/JS接口均无法取到“提前招生”内容。仅第三方江苏招生考试网(jszs.com)含2026提前招生简章全文，标注is_third_party=true。自有域名未验证到2026提前招生URL。",
+    "unverified_candidate_urls": []
+  }
+]

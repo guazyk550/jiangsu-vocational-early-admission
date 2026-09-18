@@ -1,0 +1,32 @@
+[
+  {
+    "name": "常州铁道职业技术学院",
+    "found": false,
+    "url": null,
+    "title": null,
+    "year": null,
+    "page_mentions_early_admission": false,
+    "evidence": "招生网 http://www.cztdxy.cn/zsw/ 导航仅含「招生政策/招生计划/历年分数/录取查询/普通高考招生」；招生简章栏只有「2026年中职职教高考招生简章」「2026年全日制普通专科招生章程」，未出现「提前招生」。",
+    "note": "未找到任何含「提前招生」的页面。核查过的来源：官网招生网首页及 /zsw/134/list.htm(招生简章)、/zsw/121/list.htm(招生政策) 均无提前招生；江苏省教育考试院站内搜索 https://www.jseea.cn/search/?wd=常州铁道职业技术学院 返回0条；必应/360 均无相关结果。该校2024年新设，疑似未参加江苏高职提前招生试点。"
+  },
+  {
+    "name": "太湖创意职业技术学院",
+    "found": true,
+    "url": "https://www.jszs.com/n/476799.html",
+    "title": "太湖创意职业技术学院2026年高职院校提前招生简章_提前招生_江苏招生考试网",
+    "year": 2026,
+    "page_mentions_early_admission": true,
+    "evidence": "太湖创意职业技术学院2026年高职院校提前招生简章；学校代码1959；第一轮报名3月12日-14日、第二轮4月14日；校测含文化素质测试+职业适应性测试。",
+    "note": "该页为江苏招生考试网(www.jszs.com)转载，文末注明「内容来源：太湖创意职业技术学院」，发布日期2026-02-28，正文含大量「提前招生」。学校官网 http://www.wxthcy.edu.cn 为需鉴权的JS单页应用（首页与招生网 http://www.wxthcy.edu.cn/s/index 仅返回标题、无正文，/zsw/ 等路径返回401），无法直接抓到官方简章页；官方另有微信公众号文章《高职单招 | 太湖创意职业技术学院2026年提前招生简章》，但微信链接带时效签名、不可作稳定URL。另该校提前招生考试通知页 https://www.jszs.com/n/477445.html 亦已打开确认。"
+  },
+  {
+    "name": "无锡城市职业技术学院",
+    "found": true,
+    "url": "http://zsjyc.wxcu.edu.cn/default.php?mod=article&do=detail&tid=1042542",
+    "title": "无锡城市职业技术学院2026年提前招生简章",
+    "year": 2026,
+    "page_mentions_early_admission": true,
+    "evidence": "无锡城市职业技术学院2026年提前招生简章（发布2026-02-18）：为贯彻落实《省教育厅关于做好江苏省2026年高职院校提前招生改革试点工作的通知》…第一条…",
+    "note": "官方招生网「提前自主招生」栏目页 http://zsjyc.wxcu.edu.cn/default.php?mod=article&fid=98 亦已实际打开并确认含2026年提前招生简章等条目。学校招生代码1214。"
+  }
+]

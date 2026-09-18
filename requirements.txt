@@ -1,0 +1,11 @@
+# 江苏高职提前招生院校导航器 —— Python 依赖
+# 本机 Python 3.14 已验证可装（PySide6 提供 cp310-abi3 wheel，兼容 3.10+）
+
+# 运行时：GUI
+PySide6>=6.11,<6.12
+
+# 打包 EXE
+pyinstaller>=6.22
+
+# 测试
+pytest>=8.0

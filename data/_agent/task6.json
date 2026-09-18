@@ -1,0 +1,32 @@
+[
+  {
+    "name": "盐城农业科技职业学院",
+    "found": true,
+    "url": "http://www.ycac.edu.cn/zsjy/enroll/zszc/",
+    "title": "提前招生",
+    "year": 2026,
+    "page_mentions_early_admission": false,
+    "evidence": "官方招生简章文章页侧栏含链接“提前招生(/zsjy/enroll/zszc/)”；2026简章标题《盐城农业科技职业学院2026年提前招生简章》(2026-02-14)",
+    "note": "官网已由 ycnzy.com 迁移到 ycac.edu.cn。该“提前招生”栏目URL经我实际打开的官方招生简章文章页(http://www.ycac.edu.cn/zsjy/enroll/zsjz/20260630/054754.shtml)侧栏链接确认；但栏目索引页(/zsjy/enroll/zszc/ 及其 index 变体)对抓取返回空内容(疑似JS渲染/防爬)，未取到页内“提前招生”文字，故 page_mentions_early_admission=false。2026年提前招生简章内容经中国高校之窗(www.gx211.cn, 2026-02-14 转载)确认，简章内亦写明学校招生信息网为 /zsjy。"
+  },
+  {
+    "name": "硅湖职业技术学院",
+    "found": false,
+    "url": null,
+    "title": null,
+    "year": null,
+    "page_mentions_early_admission": false,
+    "evidence": "",
+    "note": "该校确有“提前招生”：官网招生网 zs.usl.edu.cn 旧页(2023年、2025年提前招生简章，2026年提前招生校测须知)曾存在并经搜索引擎索引，但当前招生网已整体改版，旧路径 /admissions/info/NNNN 全部返回404(如 info/2779、3962、4062)，现站栏目(/zsjz、/zsdt、/zsjh 等)与 sitemap.xml 均无“提前招生”内容，故无“实际打开且含提前招生”的可用官方页面。间接参考(非官方)：高考直通车《硅湖职业技术学院2026年高职院校提前招生报考指南》、中国高校之窗/大学生必备网等有转载。"
+  },
+  {
+    "name": "苏州幼儿师范高等专科学校",
+    "found": true,
+    "url": "https://www.szys.net/zqdh/gljg/xgc/zsjy/zszt/tqzs",
+    "title": "提前招生_招生直通_招生就业_学生工作处_管理机构_苏州幼儿师范高等专科学校",
+    "year": 2026,
+    "page_mentions_early_admission": true,
+    "evidence": "栏目名“提前招生”；列表含“苏州幼儿师范高等专科学校2026年高职提前招生简章”(2026-02-25)",
+    "note": "招生网>招生直通>“提前招生”栏目页，含2026年及2025年高职提前招生简章、报考指南、校测等公告。"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "江苏农牧科技职业学院",
+    "found": false,
+    "url": null,
+    "title": null,
+    "year": null,
+    "page_mentions_early_admission": false,
+    "evidence": "官网及招生网/zsxx/main.htm直连均被WAF拦截(HTTP 412/502)，Microlink亦返回412，无法打开任何官方页面",
+    "note": "官网 www.jsahvc.edu.cn、招生网 /zsxx/main.htm、zsxx.jsahvc.edu.cn、m.jsahvc.edu.cn 等所有尝试路径均被知道创宇WAF拦截(HTTP 412 Precondition Failed / 502)，web_fetch 与第三方抓取(Microlink)均无法打开，故 found=false。360搜索显示存在『江苏农牧科技职业学院2026年提前招生简章』(2026-03-12)，但只见于第三方镜像(掌上高考、中国新闻网)，未获得可实际核验的官方URL。"
+  },
+  {
+    "name": "江苏财经职业技术学院",
+    "found": true,
+    "url": "https://jjmyx.jscj.edu.cn/2026/0506/c1215a85660/page.htm",
+    "title": "2026年江苏财经职业技术学院提前招生简章",
+    "year": 2026,
+    "page_mentions_early_admission": true,
+    "evidence": "标题『2026年江苏财经职业技术学院提前招生简章』，发布时间2026-02-16，正文含『提前招生简章』并指向 http://zs.jscj.edu.cn/Post/8/253",
+    "note": "该页为经管学院子站(jjmyx.jscj.edu.cn，官方域名 jscj.edu.cn)转载的提前招生简章，已实际打开核验。学校招生网正站 zs.jscj.edu.cn 为JS渲染，简章页 http://zs.jscj.edu.cn/Post/8/253 无法直读。另一已实际打开、标题含『提前招生』的官方页：https://www.jscj.edu.cn/_t138/2026/0309/c74a84171/page.htm （荔枝新闻转载『1560个招生计划！江苏财经职业技术学院2026年提前招生政策发布』）。"
+  },
+  {
+    "name": "江苏医药职业学院",
+    "found": false,
+    "url": null,
+    "title": null,
+    "year": null,
+    "page_mentions_early_admission": false,
+    "evidence": "招生网 zsjy.jsmc.edu.cn 直连返回504(WAF/源站无响应)，Microlink亦报PAGE_HUNG，无法实际打开该页",
+    "note": "招生网 zsjy.jsmc.edu.cn 被知道创宇WAF拦截且源站无响应(HTTP 504 / 页面挂起)，web_fetch 无法打开，Microlink 仅能命中首页缓存(标题『江苏医药职业学院-招生信息网』，不含『提前招生』)，故 found=false。经360搜索索引确认存在提前招生栏目页 https://zsjy.jsmc.edu.cn/5489/list.htm （面包屑『首页>历年招生>提前招生』，含『江苏医药职业学院2026年提前招...2026-02-24』）；该URL由360跳转(http meta refresh)确认真实，但未能实际打开，未满足『须实际用web_fetch打开且内容含提前招生』的硬性要求，故仅作线索记录。"
+  }
+]

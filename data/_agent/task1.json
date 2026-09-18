@@ -1,0 +1,32 @@
+[
+  {
+    "name": "南京信息职业技术学院",
+    "found": true,
+    "url": "http://zs.njcit.cn/2026/0211/c2201a161575/page.htm",
+    "title": "2026年南京信息职业技术学院提前招生简章",
+    "year": 2026,
+    "page_mentions_early_admission": true,
+    "evidence": "2026年南京信息职业技术学院提前招生简章（2026-02-11，招生网『提前招生』栏目）",
+    "note": "另见官方『提前招生』栏目页 http://zs.njcit.cn/ddzs/list.htm（已实开，标题即『提前招生』，内含2026年提前招生简章/计划表等）"
+  },
+  {
+    "name": "南京旅游职业学院",
+    "found": true,
+    "url": "https://zs.nith.edu.cn/infor/lmxw/2026013000002.htm",
+    "title": "2026年南京旅游职业学院提前招生简章",
+    "year": 2026,
+    "page_mentions_early_admission": true,
+    "evidence": "第二条 本简章适用于我校2026年江苏省高职提前招生工作（发布2026-02-13）",
+    "note": "官方招生网页面为GBK编码，web_fetch返回乱码；标题/正文经第三方转载 https://www.jszs.com/n/476776.html（已实开，UTF-8）逐字对照，确认官方页与之同一篇『2026年…提前招生简章』。2025年对应官方页 https://zs.nith.edu.cn/infor/lmxw/2025011800002.htm（『2025年…提前招生章程』，已实开验证URL规律）"
+  },
+  {
+    "name": "江苏司法警官职业学院",
+    "found": false,
+    "url": null,
+    "title": null,
+    "year": null,
+    "page_mentions_early_admission": false,
+    "evidence": "",
+    "note": "官网 https://www.jssfjy.cn/default.html 与招生网 https://www.jssfjy.cn/type/10002318.html 经 web_fetch 多次尝试均报 'remote error: tls: handshake failure'（该站TLS配置与抓取客户端不兼容），根域名 jssfjy.cn 无A记录；备用文本代理 r.jina.ai 亦超时。360搜索证实该招生网页面存在且被收录（360结果重定向即指向 https://www.jssfjy.cn/type/10002318.html），但无法用web_fetch实开核实其是否含『提前招生』，按硬性要求 found=false。"
+  }
+]

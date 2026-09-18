@@ -1,0 +1,22 @@
+[
+  {
+    "name": "苏州托普信息职业技术学院",
+    "found": false,
+    "url": null,
+    "title": null,
+    "year": null,
+    "page_mentions_early_admission": false,
+    "evidence": "搜狗站内索引显示官网含《苏州托普信息职业技术学院2026年高职院校提前招生简章》(2026-02-26)",
+    "note": "官网 www.szetop.edu.cn 及其招生网 szetop.edu.cn/html/zsw/ 为前端渲染(SPA)：web_fetch 打开任意路径(含 /、/robots.txt、/sitemap.xml、/zsw/、/html/zsw/zsxx/list.htm)均只返回无正文空壳(954/856字节)，取不到页面正文，也未能在任何搜索引擎/开源归档中获得该简章的具体URL，故无法核验到确含“提前招生”的页面，found=false。"
+  },
+  {
+    "name": "苏州百年职业学院",
+    "found": true,
+    "url": "http://zjw.scc.edu.cn/2026/0227/c258a7153/page.htm",
+    "title": "苏州百年职业学院2026年高职提前招生简章",
+    "year": 2026,
+    "page_mentions_early_admission": true,
+    "evidence": "页面大标题及正文首行：苏州百年职业学院2026年高职提前招生简章",
+    "note": "由招生网“招生动态”第2页定位并实际用 web_fetch 打开确认；同站“招生章程”栏目另有《苏州百年职业学院2024年高职提前招生章程》(http://zjw.scc.edu.cn/2024/1031/c287a3895/page.htm)。"
+  }
+]

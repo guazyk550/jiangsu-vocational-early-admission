@@ -1,0 +1,42 @@
+[
+  {
+    "name": "连云港职业技术学院",
+    "found": true,
+    "url": "https://www.lygtc.edu.cn/zsxxw/info/1124/2501.htm",
+    "title": "连职院2026年江苏省提前招生报考指南-招生信息网",
+    "year": 2026,
+    "is_third_party": false,
+    "evidence": "页面标题『连职院2026年江苏省提前招生报考指南』，发布日期2026-03-03",
+    "note": "校方自有域名。属招生信息网『报考指南』栏目，为2026年提前招生条目（同站另有『连职院2026年江苏省提前招生计划』info/1126/2500.htm）。站内『报考指南』列表可直达。"
+  },
+  {
+    "name": "苏州工业园区职业技术学院",
+    "found": true,
+    "url": "https://zs.ivt.edu.cn/newsDetails?id=452",
+    "title": "苏州工业园区职业技术学院2026年高职提前招生章程",
+    "year": 2026,
+    "is_third_party": false,
+    "evidence": "正文『苏州工业园区职业技术学院2026年高职院校提前招生章程…2026年我校继续开展高职院校提前招生改革试点工作』",
+    "note": "校方自有域名（招生网）。栏目『提前招生』(/newsList?id=2&class_two_id=1) 列表首条2026-03-30『2026年高职提前招生第二轮招生公告』(id=461)，本条为2026-02-27章程，正文完整可读。"
+  },
+  {
+    "name": "盐城农业科技职业学院",
+    "found": false,
+    "url": null,
+    "title": "",
+    "year": null,
+    "is_third_party": false,
+    "evidence": "内容为空，未能验证",
+    "note": "官网招生网 https://www.ycac.edu.cn/zsjy/ 。其『提前招生』栏目为 http://www.ycac.edu.cn/zsjy/enroll/zszc/ ，该栏目页及各种翻页/入口(list.htm、index.shtml、index.htm)在本环境均返回空白(200空body或404)，无法取得具体文章页 URL。文章页URL形如 /zsjy/enroll/zszc/YYYYMMDD/HHMMSS.shtml(普通高考栏目文章 /zsjy/enroll/zsjz/20260630/054754.shtml 可正常抓取，其中导航含『提前招生』指向 zszc 栏目)。360显示 ycac.edu.cn 仅约1个网页被收录，Bing/百度/搜狗/Google 均无法带出提前招生文章；故无法验证2026年提前招生简章具体页面，按未找到处理。"
+  },
+  {
+    "name": "江苏医药职业学院",
+    "found": false,
+    "url": null,
+    "title": "",
+    "year": null,
+    "is_third_party": false,
+    "evidence": "504 无法访问，未能验证",
+    "note": "招生网 https://zsjy.jsmc.edu.cn/ 及其线索页 https://zsjy.jsmc.edu.cn/5489/list.htm 多次抓取均返回 504 Gateway Time-out（知道创宇云防御节点→源站连接超时）；主站 www.jsmc.edu.cn 同样 504，顶点域名 jsmc.edu.cn 无解析；jina 只读代理亦超时。360搜索显示存在『江苏医药职业学院2026年提前招生简章』页面(约2026-02-24，来源 zsjy.jsmc.edu.cn)，但因全站不可达无法打开确认，故不采纳为结果。"
+  }
+]
