@@ -19,14 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-注意：本仓库中的**院校数据**（data/schools.json 等）为公开信息整理，其来源与
-各自的使用条款见 README「开源许可与数据来源」一节：
-
-- 经纬度来自 OpenStreetMap（© OpenStreetMap contributors，ODbL 许可）；
-- 院校基础名单/官网/地址来自第三方公开教育信息平台（掌上高考 api.eol.cn 等），仅作线索；
-- 招生政策与院校招生页面指向江苏省教育考试院及各院校官网的公开页面。
-
-本软件不是官方招生平台，招生政策与计划请以江苏省教育考试院及院校官方发布为准。

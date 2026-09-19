@@ -51,10 +51,10 @@ RELEASE_NOTES = """## 江苏高职提前招生院校导航器 —— 首个公�
 
 | 文件 | 平台 | 说明 |
 | --- | --- | --- |
-| `江苏高职提前招生.exe` | Windows 10/11 | 单文件绿色版，双击即用，无需安装 Python |
-| `江苏高职提前招生.apk` | Android 7.0+ | 原生应用（Kotlin + Jetpack Compose） |
+| `JiangsuVocationalEarlyAdmission-Windows.exe` | Windows 10/11 | 单文件绿色版，**双击即用**，无需安装 Python |
+| `JiangsuVocationalEarlyAdmission-Android.apk` | Android 7.0+ | 原生应用（Kotlin + Jetpack Compose） |
 
-两个版本**共用同一份数据**，功能与信息完全一致。
+> 两个版本**共用同一份数据**，功能与信息完全一致。下载后可直接重命名为中文名。
 
 ### 数据现状（2026 年度）
 
@@ -78,6 +78,17 @@ RELEASE_NOTES = """## 江苏高职提前招生院校导航器 —— 首个公�
 - 坐标来自 OpenStreetMap（ODbL 许可），非官方数据，仅供参考；
 - 少数院校的提前招生入口是第三方转载页，数据中已明确标注。
 """
+
+#: 资产名用 ASCII：GitHub 对 URL 里非 ASCII 的 name 参数处理不稳定，
+#: 会出现资产名变成 default.exe 的情况。中文说明放到 label 里。
+ASCII_ASSET_NAMES = {
+    "江苏高职提前招生.exe": "JiangsuVocationalEarlyAdmission-Windows.exe",
+    "江苏高职提前招生.apk": "JiangsuVocationalEarlyAdmission-Android.apk",
+}
+ASSET_LABELS = {
+    "江苏高职提前招生.exe": "Windows 10/11 单文件绿色版，双击即用",
+    "江苏高职提前招生.apk": "Android 7.0+ 原生应用",
+}
 
 
 # --------------------------------------------------------------------- 基础
@@ -170,7 +181,7 @@ def ensure_repo(token: str, owner: str, repo: str, description: str, private: bo
     )
     if status != 201:
         raise SystemExit(f"创建仓库失败：{data}")
-    print(f"      ✓ 已创建 {data.get('html_url')}")
+    print(f"      OK 已创建 {data.get('html_url')}")
 
 
 def push_main(owner: str, repo: str, dry: bool) -> None:
@@ -184,14 +195,21 @@ def push_main(owner: str, repo: str, dry: bool) -> None:
     else:
         git("remote", "add", "origin", remote)
     git("push", "-u", "origin", "main")
-    print("      ✓ 推送完成")
+    print("      OK 推送完成")
 
 
 def ensure_release(token: str, owner: str, repo: str, tag: str, title: str, body: str, dry: bool) -> str:
     print(f"[3/4] 创建 Release {tag}")
     status, data = request("GET", f"{API}/repos/{owner}/{repo}/releases/tags/{tag}", token, expect=(200, 404))
     if status == 200 and isinstance(data, dict):
-        print("      ✓ 已存在，复用")
+        print("      已存在，更新说明并复用")
+        if not dry:
+            request(
+                "PATCH",
+                f"{API}/repos/{owner}/{repo}/releases/{data['id']}",
+                token,
+                payload={"name": title, "body": body},
+            )
         return data["upload_url"]
     if dry:
         return ""
@@ -209,7 +227,7 @@ def ensure_release(token: str, owner: str, repo: str, tag: str, title: str, body
     )
     if status != 201 or not isinstance(data, dict):
         raise SystemExit(f"创建 Release 失败：{data}")
-    print(f"      ✓ {data.get('html_url')}")
+    print(f"      OK {data.get('html_url')}")
     return data["upload_url"]
 
 
@@ -223,37 +241,50 @@ def upload_assets(
     dry: bool,
 ) -> None:
     base = upload_url.split("{")[0]
+
+    if dry:
+        for path in assets:
+            print(f"[4/4] 将上传 {path.name}")
+        return
+
+    # 先清空该 Release 下的旧资产：既保证可重复执行，也避免残留历史错误命名的文件
+    status, existing = request(
+        "GET", f"{API}/repos/{owner}/{repo}/releases/tags/{tag}", token, expect=(200,)
+    )
+    if isinstance(existing, dict):
+        for asset in existing.get("assets", []):
+            request(
+                "DELETE",
+                f"{API}/repos/{owner}/{repo}/releases/assets/{asset['id']}",
+                token,
+                expect=(204,),
+            )
+            print(f"      已删除旧资产：{asset.get('name')}")
+
     for path in assets:
         if not path.exists():
             print(f"[4/4] 跳过（文件不存在）：{path}")
             continue
         name = path.name
+        asset_name = ASCII_ASSET_NAMES.get(name, name)
+        label = ASSET_LABELS.get(name, "")
         size_mb = path.stat().st_size / 1024 / 1024
-        print(f"[4/4] 上传 {name}（{size_mb:.1f} MB）")
-        if dry:
-            continue
-
-        # 同名资产先删除，保证可重复执行
-        status, existing = request(
-            "GET", f"{API}/repos/{owner}/{repo}/releases/tags/{tag}", token, expect=(200,)
-        )
-        if isinstance(existing, dict):
-            for asset in existing.get("assets", []):
-                if asset.get("name") == name:
-                    request("DELETE", f"{API}/repos/{owner}/{repo}/releases/assets/{asset['id']}", token, expect=(204,))
-                    print("      （已删除同名旧资产）")
+        print(f"[4/4] 上传 {name} → 资产名 {asset_name}（{size_mb:.1f} MB）")
 
         boundary = "----jsvocnav" + uuid.uuid4().hex
         mime = mimetypes.guess_type(name)[0] or "application/octet-stream"
+        # multipart 里的 filename 必须是纯 ASCII：非 ASCII 会被 GitHub 降级成 default.exe。
+        # 真正的资产名（可含中文）通过 ?name= 指定。
+        safe_filename = "upload" + (path.suffix or ".bin")
         head = (
             f"--{boundary}\r\n"
-            f'Content-Disposition: form-data; name="file"; filename="{name}"\r\n'
+            f'Content-Disposition: form-data; name="file"; filename="{safe_filename}"\r\n'
             f"Content-Type: {mime}\r\n\r\n"
         ).encode("utf-8")
         tail = f"\r\n--{boundary}--\r\n".encode("utf-8")
         body = head + path.read_bytes() + tail
 
-        url = f"{base}?name={urllib.parse.quote(name)}"
+        url = f"{base}?" + urllib.parse.urlencode({"name": asset_name, "label": label})
         status, data = request(
             "POST",
             url,
@@ -262,7 +293,10 @@ def upload_assets(
             content_type=f"multipart/form-data; boundary={boundary}",
         )
         if status in (200, 201):
-            print(f"      ✓ 上传成功：{data.get('browser_download_url') if isinstance(data, dict) else ''}")
+            print(
+                "      OK 上传成功："
+                + (data.get("browser_download_url") if isinstance(data, dict) else "")
+            )
         else:
             print(f"      ! 上传失败（HTTP {status}）")
 

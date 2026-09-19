@@ -384,8 +384,10 @@ py -m pytest tests/ -q
 
 | 文件 | 适用平台 | 说明 |
 | --- | --- | --- |
-| `江苏高职提前招生.exe` | Windows 10/11 | 单文件绿色版，**双击即可运行**，无需安装 Python 或任何依赖 |
-| `江苏高职提前招生.apk` | Android 7.0+（minSdk 24） | 原生应用（Kotlin + Compose）；首次安装需在手机上允许「安装未知来源应用」 |
+| `JiangsuVocationalEarlyAdmission-Windows.exe` | Windows 10/11 | 单文件绿色版，**双击即可运行**，无需安装 Python 或任何依赖 |
+| `JiangsuVocationalEarlyAdmission-Android.apk` | Android 7.0+（minSdk 24） | 原生应用（Kotlin + Compose）；首次安装需在手机上允许「安装未知来源应用」 |
+
+> 资产名使用 ASCII 是为了兼容各平台下载（下载后可自行重命名为中文名）。
 
 > 桌面版与 Android 版**共用同一份数据**（`data/schools.json`）。
 > 想更新院校数据又不想重装：把新的 `schools.json` 放到 exe 同级的 `data/` 目录即可（见第六节）。
