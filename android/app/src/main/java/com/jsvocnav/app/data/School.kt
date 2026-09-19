@@ -102,10 +102,10 @@ data class Dataset(
 )
 
 /** 排序方式（与桌面版保持一致） */
-enum class SortMode(val label: String) {
-    DEFAULT("默认（城市→校名）"),
-    NAME("A-Z 校名"),
-    DISTANCE("距离最近"),
-    PUBLIC_FIRST("公办优先"),
-    PRIVATE_FIRST("民办优先"),
+enum class SortMode(val label: String, val shortLabel: String) {
+    DEFAULT("默认（城市→校名）", "默认"),
+    NAME("A-Z 校名", "A-Z"),
+    DISTANCE("距离最近", "距离最近"),
+    PUBLIC_FIRST("公办优先", "公办优先"),
+    PRIVATE_FIRST("民办优先", "民办优先"),
 }

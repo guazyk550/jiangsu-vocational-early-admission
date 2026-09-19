@@ -4,6 +4,8 @@ import android.content.Context
 import android.widget.Toast
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.gestures.detectVerticalDragGestures
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -24,6 +26,8 @@ import androidx.compose.material.icons.automirrored.filled.Sort
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.ExpandLess
 import androidx.compose.material.icons.filled.ExpandMore
+import androidx.compose.material.icons.filled.KeyboardArrowDown
+import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.DropdownMenu
@@ -37,6 +41,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
@@ -49,6 +54,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clipToBounds
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
@@ -218,81 +224,117 @@ fun MainScreen(
                 .fillMaxSize()
                 .padding(padding),
         ) {
-            // ---------------- 搜索（常驻） ----------------
-            OutlinedTextField(
-                value = keyword,
-                onValueChange = { keyword = it },
-                singleLine = true,
-                leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
-                trailingIcon = {
-                    if (keyword.isNotEmpty()) {
-                        IconButton(onClick = { keyword = "" }) {
-                            Icon(Icons.Default.Close, contentDescription = "清空搜索")
+            // ---------------- 可收起的顶部抽屉 ----------------
+            // 收起时只剩一条「把手」：小三角 + 当前条件摘要。点按或上下滑动都能开合，
+            // 展开后才出现搜索框与全部筛选项——正文因此始终占满剩余空间。
+            val summaryText = remember(scope, city, ownership, sortMode, keyword) {
+                buildList {
+                    add(scope.label)
+                    if (city != SchoolQuery.ALL) add(city)
+                    if (ownership != SchoolQuery.ALL) add(ownership)
+                    if (sortMode != SortMode.DEFAULT) add(sortMode.shortLabel)
+                    if (keyword.isNotBlank()) add("“$keyword”")
+                }.joinToString(" · ")
+            }
+            val hasActiveFilter = keyword.isNotBlank() ||
+                city != SchoolQuery.ALL ||
+                ownership != SchoolQuery.ALL ||
+                sortMode != SortMode.DEFAULT
+
+            Surface(
+                color = MaterialTheme.colorScheme.surface,
+                modifier = Modifier.fillMaxWidth(),
+            ) {
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clickable { filtersExpanded = !filtersExpanded }
+                        .pointerInput(Unit) {
+                            // 上滑收起、下滑展开（与「很多应用」的抽屉手感一致）
+                            var accumulated = 0f
+                            detectVerticalDragGestures(
+                                onDragStart = { accumulated = 0f },
+                                onDragEnd = {
+                                    if (accumulated <= -HANDLE_DRAG_THRESHOLD) {
+                                        filtersExpanded = false
+                                    } else if (accumulated >= HANDLE_DRAG_THRESHOLD) {
+                                        filtersExpanded = true
+                                    }
+                                },
+                            ) { _, dragAmount -> accumulated += dragAmount }
+                        }
+                        .padding(start = 12.dp, end = 8.dp, top = 2.dp, bottom = 2.dp),
+                ) {
+                    Icon(
+                        imageVector = if (filtersExpanded) {
+                            Icons.Default.KeyboardArrowUp
+                        } else {
+                            Icons.Default.KeyboardArrowDown
+                        },
+                        contentDescription = if (filtersExpanded) "收起筛选" else "展开筛选",
+                        tint = MaterialTheme.colorScheme.primary,
+                    )
+                    Spacer(Modifier.width(4.dp))
+                    Text(
+                        text = summaryText,
+                        style = MaterialTheme.typography.bodyMedium,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                        modifier = Modifier.weight(1f),
+                    )
+                    if (hasActiveFilter) {
+                        TextButton(
+                            onClick = {
+                                keyword = ""
+                                city = SchoolQuery.ALL
+                                ownership = SchoolQuery.ALL
+                                sortMode = SortMode.DEFAULT
+                            },
+                        ) {
+                            Text("清空", maxLines = 1)
                         }
                     }
-                },
-                placeholder = { Text("搜索学校、城市、关键词", maxLines = 1) },
-                shape = RoundedCornerShape(12.dp),
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(start = 16.dp, end = 16.dp, top = 8.dp, bottom = 2.dp),
-            )
-
-            // ---------------- 范围 + 筛选开关（单行，尽量少占竖向空间） ----------------
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(start = 16.dp, end = 8.dp),
-            ) {
-                LazyRow(
-                    // clipToBounds：大字体下 chips 会被截断在可视区内，而不是盖到旁边的“筛选”按钮上
-                    modifier = Modifier
-                        .weight(1f)
-                        .clipToBounds(),
-                    horizontalArrangement = Arrangement.spacedBy(8.dp),
-                ) {
-                    items(Scope.entries.toList()) { item ->
-                        FilterChip(
-                            selected = scope == item,
-                            onClick = { scope = item },
-                            label = { Text(item.label, maxLines = 1) },
-                        )
-                    }
                 }
-                FilterChip(
-                    selected = filtersExpanded || activeFilterCount > 0,
-                    onClick = { filtersExpanded = !filtersExpanded },
-                    label = {
-                        Text(
-                            text = if (activeFilterCount > 0) "筛选 $activeFilterCount" else "筛选",
-                            maxLines = 1,
-                        )
-                    },
-                    trailingIcon = {
-                        Icon(
-                            imageVector = if (filtersExpanded) {
-                                Icons.Default.ExpandLess
-                            } else {
-                                Icons.Default.ExpandMore
-                            },
-                            contentDescription = if (filtersExpanded) "收起筛选" else "展开筛选",
-                            modifier = Modifier.size(18.dp),
-                        )
-                    },
-                    // 与左侧范围 chips 留出间距，避免“最近”和“筛选”贴在一起
-                    modifier = Modifier.padding(start = 8.dp),
-                )
             }
 
-            // ---------------- 可收起的筛选面板（城市 / 性质 / 排序） ----------------
             AnimatedVisibility(visible = filtersExpanded) {
                 Column(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(horizontal = 16.dp),
-                    verticalArrangement = Arrangement.spacedBy(2.dp),
+                    verticalArrangement = Arrangement.spacedBy(4.dp),
                 ) {
+                    OutlinedTextField(
+                        value = keyword,
+                        onValueChange = { keyword = it },
+                        singleLine = true,
+                        leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
+                        trailingIcon = {
+                            if (keyword.isNotEmpty()) {
+                                IconButton(onClick = { keyword = "" }) {
+                                    Icon(Icons.Default.Close, contentDescription = "清空搜索")
+                                }
+                            }
+                        },
+                        placeholder = { Text("搜索学校、城市、关键词", maxLines = 1) },
+                        shape = RoundedCornerShape(12.dp),
+                        modifier = Modifier.fillMaxWidth(),
+                    )
+
+                    LazyRow(
+                        modifier = Modifier.clipToBounds(),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    ) {
+                        items(Scope.entries.toList()) { item ->
+                            FilterChip(
+                                selected = scope == item,
+                                onClick = { scope = item },
+                                label = { Text(item.label, maxLines = 1) },
+                            )
+                        }
+                    }
+
                     Text(
                         text = "城市",
                         style = MaterialTheme.typography.labelSmall,
@@ -339,6 +381,7 @@ fun MainScreen(
                         Spacer(Modifier.width(8.dp))
                         SortMenu(current = sortMode, onPick = { sortMode = it })
                     }
+                    Spacer(Modifier.height(4.dp))
                 }
             }
 
@@ -469,3 +512,6 @@ private fun TextButtonLike(text: String, onClick: () -> Unit) {
 
 const val DISCLAIMER_FALLBACK =
     "本软件仅用于整理和导航江苏省高职院校提前招生相关公开信息，不属于江苏省教育考试院或任何高校官方招生平台。"
+
+/** 抽屉把手上下滑多少像素才触发开合 */
+private const val HANDLE_DRAG_THRESHOLD = 40f
