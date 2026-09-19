@@ -115,8 +115,8 @@ object SchoolQuery {
 
 enum class Scope(val label: String) {
     ALL("全部院校"),
-    FAVORITES("我的收藏"),
-    RECENT("最近浏览"),
+    FAVORITES("收藏"),
+    RECENT("最近"),
 }
 
 /** 便捷：把距离四舍五入到一位小数（用于纯数值展示场景） */

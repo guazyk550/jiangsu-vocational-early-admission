@@ -40,6 +40,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -47,6 +48,8 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clipToBounds
+import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -84,6 +87,12 @@ fun MainScreen(
     // 筛选面板默认收起：大字体手机上不能让它把正文挤成半屏
     var filtersExpanded by remember { mutableStateOf(false) }
     val coroutineScope = rememberCoroutineScope()
+    val focusManager = LocalFocusManager.current
+
+    // 启动时不自动聚焦搜索框（否则真机会弹出输入法，直接占掉半屏）
+    LaunchedEffect(Unit) {
+        focusManager.clearFocus(force = true)
+    }
 
     val origin = remember { store.origin }
     val distanceService = remember(origin) { DistanceService(origin) }
@@ -222,7 +231,7 @@ fun MainScreen(
                         }
                     }
                 },
-                placeholder = { Text("搜索学校名、简称、城市、关键词…", maxLines = 1) },
+                placeholder = { Text("搜索学校、城市、关键词", maxLines = 1) },
                 shape = RoundedCornerShape(12.dp),
                 modifier = Modifier
                     .fillMaxWidth()
@@ -237,7 +246,10 @@ fun MainScreen(
                     .padding(start = 16.dp, end = 8.dp),
             ) {
                 LazyRow(
-                    modifier = Modifier.weight(1f),
+                    // clipToBounds：大字体下 chips 会被截断在可视区内，而不是盖到旁边的“筛选”按钮上
+                    modifier = Modifier
+                        .weight(1f)
+                        .clipToBounds(),
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
                 ) {
                     items(Scope.entries.toList()) { item ->
@@ -268,6 +280,8 @@ fun MainScreen(
                             modifier = Modifier.size(18.dp),
                         )
                     },
+                    // 与左侧范围 chips 留出间距，避免“最近”和“筛选”贴在一起
+                    modifier = Modifier.padding(start = 8.dp),
                 )
             }
 
@@ -311,7 +325,18 @@ fun MainScreen(
                                 modifier = Modifier.padding(end = 6.dp),
                             )
                         }
-                        Spacer(Modifier.weight(1f))
+                    }
+                    // 排序单独一行：与性质挤在一行时，排序文字会被压成一个省略号
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier.fillMaxWidth(),
+                    ) {
+                        Text(
+                            text = "排序",
+                            style = MaterialTheme.typography.labelSmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                        Spacer(Modifier.width(8.dp))
                         SortMenu(current = sortMode, onPick = { sortMode = it })
                     }
                 }
@@ -329,7 +354,7 @@ fun MainScreen(
                     Text(
                         text = when (scope) {
                             Scope.FAVORITES -> "还没有收藏任何院校，点卡片右上角 ☆ 收藏"
-                            Scope.RECENT -> "还没有浏览记录，打开任意院校的「详情」后会记录"
+                            Scope.RECENT -> "还没有浏览记录，点开任意院校后会自动记录"
                             Scope.ALL -> "没有符合条件的院校，试试更换筛选条件"
                         },
                         color = MaterialTheme.colorScheme.onSurfaceVariant,

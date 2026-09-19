@@ -2,6 +2,8 @@ package com.jsvocnav.app.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -28,7 +30,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.jsvocnav.app.data.School
 
-/** 列表里的院校卡片：校名 / 城市·办学性质 / 地址 / 距离 + 三个操作按钮 + 收藏 */
+/** 列表里的院校卡片：校名 / 城市·办学性质 / 地址 / 距离 + 操作按钮 + 收藏 */
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun SchoolCardView(
     school: School,
@@ -41,6 +44,7 @@ fun SchoolCardView(
     modifier: Modifier = Modifier,
 ) {
     Card(
+        onClick = onDetail, // 整张卡片可点：进详情（大字体下可少放一个按钮）
         modifier = modifier.fillMaxWidth(),
         shape = RoundedCornerShape(14.dp),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
@@ -69,23 +73,17 @@ fun SchoolCardView(
                 }
             }
 
-            // 城市 · 办学性质 · 类型 · 距离
+            // 城市 · 办学性质 · 距离
+            // 注：不在此行放「学校类型」——大字体下会把距离挤掉；类型在详情页可见
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(
                     text = school.city.ifBlank { "城市未知" },
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    maxLines = 1,
                 )
                 Spacer(Modifier.width(8.dp))
                 OwnershipBadge(school)
-                if (school.schoolType.isNotBlank()) {
-                    Spacer(Modifier.width(8.dp))
-                    Text(
-                        text = school.schoolType,
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    )
-                }
                 if (distanceText != null) {
                     Spacer(Modifier.weight(1f))
                     Text(
@@ -93,6 +91,7 @@ fun SchoolCardView(
                         style = MaterialTheme.typography.bodyMedium,
                         fontWeight = FontWeight.SemiBold,
                         color = MaterialTheme.colorScheme.primary,
+                        maxLines = 1,
                     )
                 }
             }
@@ -120,16 +119,19 @@ fun SchoolCardView(
                 }
             }
 
-            // 操作按钮
-            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            // 操作按钮：用 FlowRow 自动换行——大字体/窄屏下按钮会换到第二行，
+            // 而不是横向溢出被裁掉
+            FlowRow(
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp),
+            ) {
                 Button(
                     onClick = onOpenAdmission,
                     enabled = school.admissionEntryUrl.isNotBlank(),
                 ) {
                     Text(school.admissionEntryLabel, maxLines = 1, overflow = TextOverflow.Ellipsis)
                 }
-                OutlinedButton(onClick = onOpenMap) { Text("百度地图") }
-                OutlinedButton(onClick = onDetail) { Text("详情") }
+                OutlinedButton(onClick = onOpenMap) { Text("百度地图", maxLines = 1) }
             }
         }
     }
