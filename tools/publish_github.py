@@ -21,6 +21,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import mimetypes
 import subprocess
@@ -77,10 +78,19 @@ RELEASE_NOTES = """## 江苏高职提前招生院校导航器 —— 首个公�
   招生政策、计划与录取规则请以**江苏省教育考试院及各院校官方发布**为准；
 - 坐标来自 OpenStreetMap（ODbL 许可），非官方数据，仅供参考；
 - 少数院校的提前招生入口是第三方转载页，数据中已明确标注。
+
+### 下载慢 / 打不开怎么办？
+
+- 国内直连 GitHub 下载可能很慢甚至中断，**下载不完整就会打不开**。可换加速通道：
+  把下面链接里的 `https://github.com` 换成 `https://ghfast.top/https://github.com`（实测约 4 MB/s）；
+- 下载后请用文末的 **SHA-256** 核对：`Get-FileHash JiangsuVocationalEarlyAdmission-Windows.exe -Algorithm SHA256`
+  如果值不一致，说明没下完，请重新下载；
+- 首次运行若被 Windows 拦住（未签名程序常见提示）：
+  右键文件 → 属性 → 勾选「**解除锁定**」→ 确定，再运行；
+  或点击「更多信息」→「仍要运行」。
 """
 
-#: 资产名用 ASCII：GitHub 对 URL 里非 ASCII 的 name 参数处理不稳定，
-#: 会出现资产名变成 default.exe 的情况。中文说明放到 label 里。
+#: 资产名必须 ASCII：URL 里非 ASCII 的 name 参数会被 GitHub 静默降级成 default.exe
 ASCII_ASSET_NAMES = {
     "江苏高职提前招生.exe": "JiangsuVocationalEarlyAdmission-Windows.exe",
     "江苏高职提前招生.apk": "JiangsuVocationalEarlyAdmission-Android.apk",
@@ -89,6 +99,25 @@ ASSET_LABELS = {
     "江苏高职提前招生.exe": "Windows 10/11 单文件绿色版，双击即用",
     "江苏高职提前招生.apk": "Android 7.0+ 原生应用",
 }
+
+
+def build_notes(assets: tuple[Path, ...]) -> str:
+    """Release 说明 + 各资产的 SHA-256（发布前计算，便于用户下载后自检）。"""
+    lines = [
+        RELEASE_NOTES,
+        "",
+        "### 文件校验（SHA-256）",
+        "",
+        "下载后可与下面的值对比（不完整/损坏会不一致）：",
+        "",
+    ]
+    for path in assets:
+        if not path.exists():
+            continue
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        lines.append(f"- `{ASCII_ASSET_NAMES.get(path.name, path.name)}`")
+        lines.append(f"  `{digest}`")
+    return "\n".join(lines)
 
 
 # --------------------------------------------------------------------- 基础
@@ -269,34 +298,30 @@ def upload_assets(
         asset_name = ASCII_ASSET_NAMES.get(name, name)
         label = ASSET_LABELS.get(name, "")
         size_mb = path.stat().st_size / 1024 / 1024
-        print(f"[4/4] 上传 {name} → 资产名 {asset_name}（{size_mb:.1f} MB）")
+        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        print(f"[4/4] 上传 {name} → {asset_name}（{size_mb:.1f} MB, sha256 {digest[:16]}…）")
 
-        boundary = "----jsvocnav" + uuid.uuid4().hex
-        mime = mimetypes.guess_type(name)[0] or "application/octet-stream"
-        # multipart 里的 filename 必须是纯 ASCII：非 ASCII 会被 GitHub 降级成 default.exe。
-        # 真正的资产名（可含中文）通过 ?name= 指定。
-        safe_filename = "upload" + (path.suffix or ".bin")
-        head = (
-            f"--{boundary}\r\n"
-            f'Content-Disposition: form-data; name="file"; filename="{safe_filename}"\r\n'
-            f"Content-Type: {mime}\r\n\r\n"
-        ).encode("utf-8")
-        tail = f"\r\n--{boundary}--\r\n".encode("utf-8")
-        body = head + path.read_bytes() + tail
-
+        # ⚠️ 必须用 application/octet-stream 直接发原始二进制。
+        # 曾经用 multipart/form-data：GitHub 没有解析请求体，而是把整个 multipart
+        # （boundary + Content-Disposition 头 + 文件 + 结束行）当成文件内容存了下来，
+        # 于是下载到的 exe 开头是 `------jsvocnav…` 而不是 `MZ`，
+        # Windows 报「不是有效的应用程序」。
+        body = path.read_bytes()
         url = f"{base}?" + urllib.parse.urlencode({"name": asset_name, "label": label})
         status, data = request(
             "POST",
             url,
             token,
             raw_body=body,
-            content_type=f"multipart/form-data; boundary={boundary}",
+            content_type="application/octet-stream",
         )
-        if status in (200, 201):
-            print(
-                "      OK 上传成功："
-                + (data.get("browser_download_url") if isinstance(data, dict) else "")
-            )
+        if status in (200, 201) and isinstance(data, dict):
+            print(f"      OK 上传成功：{data.get('browser_download_url')}")
+            remote_size = data.get("size")
+            if remote_size != path.stat().st_size:
+                print(
+                    f"      ! 警告：远端大小 {remote_size} 与本地 {path.stat().st_size} 不一致"
+                )
         else:
             print(f"      ! 上传失败（HTTP {status}）")
 
@@ -324,7 +349,13 @@ def main() -> int:
     ensure_repo(token, owner, args.repo, args.description, args.private, args.dry_run)
     push_main(owner, args.repo, args.dry_run)
     upload_url = ensure_release(
-        token, owner, args.repo, args.tag, args.title, RELEASE_NOTES, args.dry_run
+        token,
+        owner,
+        args.repo,
+        args.tag,
+        args.title,
+        build_notes(tuple(args.assets)),
+        args.dry_run,
     )
     if upload_url:
         upload_assets(token, owner, args.repo, args.tag, upload_url, tuple(args.assets), args.dry_run)
