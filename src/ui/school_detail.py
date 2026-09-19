@@ -144,6 +144,8 @@ class SchoolDetailDialog(QDialog):
             ),
             ("招生简章/章程", school.admission_brochure_url or "未找到"),
             ("招生计划", school.admission_plan_url or "未找到"),
+            ("录取结果", school.admission_result_url or "未收录"),
+            ("考试资料", school.exam_material_url or "未收录"),
         ]
         if school.early_admission_title:
             rows.append(("页面标题", school.early_admission_title))
@@ -214,6 +216,8 @@ class SchoolDetailDialog(QDialog):
             ("招生网", school.admission_website),
             ("招生简章", school.admission_brochure_url),
             ("招生计划", school.admission_plan_url),
+            ("录取结果", school.admission_result_url),
+            ("考试资料", school.exam_material_url),
         ):
             if not url:
                 continue
@@ -354,6 +358,8 @@ class SchoolDetailDialog(QDialog):
             f"提前招生页面：{school.early_admission_url or '暂无数据'}",
             f"招生简章/章程：{school.admission_brochure_url or '暂无数据'}",
             f"招生计划：{school.admission_plan_url or '暂无数据'}",
+            f"录取结果：{school.admission_result_url or '暂无数据'}",
+            f"考试资料：{school.exam_material_url or '暂无数据'}",
             f"数据年份：{school.data_year or '暂无数据'}",
             "",
             DISCLAIMER_TEXT,

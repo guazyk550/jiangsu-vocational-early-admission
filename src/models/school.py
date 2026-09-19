@@ -98,6 +98,12 @@ class School:
     admission_plan_url: str = ""
     admission_plan_title: str = ""
     admission_plan_confidence: str = CONFIDENCE_NONE
+    admission_result_url: str = ""
+    admission_result_title: str = ""
+    admission_result_confidence: str = CONFIDENCE_NONE
+    exam_material_url: str = ""
+    exam_material_title: str = ""
+    exam_material_confidence: str = CONFIDENCE_NONE
     address: str = ""
     latitude: float | None = None
     longitude: float | None = None
@@ -163,6 +169,14 @@ class School:
             admission_plan_title=_as_str(raw.get("admission_plan_title")),
             admission_plan_confidence=_as_str(raw.get("admission_plan_confidence"))
             or CONFIDENCE_NONE,
+            admission_result_url=_as_str(raw.get("admission_result_url")),
+            admission_result_title=_as_str(raw.get("admission_result_title")),
+            admission_result_confidence=_as_str(raw.get("admission_result_confidence"))
+            or CONFIDENCE_NONE,
+            exam_material_url=_as_str(raw.get("exam_material_url")),
+            exam_material_title=_as_str(raw.get("exam_material_title")),
+            exam_material_confidence=_as_str(raw.get("exam_material_confidence"))
+            or CONFIDENCE_NONE,
             address=_as_str(raw.get("address")),
             latitude=latitude,
             longitude=longitude,
@@ -199,6 +213,12 @@ class School:
             "admission_plan_url": self.admission_plan_url,
             "admission_plan_title": self.admission_plan_title,
             "admission_plan_confidence": self.admission_plan_confidence,
+            "admission_result_url": self.admission_result_url,
+            "admission_result_title": self.admission_result_title,
+            "admission_result_confidence": self.admission_result_confidence,
+            "exam_material_url": self.exam_material_url,
+            "exam_material_title": self.exam_material_title,
+            "exam_material_confidence": self.exam_material_confidence,
             "address": self.address,
             "latitude": self.latitude,
             "longitude": self.longitude,
@@ -243,6 +263,16 @@ class School:
     @property
     def has_plan(self) -> bool:
         return bool(self.admission_plan_url)
+
+    @property
+    def has_result(self) -> bool:
+        """是否有录取结果/成绩查询入口"""
+        return bool(self.admission_result_url)
+
+    @property
+    def has_exam_material(self) -> bool:
+        """是否有考试资料（校测大纲/试题等）入口"""
+        return bool(self.exam_material_url)
 
     @property
     def has_early_admission_reference(self) -> bool:

@@ -1,0 +1,18 @@
+# Gradle 构建产物
+.gradle/
+build/
+app/build/
+
+# 构建时由 syncDataset task 自动同步（数据源头是 ../data/schools.json）
+app/src/main/assets/schools.json
+
+# 本地工具链（自行下载的 Gradle 发行版，勿入库）
+.tools/
+
+# 机器相关配置
+local.properties
+
+# IDE
+.idea/
+*.iml
+.DS_Store

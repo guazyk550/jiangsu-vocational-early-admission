@@ -80,6 +80,12 @@ BROCHURE_PROCESS = (
     "征求", "补录", "调剂", "缴费",
 )
 PLAN_PROCESS = ("征求", "征集", "补录", "调剂", "录取", "查询", "成绩", "公示", "准考证")
+
+#: 「录取结果 / 成绩查询」——这类页面本身就是过程性的，因此**不做过程词惩罚**，
+#: 但它们只作为**参考入口**展示，不会占用「提前招生简章」的位置。
+RESULT_PROCESS: tuple[str, ...] = ()
+#: 「考试资料 / 试卷 / 大纲」——同理，不罚过程词
+EXAM_PROCESS: tuple[str, ...] = ()
 #: 弱负面：这些页面可能是简章，也可能不是（如「2026年提前招生通知」）
 SOFT_NEGATIVE = ("通知", "公告", "须知", "新闻", "要闻", "简讯")
 
@@ -106,6 +112,9 @@ PINYIN_HINTS = {
     "zsdt": "招生动态",
     "zsw": "招生网",
     "zsxx": "招生信息",
+    "lqcx": "录取查询",
+    "lqjg": "录取结果",
+    "cjcx": "成绩查询",
 }
 
 #: 页面上的链接文字常被截断（“2026年…提前招...”），因此允许关键词尾部缺字
@@ -191,8 +200,33 @@ PLAN = LinkTarget(
     section_bonus=70,
     penalize_modifiers=True,
 )
+RESULT = LinkTarget(
+    key="admission_result",
+    label="录取结果/成绩查询",
+    any_keywords=(
+        "录取查询", "录取结果", "拟录取", "预录取", "录取名单", "录取公示",
+        "成绩查询", "查询系统", "录取信息",
+    ),
+    page_keywords=("录取", "成绩", "查询"),
+    doc_bonus=("查询", "结果", "名单"),
+    process_keywords=RESULT_PROCESS,
+    section_bonus=30,
+)
+EXAM = LinkTarget(
+    key="exam_material",
+    label="考试资料/试卷",
+    any_keywords=(
+        "校测", "考试大纲", "试题", "试卷", "样题", "真题", "考试说明",
+        "考核办法", "校测方案", "测试大纲", "题库", "模拟题", "考试内容",
+        "职业适应性测试", "文化素质测试",
+    ),
+    page_keywords=("校测", "试题", "试卷", "大纲", "考核", "考试", "测试"),
+    doc_bonus=("大纲", "试题", "试卷", "样题", "考核办法"),
+    process_keywords=EXAM_PROCESS,
+    section_bonus=30,
+)
 
-TARGETS = (EARLY, BROCHURE, PLAN)
+TARGETS = (EARLY, BROCHURE, PLAN, RESULT, EXAM)
 
 
 class _LinkExtractor(HTMLParser):
@@ -634,7 +668,7 @@ def verify_school(
     retries: int = 1,
     insecure: bool = False,
 ) -> dict[str, Any]:
-    """核验一所院校的三类链接。"""
+    """核验一所院校的五类链接。"""
     links, notes = gather_links(
         school, timeout=timeout, retries=retries, insecure=insecure
     )
@@ -732,7 +766,8 @@ def main() -> int:
                 return True
             if old.get("early_admission_confidence") != "high":
                 return True
-            return not old.get("admission_brochure_url") or not old.get("admission_plan_url")
+            return not old.get("admission_brochure_url") or not old.get("admission_plan_url") \
+                or not old.get("admission_result_url") or not old.get("exam_material_url")
 
         schools = [s for s in schools if needs_retry(s)]
         print(f"[续跑] 待重跑 {len(schools)} 所")
@@ -769,7 +804,9 @@ def main() -> int:
                 f"[{index:>3}/{len(schools)}] {result['name']} → "
                 f"{result.get('confidence')} {result.get('early_admission_url') or ''}"
                 f"  | 简章:{'有' if result.get('admission_brochure_url') else '无'}"
-                f" 计划:{'有' if result.get('admission_plan_url') else '无'}",
+                f" 计划:{'有' if result.get('admission_plan_url') else '无'}"
+                f" 结果:{'有' if result.get('admission_result_url') else '无'}"
+                f" 资料:{'有' if result.get('exam_material_url') else '无'}",
                 flush=True,
             )
 
@@ -779,21 +816,36 @@ def main() -> int:
         for result in results:
             old = merged.get(result["name"])
             if old is not None:
-                old_rank = CONFIDENCE_RANK.get(
-                    old.get("early_admission_confidence")
-                    or old.get("confidence")
-                    or "none",
-                    0,
+                old_rank = max(
+                    CONFIDENCE_RANK.get(old.get("early_admission_confidence") or "none", 0),
+                    CONFIDENCE_RANK.get(old.get("confidence") or "none", 0),
                 )
-                new_rank = CONFIDENCE_RANK.get(
-                    result.get("early_admission_confidence")
-                    or result.get("confidence")
-                    or "none",
-                    0,
+                new_rank = max(
+                    CONFIDENCE_RANK.get(
+                        result.get("early_admission_confidence") or "none", 0
+                    ),
+                    CONFIDENCE_RANK.get(result.get("confidence") or "none", 0),
                 )
                 if new_rank < old_rank:
                     kept += 1
-                    continue  # 保留旧结果，防止“越跑越少”
+                    # 保留旧的「提前招生」结果，但**采纳本轮采集到的其他入口**
+                    # （招生简章/计划/录取结果/考试资料），避免新增字段被一起丢掉
+                    merged_record = dict(result)
+                    for field in (
+                        "early_admission_url",
+                        "early_admission_title",
+                        "early_admission_confidence",
+                        "early_admission_year",
+                        "confidence",
+                        "evidence",
+                    ):
+                        if field in old:
+                            merged_record[field] = old[field]
+                    merged_record["notes"] = list(old.get("notes") or []) + [
+                        "本轮重跑未命中更优的提前招生页，沿用上一轮结果"
+                    ]
+                    merged[result["name"]] = merged_record
+                    continue
             merged[result["name"]] = result
         if kept:
             print(f"[保护] 保留 {kept} 所上一轮更优的结果（本轮重跑降级，不覆盖）")
@@ -812,6 +864,7 @@ def main() -> int:
             "method": (
                 "抓取招生网+官网首页及其招生栏目子页；对『提前招生简章/章程/指南』加分、"
                 "对栏目页加分、对『第二轮/校测/成绩/录取』等过程性页面重罚；"
+                "同时采集招生简章/招生计划/录取结果/考试资料四类入口；"
                 "候选链接均实际发请求验证（200 且页面关键词匹配）"
             ),
             "count": len(results),

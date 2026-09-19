@@ -219,6 +219,14 @@ def main() -> int:
             "admission_plan_title": verification.get("admission_plan_title") or "",
             "admission_plan_confidence": verification.get("admission_plan_confidence")
             or "none",
+            "admission_result_url": verification.get("admission_result_url") or "",
+            "admission_result_title": verification.get("admission_result_title") or "",
+            "admission_result_confidence": verification.get("admission_result_confidence")
+            or "none",
+            "exam_material_url": verification.get("exam_material_url") or "",
+            "exam_material_title": verification.get("exam_material_title") or "",
+            "exam_material_confidence": verification.get("exam_material_confidence")
+            or "none",
             "early_admission_reference_url": (
                 verification.get("early_admission_url")
                 if verification.get("third_party")
@@ -278,6 +286,8 @@ def main() -> int:
                     1 for r in included if r["admission_brochure_url"]
                 ),
                 "admission_plan": sum(1 for r in included if r["admission_plan_url"]),
+                "admission_result": sum(1 for r in included if r["admission_result_url"]),
+                "exam_material": sum(1 for r in included if r["exam_material_url"]),
                 "official_website": sum(1 for r in included if r["official_website"]),
                 "admission_website": sum(1 for r in included if r["admission_website"]),
             },
