@@ -3,6 +3,7 @@ package com.jsvocnav.app.ui
 import android.content.Context
 import android.widget.Toast
 import androidx.activity.compose.BackHandler
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -12,6 +13,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
@@ -19,6 +21,9 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.Sort
+import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.ExpandLess
+import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.DropdownMenu
@@ -30,6 +35,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
@@ -75,6 +81,8 @@ fun MainScreen(
     var showDisclaimer by remember { mutableStateOf(false) }
     var menuOpen by remember { mutableStateOf(false) }
     var busy by remember { mutableStateOf(false) }
+    // 筛选面板默认收起：大字体手机上不能让它把正文挤成半屏
+    var filtersExpanded by remember { mutableStateOf(false) }
     val coroutineScope = rememberCoroutineScope()
 
     val origin = remember { store.origin }
@@ -98,6 +106,11 @@ fun MainScreen(
             distances,
         )
     }
+    val activeFilterCount = listOf(
+        city != SchoolQuery.ALL,
+        ownership != SchoolQuery.ALL,
+        sortMode != SortMode.DEFAULT,
+    ).count { it }
 
     fun toast(message: String) {
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
@@ -135,22 +148,27 @@ fun MainScreen(
                     containerColor = MaterialTheme.colorScheme.surface,
                 ),
                 title = {
-                    Column {
-                        Text("江苏高职提前招生", fontWeight = FontWeight.SemiBold)
-                        val meta = loadResult.dataset.meta
-                        val subtitle = buildString {
-                            if (meta.dataYear > 0) append("数据年度 ${meta.dataYear}")
-                            if (meta.lastVerified.isNotBlank()) {
-                                if (isNotEmpty()) append("　")
-                                append("核验 ${meta.lastVerified}")
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Text(
+                            text = "江苏高职提前招生",
+                            fontWeight = FontWeight.SemiBold,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis,
+                        )
+                        val dataYear = loadResult.dataset.meta.dataYear
+                        if (dataYear > 0) {
+                            Spacer(Modifier.width(6.dp))
+                            Surface(
+                                color = MaterialTheme.colorScheme.primaryContainer,
+                                shape = RoundedCornerShape(8.dp),
+                            ) {
+                                Text(
+                                    text = "$dataYear",
+                                    style = MaterialTheme.typography.labelMedium,
+                                    color = MaterialTheme.colorScheme.onPrimaryContainer,
+                                    modifier = Modifier.padding(horizontal = 7.dp, vertical = 1.dp),
+                                )
                             }
-                        }
-                        if (subtitle.isNotBlank()) {
-                            Text(
-                                text = subtitle,
-                                style = MaterialTheme.typography.labelMedium,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            )
                         }
                     }
                 },
@@ -191,70 +209,113 @@ fun MainScreen(
                 .fillMaxSize()
                 .padding(padding),
         ) {
-            // ---------------- 搜索 ----------------
+            // ---------------- 搜索（常驻） ----------------
             OutlinedTextField(
                 value = keyword,
                 onValueChange = { keyword = it },
                 singleLine = true,
                 leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
-                placeholder = { Text("搜索学校名、简称、城市、关键词…") },
+                trailingIcon = {
+                    if (keyword.isNotEmpty()) {
+                        IconButton(onClick = { keyword = "" }) {
+                            Icon(Icons.Default.Close, contentDescription = "清空搜索")
+                        }
+                    }
+                },
+                placeholder = { Text("搜索学校名、简称、城市、关键词…", maxLines = 1) },
                 shape = RoundedCornerShape(12.dp),
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(horizontal = 16.dp, vertical = 8.dp),
+                    .padding(start = 16.dp, end = 16.dp, top = 8.dp, bottom = 2.dp),
             )
 
-            // ---------------- 范围 ----------------
-            LazyRow(
-                contentPadding = PaddingValues(horizontal = 16.dp),
-                horizontalArrangement = Arrangement.spacedBy(8.dp),
-            ) {
-                items(Scope.entries.toList()) { item ->
-                    FilterChip(
-                        selected = scope == item,
-                        onClick = { scope = item },
-                        label = { Text(item.label) },
-                    )
-                }
-            }
-
-            // ---------------- 城市 ----------------
-            LazyRow(
-                contentPadding = PaddingValues(horizontal = 16.dp, vertical = 6.dp),
-                horizontalArrangement = Arrangement.spacedBy(8.dp),
-            ) {
-                items(cities) { item ->
-                    FilterChip(
-                        selected = city == item,
-                        onClick = { city = item },
-                        label = { Text(item) },
-                    )
-                }
-            }
-
-            // ---------------- 办学性质 + 排序 ----------------
+            // ---------------- 范围 + 筛选开关（单行，尽量少占竖向空间） ----------------
             Row(
                 verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier.padding(horizontal = 16.dp),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = 16.dp, end = 8.dp),
             ) {
-                listOf(SchoolQuery.ALL, "公办", "民办").forEach { item ->
-                    FilterChip(
-                        selected = ownership == item,
-                        onClick = { ownership = item },
-                        label = { Text(item) },
-                        modifier = Modifier.padding(end = 8.dp),
-                    )
+                LazyRow(
+                    modifier = Modifier.weight(1f),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
+                    items(Scope.entries.toList()) { item ->
+                        FilterChip(
+                            selected = scope == item,
+                            onClick = { scope = item },
+                            label = { Text(item.label, maxLines = 1) },
+                        )
+                    }
                 }
-                Spacer(Modifier.weight(1f))
-                SortMenu(current = sortMode, onPick = { sortMode = it })
+                FilterChip(
+                    selected = filtersExpanded || activeFilterCount > 0,
+                    onClick = { filtersExpanded = !filtersExpanded },
+                    label = {
+                        Text(
+                            text = if (activeFilterCount > 0) "筛选 $activeFilterCount" else "筛选",
+                            maxLines = 1,
+                        )
+                    },
+                    trailingIcon = {
+                        Icon(
+                            imageVector = if (filtersExpanded) {
+                                Icons.Default.ExpandLess
+                            } else {
+                                Icons.Default.ExpandMore
+                            },
+                            contentDescription = if (filtersExpanded) "收起筛选" else "展开筛选",
+                            modifier = Modifier.size(18.dp),
+                        )
+                    },
+                )
             }
 
-            Text(
-                text = "共 ${schools.size} 所院校　显示 ${visible.size} 所",
-                style = MaterialTheme.typography.labelMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
-            )
+            // ---------------- 可收起的筛选面板（城市 / 性质 / 排序） ----------------
+            AnimatedVisibility(visible = filtersExpanded) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 16.dp),
+                    verticalArrangement = Arrangement.spacedBy(2.dp),
+                ) {
+                    Text(
+                        text = "城市",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                    LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        items(cities) { item ->
+                            FilterChip(
+                                selected = city == item,
+                                onClick = { city = item },
+                                label = { Text(item, maxLines = 1) },
+                            )
+                        }
+                    }
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier.fillMaxWidth(),
+                    ) {
+                        Text(
+                            text = "性质",
+                            style = MaterialTheme.typography.labelSmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                        Spacer(Modifier.width(8.dp))
+                        listOf(SchoolQuery.ALL, "公办", "民办").forEach { item ->
+                            FilterChip(
+                                selected = ownership == item,
+                                onClick = { ownership = item },
+                                label = { Text(item, maxLines = 1) },
+                                modifier = Modifier.padding(end = 6.dp),
+                            )
+                        }
+                        Spacer(Modifier.weight(1f))
+                        SortMenu(current = sortMode, onPick = { sortMode = it })
+                    }
+                }
+            }
 
             // ---------------- 列表 ----------------
             if (visible.isEmpty()) {
@@ -276,9 +337,16 @@ fun MainScreen(
                 }
             } else {
                 LazyColumn(
-                    contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
+                    contentPadding = PaddingValues(horizontal = 16.dp, vertical = 6.dp),
                     verticalArrangement = Arrangement.spacedBy(10.dp),
                 ) {
+                    item(key = "__count__") {
+                        Text(
+                            text = "共 ${schools.size} 所院校　显示 ${visible.size} 所",
+                            style = MaterialTheme.typography.labelSmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                    }
                     items(visible, key = { it.id }) { school ->
                         SchoolCardView(
                             school = school,
@@ -317,6 +385,13 @@ fun MainScreen(
             title = "数据来源",
             paragraphs = buildList {
                 val meta = loadResult.dataset.meta
+                add(
+                    buildString {
+                        if (meta.dataYear > 0) append("数据年度：${meta.dataYear} 年　")
+                        if (meta.lastVerified.isNotBlank()) append("核验日期：${meta.lastVerified}　")
+                        append("收录 ${loadResult.schools.size} 所")
+                    }
+                )
                 if (meta.scope.isNotBlank()) add(meta.scope)
                 addAll(meta.sources)
                 if (meta.disclaimer.isNotBlank()) add(meta.disclaimer)
